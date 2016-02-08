@@ -27,7 +27,7 @@ trees<-read.tree("02-EbolaTrees.trees")
 deathfix<-0
 # fix sampling probability to 0.7:
 sprobc <- 0.7
-# 3 Re intervals (one prior to most ancestral sample, then 50/50 length) 
+# 3 Re intervals (one prior to most ancestral sample, then 50/50 length)
 numbRe<-3  # alternative numbRe<-1
 
 #calculate likelihood for first 10 trees (we did it for all 90)
@@ -105,7 +105,7 @@ par<-c(1/5,2*1/5,1/5)
 phylo$edge.length <- phylo$edge.length*365
 out<-optim(c(par),LikTypesSTTebolaS,phylo=phylo,sprob=sprob)$par
 
-# transform parameters to R0, incubation time, infectious time, sampling probability: 
+# transform parameters to R0, incubation time, infectious time, sampling probability:
 epi<-c(out[2]/out[3],1/out[1],1/out[3],sprob)
 # epi for tree 1 is 1.338087 2.215416 1.376223 0.700000
 
