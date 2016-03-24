@@ -61,7 +61,7 @@ likelihoods_distros <- list()
 likelihoods_empirical <- vector()
 empirical_tree_param_estimates <- list()
 
-cl <- makeCluster(4)
+cl <- makeCluster(8)
 registerDoParallel(cl)
 for(tr in 1:length(rateshift_trees)){
     reference_estimates <- fit_rate_shifts(rateshift_trees[[tr]], rho)
