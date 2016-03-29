@@ -79,6 +79,9 @@ for(tr in 1:length(rateshift_trees)){
 }
 stopCluster(cl)
 
+print("the p values are")
+print(pvals)
+
 pdf('histograms_100_tips.pdf')
 par(mfrow = c(3, 3))
 for(i in 1:9){
