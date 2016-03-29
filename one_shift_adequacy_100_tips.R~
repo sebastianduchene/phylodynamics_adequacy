@@ -64,7 +64,7 @@ empirical_tree_param_estimates <- list()
 cl <- makeCluster(8)
 registerDoParallel(cl)
 for(tr in 1:length(rateshift_trees)){
-   print(paste('STARTED', tr, 'OF', length(rateshift_trees)))
+   print(paste('COMPLETED', tr, 'of', length(rateshift_trees)))
     reference_estimates <- fit_rate_shifts(rateshift_trees[[tr]], rho)
 
     sim_trees0 <- sim.bd.taxa(n = nspecies, numbsim = 100, lambda = reference_estimates$shifts0[1],
@@ -75,7 +75,6 @@ for(tr in 1:length(rateshift_trees)){
     empirical_tree_param_estimates[[tr]] <- reference_estimates$shifts0
     pvals[tr] <- sum(reference_estimates[[1]][1] > liks_sim_trees0)
 
-    print(paste('COMPLETED', tr, 'OF', length(rateshift_trees)))
 }
 stopCluster(cl)
 
