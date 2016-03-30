@@ -1,0 +1,18 @@
+library(TreePar)
+library(TreeSim)
+library(NELSI)
+library(doParallel)
+library(foreach)
+
+
+
+
+
+set.seed(1234)
+nspecies <- 20
+time <- c(0, 0.5)
+rho <- c(1, 0.5)
+lambda <- c(1.5, 4)
+mu <- c(1.5, 0)
+rateshift_trees <- sim.rateshift.taxa(nspecies, 10, lambda = lambda,
+                                     mu = mu, frac = rho, times = time, complete = F)
