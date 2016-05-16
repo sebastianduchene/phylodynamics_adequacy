@@ -48,6 +48,9 @@ tr_fit <- fit_shifts(rateshift_trees[[1]], rho = rho)
 
 tr_fit_params <- get_params(tr_fit)
 
+# I am having trouble resimulating data because mu is sometimes greater than lambda, so the trees cannot be simulated
+
+
 # Simulated parameters
 mu/lambda
 lambda - mu
