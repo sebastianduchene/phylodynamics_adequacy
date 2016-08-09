@@ -1,0 +1,15 @@
+<itsabeastystatewerein version='2.0' sample='3849999'>
+<statenode id='origin.s.t:bears_irbp_fossils'>origin.s.t:bears_irbp_fossils[1 1] (0.0,Infinity): 9.108148546677121 </statenode>
+<statenode id='samplingProportion.s.t:bears_irbp_fossils'>samplingProportion.s.t:bears_irbp_fossils[1 1] (0.0,1.0): 0.8842388958430459 </statenode>
+<statenode id='becomeUninfectiousRate.s.t:bears_irbp_fossils'>becomeUninfectiousRate.s.t:bears_irbp_fossils[1 1] (0.0,Infinity): 0.37068382282482737 </statenode>
+<statenode id='R0.s.t:bears_irbp_fossils'>R0.s.t:bears_irbp_fossils[10 1] (0.0,Infinity): 1.2006026032950081 0.8156968487036667 0.6939998265968049 0.49624527061117873 2.1244112168053557 0.5553152470141502 0.8393778494609326 1.271051070070617 0.4012663065323689 1.0100556678652561 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"becomeUninfectiousRateScaler.s.t:bears_irbp_fossils","p":0.27996714372975234,"accept":121663,"reject":330933,"acceptFC":120768,"rejectFC":330641,"rejectIv":0,"rejectOp":0},
+{"id":"samplingScaler.s.t:bears_irbp_fossils","p":0.09344844680425544,"accept":71970,"reject":381259,"acceptFC":70941,"rejectFC":381082,"rejectIv":293781,"rejectOp":293781},
+{"id":"RScaler.s.t:bears_irbp_fossils","p":0.15277718336903542,"accept":604963,"reject":1659938,"acceptFC":599991,"rejectFC":1659044,"rejectIv":0,"rejectOp":0},
+{"id":"updownBD.s.t:bears_irbp_fossils","p":0.30269833816718594,"accept":118914,"reject":333673,"acceptFC":118040,"rejectFC":333352,"rejectIv":0,"rejectOp":0},
+{"id":"origScaler.s.t:bears_irbp_fossils","p":0.608935292683038,"accept":56489,"reject":170198,"acceptFC":56280,"rejectFC":169859,"rejectIv":47295,"rejectOp":0}
+]}
+-->

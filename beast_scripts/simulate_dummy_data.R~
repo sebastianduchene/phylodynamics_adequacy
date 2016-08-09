@@ -1,0 +1,7 @@
+library(phangorn)
+
+tr <- rtree(100)
+
+tr$tip.label <- paste0('sample_', 1:100, '_', runif(100, 0, 5))
+
+plot(tr)

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="BDSKY v1.3.1" version="2.4">
+
+
+
+
+
+
+
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<taxonset id="TaxonSet.bears_irbp_fossils" spec="TaxonSet">
+  <taxon id="t1" spec="Taxon"/>
+  <taxon id="t2" spec="Taxon"/>
+  <taxon id="t3" spec="Taxon"/>
+  <taxon id="t4" spec="Taxon"/>
+  <taxon id="t5" spec="Taxon"/>
+           </taxonset>
+
+
+       <tree id="Tree.t:bears_irbp_fossils1" name="stateNode" spec="beast.util.TreeParser"
+       IsLabelledNewick="true" adjustTipHeights="false"
+       newick="(((t1:1,t2:2):1,(t3:1,t4:2):2):1,t5:1):0.0;" taxonset="@TaxonSet.bears_irbp_fossils"/>
+
+       <tree id="Tree.t:bears_irbp_fossils2" name="stateNode" spec="beast.util.TreeParser"
+       IsLabelledNewick="true" adjustTipHeights="false"
+       newick="(((t1:1,t3:2):1,(t2:1,t4:2):2):1,t5:1):0.0;" taxonset="@TaxonSet.bears_irbp_fossils"/>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+   <state id="state" storeEvery="5000">
+       <parameter id="origin.s.t:bears_irbp_fossils" lower="0.0" name="stateNode" upper="Infinity">100.0</parameter>
+       <parameter id="samplingProportion.s.t:bears_irbp_fossils" lower="0.0" name="stateNode" upper="1.0">0.01</parameter>
+       <parameter id="becomeUninfectiousRate.s.t:bears_irbp_fossils" lower="0.0" name="stateNode" upper="Infinity">1.0</parameter>
+       <parameter id="R0.s.t:bears_irbp_fossils" dimension="10" lower="0.0" name="stateNode" upper="Infinity">2.0</parameter>
+   </state>
+
+
+   <distribution id="posterior" spec="util.CompoundDistribution">
+       <distribution id="prior" spec="util.CompoundDistribution">
+           <prior id="RPrior.s.t:bears_irbp_fossils" name="distribution" x="@R0.s.t:bears_irbp_fossils">
+               <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                   <parameter id="RealParameter.0" lower="0.0" name="M" upper="0.0">0.0</parameter>
+                   <parameter id="RealParameter.01" lower="0.0" name="S" upper="0.0">1.0</parameter>
+               </LogNormal>
+           </prior>
+           <prior id="becomeUninfectiousRatePrior.s.t:bears_irbp_fossils" name="distribution" x="@becomeUninfectiousRate.s.t:bears_irbp_fossils">
+               <LogNormal id="LogNormalDistributionModel.01" name="distr">
+                   <parameter id="RealParameter.02" lower="0.0" name="M" upper="0.0">0.0</parameter>
+                   <parameter id="RealParameter.03" lower="0.0" name="S" upper="0.0">1.0</parameter>
+               </LogNormal>
+           </prior>
+           <prior id="originPrior.s.t:bears_irbp_fossils" name="distribution" x="@origin.s.t:bears_irbp_fossils">
+               <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+           </prior>
+           <prior id="samplingProportionPrior.s.t:bears_irbp_fossils" name="distribution" x="@samplingProportion.s.t:bears_irbp_fossils">
+               <Beta id="Beta.0" name="distr">
+                   <parameter id="RealParameter.04" lower="0.0" name="alpha" upper="0.0">1.0</parameter>
+                   <parameter id="RealParameter.05" lower="0.0" name="beta" upper="0.0">1.0</parameter>
+               </Beta>
+           </prior>
+       </distribution>
+       <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+	 <plate var="n" range="1:2">        
+	             <distribution id="BirthDeathSkySerial.t:bears_irbp_fossils$(n)" spec="beast.evolution.speciation.BirthDeathSkylineModel" R0="@R0.s.t:bears_irbp_fossils" becomeUninfectiousRate="@becomeUninfectiousRate.s.t:bears_irbp_fossils" origin="@origin.s.t:bears_irbp_fossils" samplingProportion="@samplingProportion.s.t:bears_irbp_fossils" tree="@Tree.t:bears_irbp_fossils$(n)"/>
+           </plate>
+           </distribution>
+   </distribution>
+
+   <operator id="becomeUninfectiousRateScaler.s.t:bears_irbp_fossils" spec="ScaleOperator" parameter="@becomeUninfectiousRate.s.t:bears_irbp_fossils" scaleFactor="0.75" weight="2.0"/>
+
+   <operator id="samplingScaler.s.t:bears_irbp_fossils" spec="ScaleOperator" parameter="@samplingProportion.s.t:bears_irbp_fossils" scaleFactor="0.75" weight="2.0"/>
+
+   <operator id="RScaler.s.t:bears_irbp_fossils" spec="ScaleOperator" parameter="@R0.s.t:bears_irbp_fossils" scaleFactor="0.75" weight="10.0"/>
+
+   <operator id="updownBD.s.t:bears_irbp_fossils" spec="UpDownOperator" scaleFactor="0.75" weight="2.0">
+       <up idref="R0.s.t:bears_irbp_fossils"/>
+       <down idref="becomeUninfectiousRate.s.t:bears_irbp_fossils"/>
+   </operator>
+
+   <operator id="origScaler.s.t:bears_irbp_fossils" spec="ScaleOperator" parameter="@origin.s.t:bears_irbp_fossils" scaleFactor="0.75" weight="1.0"/>
+
+   <logger id="tracelog" fileName="bears_irbp_fossils.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+       <log idref="posterior"/>
+       <log idref="prior"/>
+       <log idref="likelihood"/>
+
+       <plate var="n" range="1:2">
+	         <log idref="BirthDeathSkySerial.t:bears_irbp_fossils$(n)"/>
+       </plate>
+       <log idref="origin.s.t:bears_irbp_fossils"/>
+       <log idref="samplingProportion.s.t:bears_irbp_fossils"/>
+       <log idref="becomeUninfectiousRate.s.t:bears_irbp_fossils"/>
+       <log idref="R0.s.t:bears_irbp_fossils"/>
+       <log id="birth.t:bears_irbp_fossils" spec="beast.math.statistic.RPNcalculator" expression="R0.s.t:bears_irbp_fossils becomeUninfectiousRate.s.t:bears_irbp_fossils *">
+           <parameter idref="becomeUninfectiousRate.s.t:bears_irbp_fossils"/>
+           <parameter idref="R0.s.t:bears_irbp_fossils"/>
+       </log>
+       <log id="death.t:bears_irbp_fossils" spec="beast.math.statistic.RPNcalculator" expression="becomeUninfectiousRate.s.t:bears_irbp_fossils 1 samplingProportion.s.t:bears_irbp_fossils - *">
+           <parameter idref="becomeUninfectiousRate.s.t:bears_irbp_fossils"/>
+           <parameter idref="samplingProportion.s.t:bears_irbp_fossils"/>
+       </log>
+       <log id="sampling.t:bears_irbp_fossils" spec="beast.math.statistic.RPNcalculator" expression="becomeUninfectiousRate.s.t:bears_irbp_fossils samplingProportion.s.t:bears_irbp_fossils *">
+           <parameter idref="becomeUninfectiousRate.s.t:bears_irbp_fossils"/>
+           <parameter idref="samplingProportion.s.t:bears_irbp_fossils"/>
+       </log>
+   </logger>
+
+   <logger id="screenlog" logEvery="1000">
+       <log idref="posterior"/>
+       <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+       <log idref="likelihood"/>
+       <log idref="prior"/>
+   </logger>
+
+
+</run>
+
+</beast>
+
