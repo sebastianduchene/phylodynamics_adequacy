@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+
+
+    <data id="dummy_aln" name="alignment">
+      <sequence id="seq_1" taxon="1" totalcount="4" value="gc"/>
+<sequence id="seq_77" taxon="77" totalcount="4" value="gc"/>
+<sequence id="seq_38" taxon="38" totalcount="4" value="gc"/>
+<sequence id="seq_58" taxon="58" totalcount="4" value="gc"/>
+<sequence id="seq_55" taxon="55" totalcount="4" value="gc"/>
+<sequence id="seq_12" taxon="12" totalcount="4" value="gc"/>
+<sequence id="seq_25" taxon="25" totalcount="4" value="gc"/>
+<sequence id="seq_54" taxon="54" totalcount="4" value="gc"/>
+<sequence id="seq_16" taxon="16" totalcount="4" value="gc"/>
+<sequence id="seq_17" taxon="17" totalcount="4" value="gc"/>
+<sequence id="seq_48" taxon="48" totalcount="4" value="gc"/>
+<sequence id="seq_21" taxon="21" totalcount="4" value="gc"/>
+<sequence id="seq_61" taxon="61" totalcount="4" value="gc"/>
+<sequence id="seq_23" taxon="23" totalcount="4" value="gc"/>
+<sequence id="seq_70" taxon="70" totalcount="4" value="gc"/>
+<sequence id="seq_96" taxon="96" totalcount="4" value="gc"/>
+<sequence id="seq_88" taxon="88" totalcount="4" value="gc"/>
+<sequence id="seq_39" taxon="39" totalcount="4" value="gc"/>
+<sequence id="seq_81" taxon="81" totalcount="4" value="gc"/>
+<sequence id="seq_43" taxon="43" totalcount="4" value="gc"/>
+<sequence id="seq_3" taxon="3" totalcount="4" value="gc"/>
+<sequence id="seq_79" taxon="79" totalcount="4" value="gc"/>
+<sequence id="seq_56" taxon="56" totalcount="4" value="gc"/>
+<sequence id="seq_63" taxon="63" totalcount="4" value="gc"/>
+<sequence id="seq_4" taxon="4" totalcount="4" value="gc"/>
+<sequence id="seq_5" taxon="5" totalcount="4" value="gc"/>
+<sequence id="seq_31" taxon="31" totalcount="4" value="gc"/>
+<sequence id="seq_51" taxon="51" totalcount="4" value="gc"/>
+<sequence id="seq_74" taxon="74" totalcount="4" value="gc"/>
+<sequence id="seq_19" taxon="19" totalcount="4" value="gc"/>
+<sequence id="seq_15" taxon="15" totalcount="4" value="gc"/>
+<sequence id="seq_60" taxon="60" totalcount="4" value="gc"/>
+<sequence id="seq_71" taxon="71" totalcount="4" value="gc"/>
+<sequence id="seq_93" taxon="93" totalcount="4" value="gc"/>
+<sequence id="seq_89" taxon="89" totalcount="4" value="gc"/>
+<sequence id="seq_78" taxon="78" totalcount="4" value="gc"/>
+<sequence id="seq_57" taxon="57" totalcount="4" value="gc"/>
+<sequence id="seq_28" taxon="28" totalcount="4" value="gc"/>
+<sequence id="seq_52" taxon="52" totalcount="4" value="gc"/>
+<sequence id="seq_80" taxon="80" totalcount="4" value="gc"/>
+<sequence id="seq_33" taxon="33" totalcount="4" value="gc"/>
+<sequence id="seq_59" taxon="59" totalcount="4" value="gc"/>
+<sequence id="seq_36" taxon="36" totalcount="4" value="gc"/>
+<sequence id="seq_87" taxon="87" totalcount="4" value="gc"/>
+<sequence id="seq_34" taxon="34" totalcount="4" value="gc"/>
+<sequence id="seq_90" taxon="90" totalcount="4" value="gc"/>
+<sequence id="seq_44" taxon="44" totalcount="4" value="gc"/>
+<sequence id="seq_85" taxon="85" totalcount="4" value="gc"/>
+<sequence id="seq_47" taxon="47" totalcount="4" value="gc"/>
+<sequence id="seq_92" taxon="92" totalcount="4" value="gc"/>
+<sequence id="seq_84" taxon="84" totalcount="4" value="gc"/>
+<sequence id="seq_73" taxon="73" totalcount="4" value="gc"/>
+<sequence id="seq_30" taxon="30" totalcount="4" value="gc"/>
+<sequence id="seq_98" taxon="98" totalcount="4" value="gc"/>
+<sequence id="seq_86" taxon="86" totalcount="4" value="gc"/>
+<sequence id="seq_75" taxon="75" totalcount="4" value="gc"/>
+<sequence id="seq_83" taxon="83" totalcount="4" value="gc"/>
+<sequence id="seq_100" taxon="100" totalcount="4" value="gc"/>
+<sequence id="seq_11" taxon="11" totalcount="4" value="gc"/>
+<sequence id="seq_45" taxon="45" totalcount="4" value="gc"/>
+<sequence id="seq_67" taxon="67" totalcount="4" value="gc"/>
+<sequence id="seq_94" taxon="94" totalcount="4" value="gc"/>
+<sequence id="seq_41" taxon="41" totalcount="4" value="gc"/>
+<sequence id="seq_26" taxon="26" totalcount="4" value="gc"/>
+<sequence id="seq_50" taxon="50" totalcount="4" value="gc"/>
+<sequence id="seq_53" taxon="53" totalcount="4" value="gc"/>
+<sequence id="seq_37" taxon="37" totalcount="4" value="gc"/>
+<sequence id="seq_18" taxon="18" totalcount="4" value="gc"/>
+<sequence id="seq_95" taxon="95" totalcount="4" value="gc"/>
+<sequence id="seq_27" taxon="27" totalcount="4" value="gc"/>
+<sequence id="seq_6" taxon="6" totalcount="4" value="gc"/>
+<sequence id="seq_10" taxon="10" totalcount="4" value="gc"/>
+<sequence id="seq_24" taxon="24" totalcount="4" value="gc"/>
+<sequence id="seq_35" taxon="35" totalcount="4" value="gc"/>
+<sequence id="seq_99" taxon="99" totalcount="4" value="gc"/>
+<sequence id="seq_46" taxon="46" totalcount="4" value="gc"/>
+<sequence id="seq_49" taxon="49" totalcount="4" value="gc"/>
+<sequence id="seq_62" taxon="62" totalcount="4" value="gc"/>
+<sequence id="seq_69" taxon="69" totalcount="4" value="gc"/>
+<sequence id="seq_68" taxon="68" totalcount="4" value="gc"/>
+<sequence id="seq_2" taxon="2" totalcount="4" value="gc"/>
+<sequence id="seq_97" taxon="97" totalcount="4" value="gc"/>
+<sequence id="seq_64" taxon="64" totalcount="4" value="gc"/>
+<sequence id="seq_76" taxon="76" totalcount="4" value="gc"/>
+<sequence id="seq_20" taxon="20" totalcount="4" value="gc"/>
+<sequence id="seq_42" taxon="42" totalcount="4" value="gc"/>
+<sequence id="seq_9" taxon="9" totalcount="4" value="gc"/>
+<sequence id="seq_82" taxon="82" totalcount="4" value="gc"/>
+<sequence id="seq_7" taxon="7" totalcount="4" value="gc"/>
+<sequence id="seq_40" taxon="40" totalcount="4" value="gc"/>
+<sequence id="seq_13" taxon="13" totalcount="4" value="gc"/>
+<sequence id="seq_91" taxon="91" totalcount="4" value="gc"/>
+<sequence id="seq_22" taxon="22" totalcount="4" value="gc"/>
+<sequence id="seq_8" taxon="8" totalcount="4" value="gc"/>
+<sequence id="seq_29" taxon="29" totalcount="4" value="gc"/>
+<sequence id="seq_14" taxon="14" totalcount="4" value="gc"/>
+<sequence id="seq_65" taxon="65" totalcount="4" value="gc"/>
+<sequence id="seq_32" taxon="32" totalcount="4" value="gc"/>
+<sequence id="seq_72" taxon="72" totalcount="4" value="gc"/>
+<sequence id="seq_66" taxon="66" totalcount="4" value="gc"/>
+    </data>
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="10000" sampleFromPrior="true">
+    <state id="state" storeEvery="5000">
+        <tree id="Tree.t:dummy_aln" name="stateNode">
+          <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
+            1=1,
+77=77,
+38=38,
+58=58,
+55=55,
+12=12,
+25=25,
+54=54,
+16=16,
+17=17,
+48=48,
+21=21,
+61=61,
+23=23,
+70=70,
+96=96,
+88=88,
+39=39,
+81=81,
+43=43,
+3=3,
+79=79,
+56=56,
+63=63,
+4=4,
+5=5,
+31=31,
+51=51,
+74=74,
+19=19,
+15=15,
+60=60,
+71=71,
+93=93,
+89=89,
+78=78,
+57=57,
+28=28,
+52=52,
+80=80,
+33=33,
+59=59,
+36=36,
+87=87,
+34=34,
+90=90,
+44=44,
+85=85,
+47=47,
+92=92,
+84=84,
+73=73,
+30=30,
+98=98,
+86=86,
+75=75,
+83=83,
+100=100,
+11=11,
+45=45,
+67=67,
+94=94,
+41=41,
+26=26,
+50=50,
+53=53,
+37=37,
+18=18,
+95=95,
+27=27,
+6=6,
+10=10,
+24=24,
+35=35,
+99=99,
+46=46,
+49=49,
+62=62,
+69=69,
+68=68,
+2=2,
+97=97,
+64=64,
+76=76,
+20=20,
+42=42,
+9=9,
+82=82,
+7=7,
+40=40,
+13=13,
+91=91,
+22=22,
+8=8,
+29=29,
+14=14,
+65=65,
+32=32,
+72=72,
+66=66
+              <taxa id="TaxonSet.dummy_aln" spec="TaxonSet">
+                <alignment idref="dummy_aln"/>
+              </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.dummy_aln"/>
+        </tree>
+        <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
+        <parameter id="popSize.t:dummy_aln" name="stateNode">18.6143574356959</parameter>
+    </state>
+
+    <init id="RandomTree.t:dummy_aln" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dummy_aln" taxa="@dummy_aln">
+        <populationModel id="ConstantPopulation0.t:dummy_aln" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:dummy_aln" name="popSize">1</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="CoalescentConstant.t:dummy_aln" spec="Coalescent">
+                <populationModel id="ConstantPopulation.t:dummy_aln" spec="ConstantPopulation" popSize="@popSize.t:dummy_aln"/>
+                <treeIntervals id="TreeIntervals.t:dummy_aln" spec="TreeIntervals" tree="@Tree.t:dummy_aln"/>
+            </distribution>
+            <prior id="ClockPrior.c:dummy_aln" name="distribution" x="@clockRate.c:dummy_aln">
+                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="PopSizePrior.t:dummy_aln" name="distribution" x="@popSize.t:dummy_aln">
+	      <Normal id="Normal.01" name="distr">
+		<parameter id="RealParameter.02" estimate="false" name="mean">18.6143574356959</parameter>
+                <parameter id="RealParameter.03" estimate="false" name="sigma">0.01</parameter>
+	      </Normal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.dummy_aln" spec="ThreadedTreeLikelihood" data="@dummy_aln" tree="@Tree.t:dummy_aln">
+                <siteModel id="SiteModel.s:dummy_aln" spec="SiteModel">
+                    <parameter id="mutationRate.s:dummy_aln" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="gammaShape.s:dummy_aln" estimate="false" name="shape">1.0</parameter>
+                    <parameter id="proportionInvariant.s:dummy_aln" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="JC69.s:dummy_aln" spec="JukesCantor"/>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:dummy_aln" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dummy_aln"/>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="StrictClockRateScaler.c:dummy_aln" spec="ScaleOperator" parameter="@clockRate.c:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="strictClockUpDownOperator.c:dummy_aln" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:dummy_aln"/>
+        <down idref="Tree.t:dummy_aln"/>
+    </operator>
+
+    <operator id="CoalescentConstantTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantUniformOperator.t:dummy_aln" spec="Uniform" tree="@Tree.t:dummy_aln" weight="30.0"/>
+
+    <operator id="CoalescentConstantSubtreeSlide.t:dummy_aln" spec="SubtreeSlide" tree="@Tree.t:dummy_aln" weight="15.0"/>
+
+    <operator id="CoalescentConstantNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
+
+    <operator id="CoalescentConstantWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
+<!-- Keep population size fixed -->
+<!--
+    <operator id="PopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@popSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+-->
+    <logger id="tracelog" fileName="cc_predictive_sims.log" logEvery="500" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.dummy_aln"/>
+        <log id="TreeHeight.t:dummy_aln" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dummy_aln"/>
+        <log idref="clockRate.c:dummy_aln"/>
+        <log idref="popSize.t:dummy_aln"/>
+        <log idref="CoalescentConstant.t:dummy_aln"/>
+    </logger>
+
+    <logger id="screenlog" fileName="" logEvery="500">
+        <log idref="posterior"/>
+	<log idref="TreeHeight.t:dummy_aln"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:dummy_aln" fileName="cc_predictive_sims.trees" logEvery="500" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
+    </logger>
+
+</run>
+
+</beast>

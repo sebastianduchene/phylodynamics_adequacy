@@ -1,0 +1,25 @@
+<beast version='2.0' namespace='master:master.model:master.steppers:master.conditions:master.postprocessors:master.outputs'>
+  <run spec='Trajectory' simulationTime='100'>
+    <model spec='Model'>
+      
+      <population spec='Population' populationName='S' id='S'/>
+      <population spec='Population' populationName='I' id='I'/>
+      <population spec='Population' populationName='R' id='R'/>
+      
+      <reaction spec='Reaction' reactionName='Infection' rate='0.0001'>
+	S + I -> 2I
+      </reaction>
+      <reaction spec='Reaction' reactionName='Infection' rate='0.2'>
+	I -> R
+      </reaction>
+
+    </model>
+
+    <initialState spec='InitState'>
+      <populationSize spec='PopulationSize' population='@S' size='999'/>
+      <populationSize spec='PopulationSize' population='@I' size='1'/>
+    </initialState>
+
+    <output spec='JsonOutput' fileName='SIR_output.json'/>
+  </run>
+</beast>

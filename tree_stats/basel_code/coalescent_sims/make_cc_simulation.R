@@ -1,0 +1,50 @@
+library(ape)
+# Input a tree to get tip labels and tip heights. This can correspond to the empirical tree.
+
+# Tags: 
+# TAXON_SEQS: <sequence id="seq_t100_2001.37" taxon="t100_2001.37" totalcount="4" value="gc"/>
+# TAXON_DATES: t1_2000=2000.0,
+# SAMPLING_PROP_MEAN -> We fix these
+# SAMPLING_PROP_SD -> We fix these
+# BECOME_UNINFECTIOUS_MEAN
+# BECOME_UNINFECTIOUS_SD
+# R0_MEAN
+# R0_SD
+# BD_SIM_TREE_FILE 
+
+xml_simulation_template <- readLines('cc_sim_template.xml')
+#input_tree <- read.tree('../cc_sims_subsample.trees')[[1]]
+input_tree <- read.tree('1_n100_lambda0.55_delta0.5_p1_N10000_Imodel_CE.newick')
+posterior_params_file <- "coal_veronika_test_1.log"
+posterior <- read.table(posterior_params_file, head = T)
+
+# Make taxon_seqs:
+taxon_seqs <- paste0("<sequence id=\"seq_", input_tree$tip.label, "\" taxon=\"",input_tree$tip.label, "\" totalcount=\"4\" value=\"gc\"/>", collapse = '\n')
+
+taxon_dates <- vector()
+for(ta in 1:length(input_tree$tip.label)){
+       date <- gsub('.+_', '', input_tree$tip.label[ta])
+       taxon_dates[ta] <- paste0(input_tree$tip.label[ta], '=', date)
+}
+taxon_dates <- paste0(taxon_dates, collapse = ',\n')
+
+xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, xml_simulation_template))
+
+xml_temp <- gsub('CC_SIM_TREE_FILE', 'cc_predictive_sims', xml_temp)
+
+# Take some 100 random draws from the posterior. Each will generate an xml file. Kill all operators for parameters. Set starting values sample a bit and get a tree.
+
+posterior_samples <- sample(1:nrow(posterior), 100)
+
+simulated_trees <- list()
+for(i in 1:length(posterior_samples)){
+      xml_temp <- gsub('CONSTANT_POPULATION_SIZE', posterior$popSize[posterior_samples[i]], xml_temp)
+      cat(xml_temp, file = 'cc_get_pps.xml', sep = '\n')
+      system('java -jar ~/Desktop/phylo_programs/beast243/lib/beast.jar -overwrite cc_get_pps.xml')
+      pps_trees <- read.nexus('cc_predictive_sims.trees') 
+      simulated_trees[[i]] <- pps_trees[sample(1:length(pps_trees), 1)]
+}
+
+sim_trees <- lapply(simulated_trees, function(x) x[[1]])
+class(sim_trees) <- 'multiPhylo'
+write.tree(sim_trees, file = gsub('[.]log', '_pps.trees', posterior_params_file))

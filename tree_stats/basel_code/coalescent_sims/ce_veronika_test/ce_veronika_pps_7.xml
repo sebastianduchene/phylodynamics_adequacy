@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<tree id="Tree.t:dummy_aln" name="stateNode" spec="beast.util.TreeParser"
+      IsLabelledNewick="true" adjustTipHeights="false"
+      newick="(((((((((1_8.35:0.002880862218,((((((((12_22.69:1.256580943,59_23.07:1.636580943):0.01154918282,96_23.15:1.728130126):0.5597416833,51_22.67:1.80787181):1.808195526,((71_21.83:0.463815871,52_21.88:0.513815871):1.749526093,92_20.31:0.6933419643):0.5627253708):2.423420614,((((16_22.73:2.261732196,(61_21.66:0.1256909494,(87_22.61:0.5113053955,90_22.42:0.3213053955):0.5643855539):1.066041246):0.650582259,36_21.91:2.092314455):1.039044235,(74_20.71:1.335189081,86_19.42:0.04518908137):0.5961696087):1.980029047,19_17.82:1.021387737):0.1681002115):1.470780926,15_17.45:2.290268875):2.597529025,7_12.97:0.4077978996):3.964882247,41_9.98:1.382680147):0.2502007156):1.233442769,(77_10.71:3.362231175,38_8.42:1.072231175):0.2340924554):0.1696120879,65_7.29:0.3459357188):0.4234576093,(69_8.04:1.49916808,14_7.08:0.5391680805):0.02022524767):1.582598543,2_5.6:0.6619918713):0.4278169298,43_5.24:0.7298088011):6.680632528,(9_2.98:1.037456207,72_2.83:0.8874562068):4.112985123):4.431285289,68_0:6.601726618):19.20760155,((((((((58_8.58:2.400888499,29_6.72:0.5408884987):1.33774153,(((55_8.13:0.0907187486,(((25_20.66:9.058789025,((78_17.27:2.539000965,(83_18.3:3.339815196,67_15.24:0.2798151959):0.2291857691):1.851704511,62_15.12:2.240705476):1.278083549):0.6409346025,11_11.16:0.1997236271):2.840525422,(((39_14.11:0.3601856022,4_14.03:0.2801856022):4.119802856,(((((((31_22.28:0.3979748924,93_22.53:0.6479748924):3.600819309,98_19.45:1.168794201):0.5072178941,84_18.32:0.5460120954):2.906390268,((33_19.35:0.3734784828,13_19.08:0.1034784828):2.396061279,75_17.69:1.109539762):1.712862602):0.3569409321,89_19.01:4.499343296):1.54003545,91_14.96:1.989378746):1.609623318,95_11.73:0.369002064):1.730986394):0.008734144973,((45_15.6:0.9614816962,49_16.27:1.631481696):2.004291891,40_13.36:0.725773587):3.012949016):1.501526446):0.08046969987):0.6466110127,100_13.1:5.707329761):0.08303582165,((94_14.18:1.536160678,46_13.2:0.5561606778):1.716331085,18_14.58:3.652491763):3.61787382):2.468264446):0.4999905364,56_4.44:0.09862056491):0.06114631634,(37_6.19:1.253762475,64_5.22:0.2837624751):0.6560044061):0.9682883195,66_4.99:1.678055201):0.06382633972,(((81_8.25:2.972007136,53_5.93:0.6520071357):1.488024621,8_6.08:2.290031756):0.3333707936,76_4.56:1.10340255):0.2084789906):4.910966487,(((79_5.89:1.202301,20_5.01:0.3223010004):2.704992661,97_5.32:3.337293661):3.560500466,63_2.99:4.567794128):0.08505389935):5.581643293,((((((((((((((((54_22.28:0.7712758561,5_21.72:0.2112758561):0.4593401994,57_21.1:0.05061605554):0.7661775091,23_23.29:3.006793565):1.006031165,(48_23:2.816930316,44_20.53:0.3469303163):0.905894413):0.5115815198,88_18.97:0.2044062491):0.7611748154,(21_22.71:4.463901398,((70_21.71:0.1207776675,(((28_22.58:0.4758401049,24_22.5:0.3958401049):0.3227432767,99_23.07:1.288583382):0.1530893442,80_21.75:0.1216727258):0.03910494167):1.198747679,35_21.86:1.469525346):2.144376052):0.2416796664):0.2187971288,73_18.55:0.7643781933):1.452492898,(47_20.44:1.595729388,10_20.12:1.275729388):2.511141704):0.6857740436,((17_23.28:3.692934974,85_21.34:1.752934974):2.19983495,34_21.38:3.992769925):1.73987521):0.2045182694,(60_19.05:0.4757444716,30_19.62:1.045744472):3.131418933):7.206725144,6_10.51:2.273888549):4.400677956,42_5.26:1.424566505):0.1215919042,(3_5.89:1.610927735,22_6.58:2.300927735):0.5652306736):0.4747912176,82_3.31:0.07094962657):0.855235819,32_4.24:1.856185446):3.423738504,((26_6.73:0.3810722661,27_7.82:1.471072266):0.5165435743,50_6.3:0.4676158404):6.87230811):6.20456737):18.56483685):0;">
+  <taxonset id="TaxonSet.dummy_aln" spec="TaxonSet">
+    <taxon id="1_8.35" spec="Taxon"/>
+<taxon id="12_22.69" spec="Taxon"/>
+<taxon id="59_23.07" spec="Taxon"/>
+<taxon id="96_23.15" spec="Taxon"/>
+<taxon id="51_22.67" spec="Taxon"/>
+<taxon id="71_21.83" spec="Taxon"/>
+<taxon id="52_21.88" spec="Taxon"/>
+<taxon id="92_20.31" spec="Taxon"/>
+<taxon id="16_22.73" spec="Taxon"/>
+<taxon id="61_21.66" spec="Taxon"/>
+<taxon id="87_22.61" spec="Taxon"/>
+<taxon id="90_22.42" spec="Taxon"/>
+<taxon id="36_21.91" spec="Taxon"/>
+<taxon id="74_20.71" spec="Taxon"/>
+<taxon id="86_19.42" spec="Taxon"/>
+<taxon id="19_17.82" spec="Taxon"/>
+<taxon id="15_17.45" spec="Taxon"/>
+<taxon id="7_12.97" spec="Taxon"/>
+<taxon id="41_9.98" spec="Taxon"/>
+<taxon id="77_10.71" spec="Taxon"/>
+<taxon id="38_8.42" spec="Taxon"/>
+<taxon id="65_7.29" spec="Taxon"/>
+<taxon id="69_8.04" spec="Taxon"/>
+<taxon id="14_7.08" spec="Taxon"/>
+<taxon id="2_5.6" spec="Taxon"/>
+<taxon id="43_5.24" spec="Taxon"/>
+<taxon id="9_2.98" spec="Taxon"/>
+<taxon id="72_2.83" spec="Taxon"/>
+<taxon id="68_0" spec="Taxon"/>
+<taxon id="58_8.58" spec="Taxon"/>
+<taxon id="29_6.72" spec="Taxon"/>
+<taxon id="55_8.13" spec="Taxon"/>
+<taxon id="25_20.66" spec="Taxon"/>
+<taxon id="78_17.27" spec="Taxon"/>
+<taxon id="83_18.3" spec="Taxon"/>
+<taxon id="67_15.24" spec="Taxon"/>
+<taxon id="62_15.12" spec="Taxon"/>
+<taxon id="11_11.16" spec="Taxon"/>
+<taxon id="39_14.11" spec="Taxon"/>
+<taxon id="4_14.03" spec="Taxon"/>
+<taxon id="31_22.28" spec="Taxon"/>
+<taxon id="93_22.53" spec="Taxon"/>
+<taxon id="98_19.45" spec="Taxon"/>
+<taxon id="84_18.32" spec="Taxon"/>
+<taxon id="33_19.35" spec="Taxon"/>
+<taxon id="13_19.08" spec="Taxon"/>
+<taxon id="75_17.69" spec="Taxon"/>
+<taxon id="89_19.01" spec="Taxon"/>
+<taxon id="91_14.96" spec="Taxon"/>
+<taxon id="95_11.73" spec="Taxon"/>
+<taxon id="45_15.6" spec="Taxon"/>
+<taxon id="49_16.27" spec="Taxon"/>
+<taxon id="40_13.36" spec="Taxon"/>
+<taxon id="100_13.1" spec="Taxon"/>
+<taxon id="94_14.18" spec="Taxon"/>
+<taxon id="46_13.2" spec="Taxon"/>
+<taxon id="18_14.58" spec="Taxon"/>
+<taxon id="56_4.44" spec="Taxon"/>
+<taxon id="37_6.19" spec="Taxon"/>
+<taxon id="64_5.22" spec="Taxon"/>
+<taxon id="66_4.99" spec="Taxon"/>
+<taxon id="81_8.25" spec="Taxon"/>
+<taxon id="53_5.93" spec="Taxon"/>
+<taxon id="8_6.08" spec="Taxon"/>
+<taxon id="76_4.56" spec="Taxon"/>
+<taxon id="79_5.89" spec="Taxon"/>
+<taxon id="20_5.01" spec="Taxon"/>
+<taxon id="97_5.32" spec="Taxon"/>
+<taxon id="63_2.99" spec="Taxon"/>
+<taxon id="54_22.28" spec="Taxon"/>
+<taxon id="5_21.72" spec="Taxon"/>
+<taxon id="57_21.1" spec="Taxon"/>
+<taxon id="23_23.29" spec="Taxon"/>
+<taxon id="48_23" spec="Taxon"/>
+<taxon id="44_20.53" spec="Taxon"/>
+<taxon id="88_18.97" spec="Taxon"/>
+<taxon id="21_22.71" spec="Taxon"/>
+<taxon id="70_21.71" spec="Taxon"/>
+<taxon id="28_22.58" spec="Taxon"/>
+<taxon id="24_22.5" spec="Taxon"/>
+<taxon id="99_23.07" spec="Taxon"/>
+<taxon id="80_21.75" spec="Taxon"/>
+<taxon id="35_21.86" spec="Taxon"/>
+<taxon id="73_18.55" spec="Taxon"/>
+<taxon id="47_20.44" spec="Taxon"/>
+<taxon id="10_20.12" spec="Taxon"/>
+<taxon id="17_23.28" spec="Taxon"/>
+<taxon id="85_21.34" spec="Taxon"/>
+<taxon id="34_21.38" spec="Taxon"/>
+<taxon id="60_19.05" spec="Taxon"/>
+<taxon id="30_19.62" spec="Taxon"/>
+<taxon id="6_10.51" spec="Taxon"/>
+<taxon id="42_5.26" spec="Taxon"/>
+<taxon id="3_5.89" spec="Taxon"/>
+<taxon id="22_6.58" spec="Taxon"/>
+<taxon id="82_3.31" spec="Taxon"/>
+<taxon id="32_4.24" spec="Taxon"/>
+<taxon id="26_6.73" spec="Taxon"/>
+<taxon id="27_7.82" spec="Taxon"/>
+<taxon id="50_6.3" spec="Taxon"/>
+  </taxonset>
+</tree>
+
+
+<run id="mcmc" spec="MCMC" chainLength="20000000" sampleFromPrior="false">
+    <state id="state" storeEvery="5000"> 
+      <parameter id="ePopSize.t:dummy_aln" name="stateNode">22.8</parameter>
+      <parameter id="growthRate.t:dummy_aln" name="stateNode">0.028</parameter>
+    </state>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <prior id="ePopSizePrior.t:dummy_aln" name="distribution" x="@ePopSize.t:dummy_aln">
+              <Normal id="Normal.01" name="distr">
+                <parameter id="RealParameter.0" estimate="false" name="mean">22.8</parameter>
+                <parameter id="RealParameter.01" estimate="false" name="sigma">15.0</parameter>
+              </Normal>
+            </prior>
+            <prior id="GrowthRatePrior.t:dummy_aln" name="distribution" x="@growthRate.t:dummy_aln">
+              <Normal id="Normal.02" name="distr">
+                <parameter id="RealParameter.02" estimate="false" name="mean">0.028</parameter>
+                <parameter id="RealParameter.03" estimate="false" name="sigma">5</parameter>
+              </Normal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+	  <distribution id="CoalescentExponential.t:dummy_aln" spec="Coalescent">
+            <populationModel id="ExponentialGrowth.t:dummy_aln" spec="ExponentialGrowth" growthRate="@growthRate.t:dummy_aln" popSize="@ePopSize.t:dummy_aln"/>
+            <treeIntervals id="TreeIntervals.t:dummy_aln" spec="TreeIntervals" tree="@Tree.t:dummy_aln"/>
+          </distribution>
+        </distribution>
+    </distribution>
+<!-- Kill topology operators to for analysis -->
+<!--
+    <operator id="CoalescentExponentialTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialUniformOperator.t:dummy_aln" spec="Uniform" tree="@Tree.t:dummy_aln" weight="30.0"/>
+    <operator id="CoalescentExponentialSubtreeSlide.t:dummy_aln" spec="SubtreeSlide" tree="@Tree.t:dummy_aln" weight="15.0"/>
+    <operator id="CoalescentExponentialNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
+    <operator id="CoalescentExponentialWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
+-->
+    <operator id="ePopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@ePopSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="GrowthRateRandomWalk.t:dummy_aln" spec="RealRandomWalkOperator" parameter="@growthRate.t:dummy_aln" weight="3.0" windowSize="1.0"/>
+
+    <logger id="tracelog" fileName="ce_veronika_pps_7.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log id="TreeHeight.t:dummy_aln" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dummy_aln"/>
+        <log idref="CoalescentExponential.t:dummy_aln"/>
+        <log idref="ePopSize.t:dummy_aln"/>
+        <log idref="growthRate.t:dummy_aln"/>
+    </logger>
+
+    <logger id="screenlog" fileName="" logEvery="10000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:dummy_aln" fileName="ce_veronika_pps_7.trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
+    </logger>
+
+</run>
+
+</beast>

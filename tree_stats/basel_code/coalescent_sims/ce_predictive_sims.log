@@ -1,0 +1,142 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
+#    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
+#        <distribution id="CoalescentExponential.t:dummy_aln" spec="beast.evolution.tree.coalescent.Coalescent">
+#            <populationModel id="ExponentialGrowth.t:dummy_aln" spec="beast.evolution.tree.coalescent.ExponentialGrowth">
+#                <parameter id="ePopSize.t:dummy_aln" name="popSize">19.0107738446741</parameter>
+#                <parameter id="growthRate.t:dummy_aln" name="growthRate">0.0168546154184884</parameter>
+#            </populationModel>
+#            <treeIntervals id="TreeIntervals.t:dummy_aln" spec="beast.evolution.tree.coalescent.TreeIntervals">
+#                <tree id="Tree.t:dummy_aln">
+#                    <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
+#          1_8.35=8.35,
+#77_10.71=10.71,
+#38_8.42=8.42,
+#58_8.58=8.58,
+#55_8.13=8.13,
+#12_22.69=22.69,
+#25_20.66=20.66,
+#54_22.28=22.28,
+#16_22.73=22.73,
+#17_23.28=23.28,
+#48_23=23,
+#21_22.71=22.71,
+#61_21.66=21.66,
+#23_23.29=23.29,
+#70_21.71=21.71,
+#96_23.15=23.15,
+#88_18.97=18.97,
+#39_14.11=14.11,
+#81_8.25=8.25,
+#43_5.24=5.24,
+#3_5.89=5.89,
+#79_5.89=5.89,
+#56_4.44=4.44,
+#63_2.99=2.99,
+#4_14.03=14.03,
+#5_21.72=21.72,
+#31_22.28=22.28,
+#51_22.67=22.67,
+#74_20.71=20.71,
+#19_17.82=17.82,
+#15_17.45=17.45,
+#60_19.05=19.05,
+#71_21.83=21.83,
+#93_22.53=22.53,
+#89_19.01=19.01,
+#78_17.27=17.27,
+#57_21.1=21.1,
+#28_22.58=22.58,
+#52_21.88=21.88,
+#80_21.75=21.75,
+#33_19.35=19.35,
+#59_23.07=23.07,
+#36_21.91=21.91,
+#87_22.61=22.61,
+#34_21.38=21.38,
+#90_22.42=22.42,
+#44_20.53=20.53,
+#85_21.34=21.34,
+#47_20.44=20.44,
+#92_20.31=20.31,
+#84_18.32=18.32,
+#73_18.55=18.55,
+#30_19.62=19.62,
+#98_19.45=19.45,
+#86_19.42=19.42,
+#75_17.69=17.69,
+#83_18.3=18.3,
+#100_13.1=13.1,
+#11_11.16=11.16,
+#45_15.6=15.6,
+#67_15.24=15.24,
+#94_14.18=14.18,
+#41_9.98=9.98,
+#26_6.73=6.73,
+#50_6.3=6.3,
+#53_5.93=5.93,
+#37_6.19=6.19,
+#18_14.58=14.58,
+#95_11.73=11.73,
+#27_7.82=7.82,
+#6_10.51=10.51,
+#10_20.12=20.12,
+#24_22.5=22.5,
+#35_21.86=21.86,
+#99_23.07=23.07,
+#46_13.2=13.2,
+#49_16.27=16.27,
+#62_15.12=15.12,
+#69_8.04=8.04,
+#68_0=0,
+#2_5.6=5.6,
+#97_5.32=5.32,
+#64_5.22=5.22,
+#76_4.56=4.56,
+#20_5.01=5.01,
+#42_5.26=5.26,
+#9_2.98=2.98,
+#82_3.31=3.31,
+#7_12.97=12.97,
+#40_13.36=13.36,
+#13_19.08=19.08,
+#91_14.96=14.96,
+#22_6.58=6.58,
+#8_6.08=6.08,
+#29_6.72=6.72,
+#14_7.08=7.08,
+#65_7.29=7.29,
+#32_4.24=4.24,
+#72_2.83=2.83,
+#66_4.99=4.99
+#                                <taxa id="TaxonSet.dummy_aln" spec="beast.evolution.alignment.TaxonSet">
+#                        </taxa>
+#                    </trait>
+#                    <taxonset idref="TaxonSet.dummy_aln"/>
+#                </tree>
+#            </treeIntervals>
+#        </distribution>
+#        <prior id="ePopSizePrior.t:dummy_aln" name="distribution" x="@ePopSize.t:dummy_aln">
+#            <Normal id="Normal.01" name="distr">
+#                <parameter estimate="false" id="RealParameter.0" name="mean">22.8</parameter>
+#                <parameter estimate="false" id="RealParameter.01" name="sigma">15.0</parameter>
+#            </Normal>
+#        </prior>
+#        <prior id="GrowthRatePrior.t:dummy_aln" name="distribution" x="@growthRate.t:dummy_aln">
+#            <Normal id="Normal.02" name="distr">
+#                <parameter estimate="false" id="RealParameter.02" name="mean">0.028</parameter>
+#                <parameter estimate="false" id="RealParameter.03" name="sigma">5.0</parameter>
+#            </Normal>
+#        </prior>
+#        <prior id="ClockPrior.c:dummy_aln" name="distribution">
+#            <parameter id="clockRate.c:dummy_aln" name="x">1.0</parameter>
+#            <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+#        </prior>
+#    </distribution>
+#</input>
+#
+Sample	posterior	likelihood	prior	TreeHeight	CoalescentExponential	ePopSize	growthRate.
+0	-288.6603769595697	NaN	-288.6603769595697	24.83059897730158	-282.47310210666274	19.0107738446741	0.0168546154184884
+10000	-364.44230113368553	NaN	-364.44230113368553	33.69455817412073	-358.25502628077857	19.0107738446741	0.0168546154184884

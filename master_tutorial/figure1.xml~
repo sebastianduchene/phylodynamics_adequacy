@@ -1,0 +1,7 @@
+<beast version='2.0' namespace='beast.core.parameter:master.beast'>
+  <run spec='Trajectory' simulationTime=50>
+    <model spec='Model'>
+      
+      <population spec='Population' populationName='S' id='S'/>
+      <population spec='Population' populationName='I' id='R'/>
+      

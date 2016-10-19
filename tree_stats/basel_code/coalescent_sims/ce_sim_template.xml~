@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+
+    <data id="dummy_aln" name="alignment">
+      TAXON_SEQS
+    </data>
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="10000" sampleFromPrior="true">
+    <state id="state" storeEvery="5000">
+      <tree id="Tree.t:dummy_aln" name="stateNode">
+        <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
+          TAXON_DATES
+          <taxa id="TaxonSet.dummy_aln" spec="TaxonSet">
+            <alignment idref="dummy_aln"/>
+          </taxa>
+        </trait>
+        <taxonset idref="TaxonSet.dummy_aln"/>
+      </tree>
+      <parameter id="ePopSize.t:dummy_aln" name="stateNode">E_POP_SIZE</parameter>
+      <parameter id="growthRate.t:dummy_aln" name="stateNode">GROWTH_RATE</parameter>
+      <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
+    </state>
+
+    <init id="RandomTree.t:dummy_aln" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dummy_aln" taxa="@dummy_aln">
+        <populationModel id="ConstantPopulation0.t:dummy_aln" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:dummy_aln" name="popSize">1</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+      <distribution id="prior" spec="util.CompoundDistribution">
+        <distribution id="CoalescentExponential.t:vero_dummy_aln" spec="Coalescent">
+          <populationModel id="ExponentialGrowth.t:vero_dummy_aln" spec="ExponentialGrowth" growthRate="@growthRate.t:vero_dummy_aln" popSize="@ePopSize.t:vero_dummy_aln"/>
+          <treeIntervals id="TreeIntervals.t:vero_dummy_aln" spec="TreeIntervals" tree="@Tree.t:vero_dummy_aln"/>
+        </distribution>
+        <prior id="ePopSizePrior.t:dummy_aln" name="distribution" x="@ePopSize.t:dummy_aln">
+          <Normal id="Normal.01" name="distr">
+            <parameter id="RealParameter.0" estimate="false" name="mean">22.8</parameter>
+            <parameter id="RealParameter.01" estimate="false" name="sigma">15.0</parameter>
+          </Normal>
+        </prior>
+        <prior id="GrowthRatePrior.t:dummy_aln" name="distribution" x="@growthRate.t:dummy_aln">
+          <Normal id="Normal.02" name="distr">
+            <parameter id="RealParameter.02" estimate="false" name="mean">0.028</parameter>
+            <parameter id="RealParameter.03" estimate="false" name="sigma">5</parameter>
+          </Normal>
+        </prior>
+        <prior id="ClockPrior.c:dummy_aln" name="distribution" x="@clockRate.c:dummy_aln">
+          <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+        </prior>
+      </distribution>
+
+      <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+        <distribution id="treeLikelihood.dummy_aln" spec="ThreadedTreeLikelihood" data="@dummy_aln" tree="@Tree.t:dummy_aln">
+          <siteModel id="SiteModel.s:dummy_aln" spec="SiteModel">
+            <parameter id="mutationRate.s:dummy_aln" estimate="false" name="mutationRate">1.0</parameter>
+            <parameter id="gammaShape.s:dummy_aln" estimate="false" name="shape">1.0</parameter>
+            <parameter id="proportionInvariant.s:dummy_aln" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+            <substModel id="JC69.s:dummy_aln" spec="JukesCantor"/>
+          </siteModel>
+        <branchRateModel id="StrictClock.c:dummy_aln" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dummy_aln"/>
+	</distribution>
+      </distribution>
+    </distribution>
+<!-- Kill topology operators to for analysis -->
+
+    <operator id="CoalescentExponentialTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialUniformOperator.t:dummy_aln" spec="Uniform" tree="@Tree.t:dummy_aln" weight="30.0"/>
+    <operator id="CoalescentExponentialSubtreeSlide.t:dummy_aln" spec="SubtreeSlide" tree="@Tree.t:dummy_aln" weight="15.0"/>
+    <operator id="CoalescentExponentialNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
+    <operator id="CoalescentExponentialWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
+    <operator id="CoalescentExponentialWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
+<!--
+    <operator id="ePopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@ePopSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="GrowthRateRandomWalk.t:dummy_aln" spec="RealRandomWalkOperator" parameter="@growthRate.t:dummy_aln" weight="3.0" windowSize="1.0"/>
+-->
+    <logger id="tracelog" fileName="CE_SIM_TREE_FILE.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log id="TreeHeight.t:dummy_aln" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dummy_aln"/>
+        <log idref="CoalescentExponential.t:dummy_aln"/>
+        <log idref="ePopSize.t:dummy_aln"/>
+        <log idref="growthRate.t:dummy_aln"/>
+    </logger>
+
+    <logger id="screenlog" fileName="" logEvery="10000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:dummy_aln" fileName="CE_SIM_TREE_FILE.trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
+    </logger>
+
+</run>
+
+</beast>

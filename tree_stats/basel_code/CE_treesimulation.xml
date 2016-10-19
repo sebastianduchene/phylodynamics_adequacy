@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beast namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.evolution.speciation:beast.core.parameter" version="2.0">
+
+    <!-- ntax=100                                                                -->
+	<data dataType="nucleotide" id="alignment" name="alignment">
+    	
+    	
+    <sequence id="seq_t1" taxon="t1" value="A"/>
+	<sequence id="seq_t2" taxon="t2" value="A"/>
+	<sequence id="seq_t3" taxon="t3" value="A"/>
+	<sequence id="seq_t4" taxon="t4" value="A"/>
+	<sequence id="seq_t5" taxon="t5" value="A"/>
+	<sequence id="seq_t6" taxon="t6" value="A"/>
+	<sequence id="seq_t7" taxon="t7" value="A"/>
+	<sequence id="seq_t8" taxon="t8" value="A"/>
+	<sequence id="seq_t9" taxon="t9" value="A"/>
+	<sequence id="seq_t10" taxon="t10" value="A"/>
+    		
+    	
+    		</data>
+
+	<taxonset id="tips" spec="beast.evolution.alignment.TaxonSet">
+
+<taxon id="t1" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t2" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t3" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t4" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t5" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t6" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t7" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t8" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t9" spec="beast.evolution.alignment.Taxon"/>
+	<taxon id="t10" spec="beast.evolution.alignment.Taxon"/>
+
+	</taxonset>
+    
+<map name="Beta">beast.math.distributions.Beta</map>
+<map name="Exponential">beast.math.distributions.Exponential</map>
+<map name="InverseGamma">beast.math.distributions.InverseGamma</map>
+<map name="LogNormal">beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Gamma">beast.math.distributions.Gamma</map>
+<map name="Uniform">beast.math.distributions.Uniform</map>
+<map name="prior">beast.math.distributions.Prior</map>
+<map name="LaplaceDistribution">beast.math.distributions.LaplaceDistribution</map>
+<map name="OneOnX">beast.math.distributions.OneOnX</map>
+<map name="Normal">beast.math.distributions.Normal</map>
+
+    
+<run chainLength="10000000" id="mcmc" spec="MCMC">
+        
+    <state id="state" storeEvery="1000">
+
+        <tree spec="beast.util.ClusterTree" id="tree" clusterType="upgma" name="stateNode">
+            <taxa idref="alignment"/>
+            <trait id="tipDates" spec='beast.evolution.tree.TraitSet' traitname='date-forward'>
+
+
+t1=90.6796,
+t2=70.6441,
+t3=62.2173,
+t4=36.5498,
+t5=82.4427,
+t6=91.4023,
+t7=86.8246,
+t8=67.7493,
+t9=47.4118,
+t10=91.967
+
+
+
+            <taxa spec='beast.evolution.alignment.TaxonSet' alignment='@alignment'/>
+            </trait>
+            <taxonset idref="tips"/>
+        </tree>
+        <parameter id="ePopSize" name="stateNode" value="1000"/>
+        <parameter id="growthRate" name="stateNode" value="0.3"/>
+    </state>    
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution spec="Coalescent" id="CoalescentExponential">
+                <populationModel spec="ExponentialGrowth" growthRate="@growthRate" id="ExponentialGrowth" popSize="@ePopSize"/>
+                <treeIntervals id="TreeIntervals" spec="TreeIntervals" tree="@tree"/>
+            </distribution>
+                <!-- no skyline for now:		<intervalTimes spec="RealParameter" id="intervalTimes" value="0. 1." /> -->
+            	<!--<prior id="ePopSizePrior" name="distribution" x="@ePopSize">
+                <OneOnX id="OneOnX.0" name="distr"/>
+            </prior>-->
+            
+        </distribution>
+	</distribution>
+	<!--operator id='timeOperator' spec='ScaleOperator' scaleFactor=".75" weight="1" parameter="@intervalTimes"/-->
+
+    <operator id='treeScaler' spec='ScaleOperator' scaleFactor=".75" weight="2" tree="@tree" rootOnly="true"/>
+    <operator id='treeScaler2' spec='ScaleOperator' scaleFactor="0.99" weight="20" tree="@tree"/>
+    <operator spec='Uniform' weight="20" tree="@tree"/>
+    <operator spec='SubtreeSlide' weight="1" gaussian="true" size="1.0" tree="@tree"/>
+    <operator id='narrow' spec='Exchange' isNarrow='true' weight="1" tree="@tree"/>
+    <operator id='wide' spec='Exchange' isNarrow='false' weight="1" tree="@tree"/>
+    <operator spec='WilsonBalding' weight="1" tree="@tree"/>
+    
+    <logger fileName="CE_treesimulation.log" id="log" logEvery="1000" mode="autodetect" model="@prior">
+        <distribution idref="prior" name="log"/>
+        <log idref="CoalescentExponential"/>
+        <log spec='beast.evolution.tree.TreeHeightLogger' tree='@tree'/>
+		<log idref="ePopSize"/>
+		<log idref="growthRate"/>
+    </logger>
+	
+    <logger id="screenlog" logEvery="10000" mode="autodetect">
+        <distribution idref="prior" name="log"/>
+        <log arg="@prior" id="ESS.0" spec="util.ESS"/>
+        <log spec='beast.evolution.tree.TreeHeightLogger' tree='@tree'/>
+        <log idref="CoalescentExponential"/>
+        <log idref="ePopSize"/>
+        <log idref='growthRate'/>
+    </logger>
+<!--
+    <logger fileName="CE_treesimulation_tipDates.log" id="tiplog" logEvery="1000" mode="autodetect" model="@prior">
+        <log spec='beast.math.distributions.MRCAPrior' tipsonly='true' id='TipDatesLogger' taxonset="@tips" tree='@tree'/>
+    </logger>
+-->
+    <logger fileName="CE_treesimulation.trees" id="treelog" logEvery="100000" mode="tree">
+        <tree idref="tree" name="log"/>
+    </logger>
+		
+</run>
+
+</beast>

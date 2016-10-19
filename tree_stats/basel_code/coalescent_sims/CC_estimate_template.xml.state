@@ -1,0 +1,8 @@
+<itsabeastystatewerein version='2.0' sample='2529999'>
+<statenode id='popSize.t:dummy_aln'>popSize.t:dummy_aln[1 1] (-Infinity,Infinity): 1000.289453117748 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"PopSizeScaler.t:dummy_aln","p":0.9844287069404994,"accept":136429,"reject":2393571,"acceptFC":136394,"rejectFC":2383604,"rejectIv":2393335,"rejectOp":0}
+]}
+-->

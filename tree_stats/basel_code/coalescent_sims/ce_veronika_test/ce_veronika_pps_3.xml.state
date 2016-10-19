@@ -1,0 +1,10 @@
+<itsabeastystatewerein version='2.0' sample='79999'>
+<statenode id='ePopSize.t:dummy_aln'>ePopSize.t:dummy_aln[1 1] (0.0,Infinity): 11.83533726734862 </statenode>
+<statenode id='growthRate.t:dummy_aln'>growthRate.t:dummy_aln[1 1] (-Infinity,Infinity): 0.02552313815822861 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"ePopSizeScaler.t:dummy_aln","p":0.5386910210191581,"accept":10998,"reject":28962,"acceptFC":8480,"rejectFC":26487,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk.t:dummy_aln","p":0.13421934702891283,"accept":2670,"reject":37370,"acceptFC":2614,"rejectFC":32417,"rejectIv":0,"rejectOp":0}
+]}
+-->
