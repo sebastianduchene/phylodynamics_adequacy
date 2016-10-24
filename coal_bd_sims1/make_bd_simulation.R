@@ -1,0 +1,58 @@
+library(ape)
+# Input a tree to get tip labels and tip heights. This can correspond to the empirical tree.
+
+# Tags: 
+# TAXON_SEQS: <sequence id="seq_t100_2001.37" taxon="t100_2001.37" totalcount="4" value="gc"/>
+# TAXON_DATES: t1_2000=2000.0,
+# SAMPLING_PROP_MEAN -> We fix these
+# SAMPLING_PROP_SD -> We fix these
+# BECOME_UNINFECTIOUS_MEAN
+# BECOME_UNINFECTIOUS_SD
+# R0_MEAN
+# R0_SD
+# BD_SIM_TREE_FILE 
+# ORGIN_MEAN
+
+xml_simulation_template <- readLines('bd_sim_template.xml')
+input_tree <- read.tree('dated.tree') #[[1]]
+posterior_params_file <- "bd_veronika_tree.log"
+posterior <- read.table(posterior_params_file, head = T)
+
+# Make taxon_seqs:
+taxon_seqs <- paste0("<sequence id=\"seq_", input_tree$tip.label, "\" taxon=\"",input_tree$tip.label, "\" totalcount=\"4\" value=\"gc\"/>", collapse = '\n')
+
+taxon_dates <- vector()
+for(ta in 1:length(input_tree$tip.label)){
+       date <- gsub('.+_', '', input_tree$tip.label[ta])
+       taxon_dates[ta] <- paste0(input_tree$tip.label[ta], '=', date)
+}
+taxon_dates <- paste0(taxon_dates, collapse = ',\n')
+
+xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, xml_simulation_template))
+
+xml_temp <- gsub('BD_SIM_TREE_FILE', 'bd_predictive_sims', xml_temp)
+
+# Take some 100 random draws from the posterior. Each will generate an xml file. Kill all operators for parameters. Set starting values sample a bit and get a tree.
+
+posterior_samples <- sample(1:nrow(posterior), 100)
+
+simulated_trees <- list()
+for(i in 1:length(posterior_samples)){
+      print(paste('\n\n\n\n\n\n\n\nsimulating replicate', i, '\n\n\n\n\n\n\n'))
+      r_xml_temp <- gsub('SAMPLING_PROP_MEAN', posterior$samplingProportion[posterior_samples[i]], xml_temp)
+      r_xml_temp <- gsub('BECOME_UNINFECTIOUS_MEAN', posterior$becomeUninfectiousRate[posterior_samples[i]], r_xml_temp)
+      r_xml_temp <- gsub('ORIGIN_MEAN', posterior$origin[posterior_samples[i]], r_xml_temp)
+      r0_means <- paste(round(posterior[posterior_samples[i], grep('R0', colnames(posterior))], 2), collapse = ' ')
+      r_xml_temp <- gsub('R0_MEAN', r0_means, r_xml_temp)
+      cat(r_xml_temp, file = paste0('bd_get_pps.xml', i), sep = '\n')
+      system(paste0('java -jar ~/Desktop/phylo_programs/beast243/lib/beast.jar -overwrite bd_get_pps.xml', i))
+      pps_trees <- read.nexus('bd_predictive_sims.trees') 
+      simulated_trees[[i]] <- pps_trees[sample(1:length(pps_trees), 1)]
+}
+
+sampled_posterior <- posterior[posterior_samples, ]
+write.table(sampled_posterior, file = paste0('sampled_', posterior_params_file))
+
+sim_trees <- lapply(simulated_trees, function(x) x[[1]])
+class(sim_trees) <- 'multiPhylo'
+write.tree(sim_trees, file = gsub('[.]log', '_pps.trees', posterior_params_file))
