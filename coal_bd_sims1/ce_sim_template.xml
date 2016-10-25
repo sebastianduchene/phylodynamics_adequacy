@@ -16,7 +16,7 @@
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="10000" sampleFromPrior="true">
+<run id="mcmc" spec="MCMC" chainLength="10000000" sampleFromPrior="true">
     <state id="state" storeEvery="5000">
       <tree id="Tree.t:dummy_aln" name="stateNode">
         <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
@@ -27,8 +27,8 @@
         </trait>
         <taxonset idref="TaxonSet.dummy_aln"/>
       </tree>
-      <parameter id="ePopSize.t:dummy_aln" name="stateNode">E_POP_SIZE</parameter>
-      <parameter id="growthRate.t:dummy_aln" name="stateNode">GROWTH_RATE</parameter>
+      <parameter id="ePopSize.t:dummy_aln" name="stateNode">E_POP_SIZE_MEAN</parameter>
+      <parameter id="growthRate.t:dummy_aln" name="stateNode">GROWTH_RATE_MEAN</parameter>
       <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
     </state>
 
@@ -46,14 +46,14 @@
         </distribution>
         <prior id="ePopSizePrior.t:dummy_aln" name="distribution" x="@ePopSize.t:dummy_aln">
           <Normal id="Normal.01" name="distr">
-            <parameter id="RealParameter.0" estimate="false" name="mean">22.8</parameter>
-            <parameter id="RealParameter.01" estimate="false" name="sigma">15.0</parameter>
+            <parameter id="RealParameter.0" estimate="false" name="mean">E_POP_SIZE_MEAN</parameter>
+            <parameter id="RealParameter.01" estimate="false" name="sigma">E_POP_SIZE_SD</parameter>
           </Normal>
         </prior>
         <prior id="GrowthRatePrior.t:dummy_aln" name="distribution" x="@growthRate.t:dummy_aln">
           <Normal id="Normal.02" name="distr">
-            <parameter id="RealParameter.02" estimate="false" name="mean">0.028</parameter>
-            <parameter id="RealParameter.03" estimate="false" name="sigma">5</parameter>
+            <parameter id="RealParameter.02" estimate="false" name="mean">GROWTH_RATE_MEAN</parameter>
+            <parameter id="RealParameter.03" estimate="false" name="sigma">GROWTH_RATE_SD</parameter>
           </Normal>
         </prior>
         <prior id="ClockPrior.c:dummy_aln" name="distribution" x="@clockRate.c:dummy_aln">
@@ -73,7 +73,6 @@
 	</distribution>
       </distribution>
     </distribution>
-<!-- Kill topology operators to for analysis -->
 
     <operator id="CoalescentExponentialTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
     <operator id="CoalescentExponentialTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
@@ -82,12 +81,11 @@
     <operator id="CoalescentExponentialNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
     <operator id="CoalescentExponentialWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
     <operator id="CoalescentExponentialWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
-<!--
+<!-- Leave coalescent operators for analysis -->
     <operator id="ePopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@ePopSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
-
     <operator id="GrowthRateRandomWalk.t:dummy_aln" spec="RealRandomWalkOperator" parameter="@growthRate.t:dummy_aln" weight="3.0" windowSize="1.0"/>
--->
-    <logger id="tracelog" fileName="CE_SIM_TREE_FILE.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+
+    <logger id="tracelog" fileName="CE_SIM_TREE_FILE.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
@@ -103,8 +101,8 @@
         <log idref="likelihood"/>
         <log idref="prior"/>
     </logger>
-
-    <logger id="treelog.t:dummy_aln" fileName="CE_SIM_TREE_FILE.trees" logEvery="1000" mode="tree">
+<!-- sample trees a bit less often -->
+    <logger id="treelog.t:dummy_aln" fileName="CE_SIM_TREE_FILE.trees" logEvery="10000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
     </logger>
 

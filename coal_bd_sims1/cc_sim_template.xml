@@ -16,7 +16,7 @@
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="10000" sampleFromPrior="true">
+<run id="mcmc" spec="MCMC" chainLength="4000000" sampleFromPrior="true">
     <state id="state" storeEvery="5000">
         <tree id="Tree.t:dummy_aln" name="stateNode">
           <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
@@ -28,7 +28,7 @@
             <taxonset idref="TaxonSet.dummy_aln"/>
         </tree>
         <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
-        <parameter id="popSize.t:dummy_aln" name="stateNode">CONSTANT_POPULATION_SIZE</parameter>
+        <parameter id="popSize.t:dummy_aln" name="stateNode">CONSTANT_POPSIZE_MEAN</parameter>
     </state>
 
     <init id="RandomTree.t:dummy_aln" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dummy_aln" taxa="@dummy_aln">
@@ -48,8 +48,8 @@
             </prior>
             <prior id="PopSizePrior.t:dummy_aln" name="distribution" x="@popSize.t:dummy_aln">
 	      <Normal id="Normal.01" name="distr">
-		<parameter id="RealParameter.02" estimate="false" name="mean">CONSTANT_POPULATION_SIZE</parameter>
-                <parameter id="RealParameter.03" estimate="false" name="sigma">0.01</parameter>
+		<parameter id="RealParameter.02" estimate="false" name="mean">CONSTANT_POPSIZE_MEAN</parameter>
+                <parameter id="RealParameter.03" estimate="false" name="sigma">CONSTANT_POPSIZE_SD</parameter>
 	      </Normal>
             </prior>
         </distribution>
@@ -86,11 +86,10 @@
     <operator id="CoalescentConstantWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
 
     <operator id="CoalescentConstantWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
-<!-- Keep population size fixed -->
-<!--
+
     <operator id="PopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@popSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
--->
-    <logger id="tracelog" fileName="CC_SIM_TREE_FILE.log" logEvery="500" model="@posterior" sanitiseHeaders="true" sort="smart">
+
+    <logger id="tracelog" fileName="CC_SIM_TREE_FILE.log" logEvery="5000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
@@ -101,7 +100,7 @@
         <log idref="CoalescentConstant.t:dummy_aln"/>
     </logger>
 
-    <logger id="screenlog" fileName="" logEvery="500">
+    <logger id="screenlog" fileName="" logEvery="5000">
         <log idref="posterior"/>
 	<log idref="TreeHeight.t:dummy_aln"/>
         <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
@@ -109,7 +108,7 @@
         <log idref="prior"/>
     </logger>
 
-    <logger id="treelog.t:dummy_aln" fileName="CC_SIM_TREE_FILE.trees" logEvery="500" mode="tree">
+    <logger id="treelog.t:dummy_aln" fileName="CC_SIM_TREE_FILE.trees" logEvery="5000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
     </logger>
 

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+
+    <data id="dummy_aln" name="alignment">
+      <sequence id="seq_t1_30.14" taxon="t1_30.14" totalcount="4" value="gc"/>
+<sequence id="seq_t77_32.49" taxon="t77_32.49" totalcount="4" value="gc"/>
+<sequence id="seq_t38_30.2" taxon="t38_30.2" totalcount="4" value="gc"/>
+<sequence id="seq_t58_30.36" taxon="t58_30.36" totalcount="4" value="gc"/>
+<sequence id="seq_t55_29.91" taxon="t55_29.91" totalcount="4" value="gc"/>
+<sequence id="seq_t12_44.47" taxon="t12_44.47" totalcount="4" value="gc"/>
+<sequence id="seq_t25_42.44" taxon="t25_42.44" totalcount="4" value="gc"/>
+<sequence id="seq_t54_44.06" taxon="t54_44.06" totalcount="4" value="gc"/>
+<sequence id="seq_t16_44.51" taxon="t16_44.51" totalcount="4" value="gc"/>
+<sequence id="seq_t17_45.06" taxon="t17_45.06" totalcount="4" value="gc"/>
+<sequence id="seq_t48_44.79" taxon="t48_44.79" totalcount="4" value="gc"/>
+<sequence id="seq_t21_44.49" taxon="t21_44.49" totalcount="4" value="gc"/>
+<sequence id="seq_t61_43.44" taxon="t61_43.44" totalcount="4" value="gc"/>
+<sequence id="seq_t23_45.07" taxon="t23_45.07" totalcount="4" value="gc"/>
+<sequence id="seq_t70_43.49" taxon="t70_43.49" totalcount="4" value="gc"/>
+<sequence id="seq_t96_44.93" taxon="t96_44.93" totalcount="4" value="gc"/>
+<sequence id="seq_t88_40.76" taxon="t88_40.76" totalcount="4" value="gc"/>
+<sequence id="seq_t39_35.89" taxon="t39_35.89" totalcount="4" value="gc"/>
+<sequence id="seq_t81_30.03" taxon="t81_30.03" totalcount="4" value="gc"/>
+<sequence id="seq_t43_27.02" taxon="t43_27.02" totalcount="4" value="gc"/>
+<sequence id="seq_t3_27.67" taxon="t3_27.67" totalcount="4" value="gc"/>
+<sequence id="seq_t79_27.67" taxon="t79_27.67" totalcount="4" value="gc"/>
+<sequence id="seq_t56_26.22" taxon="t56_26.22" totalcount="4" value="gc"/>
+<sequence id="seq_t63_24.77" taxon="t63_24.77" totalcount="4" value="gc"/>
+<sequence id="seq_t4_35.81" taxon="t4_35.81" totalcount="4" value="gc"/>
+<sequence id="seq_t5_43.5" taxon="t5_43.5" totalcount="4" value="gc"/>
+<sequence id="seq_t31_44.06" taxon="t31_44.06" totalcount="4" value="gc"/>
+<sequence id="seq_t51_44.45" taxon="t51_44.45" totalcount="4" value="gc"/>
+<sequence id="seq_t74_42.49" taxon="t74_42.49" totalcount="4" value="gc"/>
+<sequence id="seq_t19_39.61" taxon="t19_39.61" totalcount="4" value="gc"/>
+<sequence id="seq_t15_39.23" taxon="t15_39.23" totalcount="4" value="gc"/>
+<sequence id="seq_t60_40.83" taxon="t60_40.83" totalcount="4" value="gc"/>
+<sequence id="seq_t71_43.61" taxon="t71_43.61" totalcount="4" value="gc"/>
+<sequence id="seq_t93_44.32" taxon="t93_44.32" totalcount="4" value="gc"/>
+<sequence id="seq_t89_40.79" taxon="t89_40.79" totalcount="4" value="gc"/>
+<sequence id="seq_t78_39.05" taxon="t78_39.05" totalcount="4" value="gc"/>
+<sequence id="seq_t57_42.88" taxon="t57_42.88" totalcount="4" value="gc"/>
+<sequence id="seq_t28_44.36" taxon="t28_44.36" totalcount="4" value="gc"/>
+<sequence id="seq_t52_43.67" taxon="t52_43.67" totalcount="4" value="gc"/>
+<sequence id="seq_t80_43.53" taxon="t80_43.53" totalcount="4" value="gc"/>
+<sequence id="seq_t33_41.13" taxon="t33_41.13" totalcount="4" value="gc"/>
+<sequence id="seq_t59_44.85" taxon="t59_44.85" totalcount="4" value="gc"/>
+<sequence id="seq_t36_43.69" taxon="t36_43.69" totalcount="4" value="gc"/>
+<sequence id="seq_t87_44.39" taxon="t87_44.39" totalcount="4" value="gc"/>
+<sequence id="seq_t34_43.16" taxon="t34_43.16" totalcount="4" value="gc"/>
+<sequence id="seq_t90_44.21" taxon="t90_44.21" totalcount="4" value="gc"/>
+<sequence id="seq_t44_42.31" taxon="t44_42.31" totalcount="4" value="gc"/>
+<sequence id="seq_t85_43.12" taxon="t85_43.12" totalcount="4" value="gc"/>
+<sequence id="seq_t47_42.22" taxon="t47_42.22" totalcount="4" value="gc"/>
+<sequence id="seq_t92_42.09" taxon="t92_42.09" totalcount="4" value="gc"/>
+<sequence id="seq_t84_40.1" taxon="t84_40.1" totalcount="4" value="gc"/>
+<sequence id="seq_t73_40.33" taxon="t73_40.33" totalcount="4" value="gc"/>
+<sequence id="seq_t30_41.4" taxon="t30_41.4" totalcount="4" value="gc"/>
+<sequence id="seq_t98_41.23" taxon="t98_41.23" totalcount="4" value="gc"/>
+<sequence id="seq_t86_41.2" taxon="t86_41.2" totalcount="4" value="gc"/>
+<sequence id="seq_t75_39.47" taxon="t75_39.47" totalcount="4" value="gc"/>
+<sequence id="seq_t83_40.09" taxon="t83_40.09" totalcount="4" value="gc"/>
+<sequence id="seq_t100_34.88" taxon="t100_34.88" totalcount="4" value="gc"/>
+<sequence id="seq_t11_32.94" taxon="t11_32.94" totalcount="4" value="gc"/>
+<sequence id="seq_t45_37.38" taxon="t45_37.38" totalcount="4" value="gc"/>
+<sequence id="seq_t67_37.02" taxon="t67_37.02" totalcount="4" value="gc"/>
+<sequence id="seq_t94_35.96" taxon="t94_35.96" totalcount="4" value="gc"/>
+<sequence id="seq_t41_31.76" taxon="t41_31.76" totalcount="4" value="gc"/>
+<sequence id="seq_t26_28.51" taxon="t26_28.51" totalcount="4" value="gc"/>
+<sequence id="seq_t50_28.08" taxon="t50_28.08" totalcount="4" value="gc"/>
+<sequence id="seq_t53_27.72" taxon="t53_27.72" totalcount="4" value="gc"/>
+<sequence id="seq_t37_27.97" taxon="t37_27.97" totalcount="4" value="gc"/>
+<sequence id="seq_t18_36.36" taxon="t18_36.36" totalcount="4" value="gc"/>
+<sequence id="seq_t95_33.51" taxon="t95_33.51" totalcount="4" value="gc"/>
+<sequence id="seq_t27_29.6" taxon="t27_29.6" totalcount="4" value="gc"/>
+<sequence id="seq_t6_32.29" taxon="t6_32.29" totalcount="4" value="gc"/>
+<sequence id="seq_t10_41.9" taxon="t10_41.9" totalcount="4" value="gc"/>
+<sequence id="seq_t24_44.28" taxon="t24_44.28" totalcount="4" value="gc"/>
+<sequence id="seq_t35_43.64" taxon="t35_43.64" totalcount="4" value="gc"/>
+<sequence id="seq_t99_44.86" taxon="t99_44.86" totalcount="4" value="gc"/>
+<sequence id="seq_t46_34.98" taxon="t46_34.98" totalcount="4" value="gc"/>
+<sequence id="seq_t49_38.05" taxon="t49_38.05" totalcount="4" value="gc"/>
+<sequence id="seq_t62_36.91" taxon="t62_36.91" totalcount="4" value="gc"/>
+<sequence id="seq_t69_29.82" taxon="t69_29.82" totalcount="4" value="gc"/>
+<sequence id="seq_t68_21.78" taxon="t68_21.78" totalcount="4" value="gc"/>
+<sequence id="seq_t2_27.38" taxon="t2_27.38" totalcount="4" value="gc"/>
+<sequence id="seq_t97_27.1" taxon="t97_27.1" totalcount="4" value="gc"/>
+<sequence id="seq_t64_27" taxon="t64_27" totalcount="4" value="gc"/>
+<sequence id="seq_t76_26.34" taxon="t76_26.34" totalcount="4" value="gc"/>
+<sequence id="seq_t20_26.8" taxon="t20_26.8" totalcount="4" value="gc"/>
+<sequence id="seq_t42_27.04" taxon="t42_27.04" totalcount="4" value="gc"/>
+<sequence id="seq_t9_24.76" taxon="t9_24.76" totalcount="4" value="gc"/>
+<sequence id="seq_t82_25.09" taxon="t82_25.09" totalcount="4" value="gc"/>
+<sequence id="seq_t7_34.75" taxon="t7_34.75" totalcount="4" value="gc"/>
+<sequence id="seq_t40_35.15" taxon="t40_35.15" totalcount="4" value="gc"/>
+<sequence id="seq_t13_40.86" taxon="t13_40.86" totalcount="4" value="gc"/>
+<sequence id="seq_t91_36.74" taxon="t91_36.74" totalcount="4" value="gc"/>
+<sequence id="seq_t22_28.36" taxon="t22_28.36" totalcount="4" value="gc"/>
+<sequence id="seq_t8_27.86" taxon="t8_27.86" totalcount="4" value="gc"/>
+<sequence id="seq_t29_28.5" taxon="t29_28.5" totalcount="4" value="gc"/>
+<sequence id="seq_t14_28.86" taxon="t14_28.86" totalcount="4" value="gc"/>
+<sequence id="seq_t65_29.08" taxon="t65_29.08" totalcount="4" value="gc"/>
+<sequence id="seq_t32_26.02" taxon="t32_26.02" totalcount="4" value="gc"/>
+<sequence id="seq_t72_24.61" taxon="t72_24.61" totalcount="4" value="gc"/>
+<sequence id="seq_t66_26.77" taxon="t66_26.77" totalcount="4" value="gc"/>
+    </data>
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="4000000" sampleFromPrior="true">
+    <state id="state" storeEvery="5000">
+        <tree id="Tree.t:dummy_aln" name="stateNode">
+          <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
+            t1_30.14=30.14,
+t77_32.49=32.49,
+t38_30.2=30.2,
+t58_30.36=30.36,
+t55_29.91=29.91,
+t12_44.47=44.47,
+t25_42.44=42.44,
+t54_44.06=44.06,
+t16_44.51=44.51,
+t17_45.06=45.06,
+t48_44.79=44.79,
+t21_44.49=44.49,
+t61_43.44=43.44,
+t23_45.07=45.07,
+t70_43.49=43.49,
+t96_44.93=44.93,
+t88_40.76=40.76,
+t39_35.89=35.89,
+t81_30.03=30.03,
+t43_27.02=27.02,
+t3_27.67=27.67,
+t79_27.67=27.67,
+t56_26.22=26.22,
+t63_24.77=24.77,
+t4_35.81=35.81,
+t5_43.5=43.5,
+t31_44.06=44.06,
+t51_44.45=44.45,
+t74_42.49=42.49,
+t19_39.61=39.61,
+t15_39.23=39.23,
+t60_40.83=40.83,
+t71_43.61=43.61,
+t93_44.32=44.32,
+t89_40.79=40.79,
+t78_39.05=39.05,
+t57_42.88=42.88,
+t28_44.36=44.36,
+t52_43.67=43.67,
+t80_43.53=43.53,
+t33_41.13=41.13,
+t59_44.85=44.85,
+t36_43.69=43.69,
+t87_44.39=44.39,
+t34_43.16=43.16,
+t90_44.21=44.21,
+t44_42.31=42.31,
+t85_43.12=43.12,
+t47_42.22=42.22,
+t92_42.09=42.09,
+t84_40.1=40.1,
+t73_40.33=40.33,
+t30_41.4=41.4,
+t98_41.23=41.23,
+t86_41.2=41.2,
+t75_39.47=39.47,
+t83_40.09=40.09,
+t100_34.88=34.88,
+t11_32.94=32.94,
+t45_37.38=37.38,
+t67_37.02=37.02,
+t94_35.96=35.96,
+t41_31.76=31.76,
+t26_28.51=28.51,
+t50_28.08=28.08,
+t53_27.72=27.72,
+t37_27.97=27.97,
+t18_36.36=36.36,
+t95_33.51=33.51,
+t27_29.6=29.6,
+t6_32.29=32.29,
+t10_41.9=41.9,
+t24_44.28=44.28,
+t35_43.64=43.64,
+t99_44.86=44.86,
+t46_34.98=34.98,
+t49_38.05=38.05,
+t62_36.91=36.91,
+t69_29.82=29.82,
+t68_21.78=21.78,
+t2_27.38=27.38,
+t97_27.1=27.1,
+t64_27=27,
+t76_26.34=26.34,
+t20_26.8=26.8,
+t42_27.04=27.04,
+t9_24.76=24.76,
+t82_25.09=25.09,
+t7_34.75=34.75,
+t40_35.15=35.15,
+t13_40.86=40.86,
+t91_36.74=36.74,
+t22_28.36=28.36,
+t8_27.86=27.86,
+t29_28.5=28.5,
+t14_28.86=28.86,
+t65_29.08=29.08,
+t32_26.02=26.02,
+t72_24.61=24.61,
+t66_26.77=26.77
+              <taxa id="TaxonSet.dummy_aln" spec="TaxonSet">
+                <alignment idref="dummy_aln"/>
+              </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.dummy_aln"/>
+        </tree>
+        <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
+        <parameter id="popSize.t:dummy_aln" name="stateNode">14.36</parameter>
+    </state>
+
+    <init id="RandomTree.t:dummy_aln" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dummy_aln" taxa="@dummy_aln">
+        <populationModel id="ConstantPopulation0.t:dummy_aln" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:dummy_aln" name="popSize">1</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="CoalescentConstant.t:dummy_aln" spec="Coalescent">
+                <populationModel id="ConstantPopulation.t:dummy_aln" spec="ConstantPopulation" popSize="@popSize.t:dummy_aln"/>
+                <treeIntervals id="TreeIntervals.t:dummy_aln" spec="TreeIntervals" tree="@Tree.t:dummy_aln"/>
+            </distribution>
+            <prior id="ClockPrior.c:dummy_aln" name="distribution" x="@clockRate.c:dummy_aln">
+                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="PopSizePrior.t:dummy_aln" name="distribution" x="@popSize.t:dummy_aln">
+	      <Normal id="Normal.01" name="distr">
+		<parameter id="RealParameter.02" estimate="false" name="mean">14.36</parameter>
+                <parameter id="RealParameter.03" estimate="false" name="sigma">1.44</parameter>
+	      </Normal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.dummy_aln" spec="ThreadedTreeLikelihood" data="@dummy_aln" tree="@Tree.t:dummy_aln">
+                <siteModel id="SiteModel.s:dummy_aln" spec="SiteModel">
+                    <parameter id="mutationRate.s:dummy_aln" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="gammaShape.s:dummy_aln" estimate="false" name="shape">1.0</parameter>
+                    <parameter id="proportionInvariant.s:dummy_aln" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="JC69.s:dummy_aln" spec="JukesCantor"/>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:dummy_aln" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dummy_aln"/>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="StrictClockRateScaler.c:dummy_aln" spec="ScaleOperator" parameter="@clockRate.c:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="strictClockUpDownOperator.c:dummy_aln" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:dummy_aln"/>
+        <down idref="Tree.t:dummy_aln"/>
+    </operator>
+
+    <operator id="CoalescentConstantTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantUniformOperator.t:dummy_aln" spec="Uniform" tree="@Tree.t:dummy_aln" weight="30.0"/>
+
+    <operator id="CoalescentConstantSubtreeSlide.t:dummy_aln" spec="SubtreeSlide" tree="@Tree.t:dummy_aln" weight="15.0"/>
+
+    <operator id="CoalescentConstantNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
+
+    <operator id="CoalescentConstantWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="CoalescentConstantWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
+
+    <operator id="PopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@popSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+    <logger id="tracelog" fileName="cc_replicate_24_pps.log" logEvery="5000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.dummy_aln"/>
+        <log id="TreeHeight.t:dummy_aln" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dummy_aln"/>
+        <log idref="clockRate.c:dummy_aln"/>
+        <log idref="popSize.t:dummy_aln"/>
+        <log idref="CoalescentConstant.t:dummy_aln"/>
+    </logger>
+
+    <logger id="screenlog" fileName="" logEvery="5000">
+        <log idref="posterior"/>
+	<log idref="TreeHeight.t:dummy_aln"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:dummy_aln" fileName="cc_replicate_24_pps.trees" logEvery="5000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
+    </logger>
+
+</run>
+
+</beast>
