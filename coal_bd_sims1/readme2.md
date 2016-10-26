@@ -13,10 +13,12 @@ to run the pps, make an shell script to do:
 
 I also need to run the mismatched modes analyses. For this we need the trees used in each analyses. 
 
-  - bd cc --analyses running
-  - bd ce
-  - cc ce
-  - cc bd
-  - ce cc
-  - ce bd
+  - bd cc --analyses run
+  - bd ce --analyses run
+
+  - cc ce -- Running analyses
+  - cc bd -- Running analyses
+
+  - ce cc --
+  - ce bd --Running analyses
 
