@@ -11,7 +11,7 @@ to run the pps, make an shell script to do:
 
    - Then submit all slurm scripts
 
-I also need to run the mismatched modes analyses. For this we need the trees used in each analyses. 
+Run the mismatched modes analyses. For this we need the trees used in each analyses. 
 
   - bd cc --analyses run
   - bd ce --analyses run
@@ -19,6 +19,6 @@ I also need to run the mismatched modes analyses. For this we need the trees use
   - cc ce -- Running analyses
   - cc bd -- Running analyses
 
-  - ce cc --
+  - ce cc --Submitted to Helix
   - ce bd --Running analyses
 
