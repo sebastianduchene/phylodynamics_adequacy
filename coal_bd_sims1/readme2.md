@@ -22,3 +22,13 @@ Run the mismatched modes analyses. For this we need the trees used in each analy
   - ce cc --Submitted to Helix
   - ce bd --Running analyses
 
+Get pps for mismatched models
+
+  - bd cc -- getting pps trees
+  - bd ce -- getting pps trees
+
+  - cc ce -- getting pps trees
+  - cc bd -- getting pps trees
+
+  - ce cc 
+  - ce bd 
