@@ -7,9 +7,6 @@
 
 library(ape)
 
-trees_lines <- readLines('dated.tree')
-rep_name <- 'rep_test'
-
 make_cc_template <- function(trees_lines, rep_name){
 
   cc_template <- "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><beast beautitemplate='Standard' beautistatus='' namespace=\"beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood\" required=\"\" version=\"2.4\">
@@ -80,8 +77,8 @@ make_cc_template <- function(trees_lines, rep_name){
     for(i in 1:length(trees_lines)){
       tr_temp <- read.tree(text = trees_lines[i])
       taxon_sets <- paste0("<taxon id=\"", tr_temp$tip.label, "\" spec=\"Taxon\"/>", collapse = "\n")
-      xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', rep_name, gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], cc_template)))
-      cat(xml_temp, file = paste0(rep_name, '.xml'), sep = '\n')
+      xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], cc_template)))
+      cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
     }
 }
 
@@ -108,7 +105,7 @@ make_ce_template <- function(trees_lines, rep_name){
   </tree>
 
 
-  <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"20000000\" sampleFromPrior=\"false\">
+  <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"10000000\" sampleFromPrior=\"false\">
       <state id=\"state\" storeEvery=\"5000\">
         <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">22.8</parameter>
         <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">0.028</parameter>
@@ -164,8 +161,8 @@ make_ce_template <- function(trees_lines, rep_name){
   for(i in 1:length(trees_lines)){
     tr_temp <- read.tree(text = trees_lines[i])
     taxon_sets <- paste0("<taxon id=\"", tr_temp$tip.label, "\" spec=\"Taxon\"/>", collapse = "\n")
-    xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', rep_name, gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], ce_template)))
-    cat(xml_temp, file = paste0(rep_name, '.xml'), sep = '\n')
+    xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], ce_template)))
+    cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
   }
 
 }
@@ -282,10 +279,11 @@ make_bd_template <- function(trees_lines, rep_name){
   for(i in 1:length(trees_lines)){
     tr_temp <- read.tree(text = trees_lines[i])
     taxon_sets <- paste0("<taxon id=\"", tr_temp$tip.label, "\" spec=\"Taxon\"/>", collapse = "\n")
-    xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', rep_name, gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], bd_template)))
-    cat(xml_temp, file = paste0(rep_name, '.xml'), sep = '\n')
+    xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], bd_template)))
+    cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
   }
 }
+
 
 run_beast_analyses <- function(beast_command, xml_file_name){
   system(paste(beast_command, xml_file_name))
@@ -294,7 +292,7 @@ run_beast_analyses <- function(beast_command, xml_file_name){
 }
 
 
-beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
+
 
 make_cc_simulation <- function(posterior_log_data, input_tree, output_name){
   cc_template <- '<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><beast beautitemplate=\'Standard\' beautistatus=\'\' namespace=\"beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood\" required=\"\" version=\"2.4\">
@@ -753,3 +751,43 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
 
 
 }
+
+# Run beast simulation; run beast and collect trees only
+
+run_beast_simulation <- function(beast_command, xml_file_name){
+    system(paste(beast_command, xml_file_name))
+    trees_sampled <- read.nexus(gsub('[.]xml', '.trees', xml_file_name))
+    return(trees_sampled[sample(1:length(trees_sampled), 100)])# Note that we only sample 100 trees
+}
+
+run_beast_pps <- function(beast_command, xml_files){
+  library(foreach)
+  library(doParallel)
+  cl <- makeCluster(5)
+  registerDoParallel(cl)
+
+  run_rep <- function(x){
+    log_temp <- run_beast_analyses(beast_command, x)
+    return(colMeans(log_temp))
+   }
+  output <- foreach(x = xml_files, .export = 'run_beast_analyses', .combine = rbind) %dopar% run_rep(x)
+  stopCluster(cl)
+  return(output)
+}
+
+## read tree
+## make template for one of the model
+## Run beast and collect log file
+## make simulations
+## run simulations
+## run beast pps
+
+# make_cc_template
+# run_beast_analyses
+# make_cc_simulation
+# run_beast_simulation
+# run_beast_pps -> save logs in an pps file
+
+trees_lines <- readLines('dated.tree')
+rep_name <- 'rep_test'
+beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
