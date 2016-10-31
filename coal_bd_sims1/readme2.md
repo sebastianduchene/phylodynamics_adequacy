@@ -1,34 +1,7 @@
 # TItle
 
-to run the pps, make an shell script to do:
 
-   - find the pps.trees files
-     - make a folder
-     - move trees file to folder
-     - make xml files for 100 trees from the trees file
-     - make a slurm script that would run beast sequentially on each of these xml files. Remember to request sufficient time.
-     - go up and restart loop
 
-   - Then submit all slurm scripts
-
-Run the mismatched modes analyses. For this we need the trees used in each analyses. 
-
-  - bd cc --analyses run
-  - bd ce --analyses run
-
-  - cc ce -- Running analyses
-  - cc bd -- Running analyses
-
-  - ce cc --Submitted to Helix
-  - ce bd --Running analyses
-
-Get pps for mismatched models
-
-  - bd cc -- getting pps trees
-  - bd ce -- getting pps trees
-
-  - cc ce -- getting pps trees
-  - cc bd -- getting pps trees
-
-  - ce cc 
-  - ce bd 
+- Running
+CC CC in helix
+CC CE in spartan
