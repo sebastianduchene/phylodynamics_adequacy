@@ -788,6 +788,62 @@ run_beast_pps <- function(beast_command, xml_files){
 # run_beast_simulation
 # run_beast_pps -> save logs in an pps file
 
-trees_lines <- readLines('dated.tree')
-rep_name <- 'rep_test'
-beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
+
+
+cc_run <- function(tr, beast_command){
+  file_name <- gsub('[.]tree', '_cc', tr)
+  xml_file <- paste0(file_name, '_1.xml')
+  make_cc_template(readLines(tr), file_name)
+  log_temp <- run_beast_analyses(beast_command, xml_file)
+  make_cc_simulation(log_temp, read.tree('dated.tree'), file_name)
+  pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
+  pps_names <- paste0(file_name, '_pps')
+  make_cc_template(write.tree(pps), pps_names)
+  pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
+  pps_results <- run_beast_pps(beast_command, pps_files)
+  write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
+}
+
+ce_run <- function(tr, beast_command){
+  file_name <- gsub('[.]tree', '_ce', tr)
+  xml_file <- paste0(file_name, '_1.xml')
+  make_ce_template(readLines(tr), file_name)
+  log_temp <- run_beast_analyses(beast_command, xml_file)
+  make_ce_simulation(log_temp, read.tree('dated.tree'), file_name)
+  pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
+  pps_names <- paste0(file_name, '_pps')
+  make_cc_template(write.tree(pps), pps_names)
+  pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
+  pps_results <- run_beast_pps(beast_command, pps_files)
+  write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
+}
+
+bd_run <- function(tr, beast_command){
+  file_name <- gsub('[.]tree', '_bd', tr)
+  xml_file <- paste0(file_name, '_1.xml')
+  make_bd_template(readLines(tr), file_name)
+  log_temp <- run_beast_analyses(beast_command, xml_file)
+  make_bd_simulation(log_temp, read.tree('dated.tree'), file_name)
+  pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
+  pps_names <- paste0(file_name, '_pps')
+  make_bd_template(write.tree(pps), pps_names)
+  pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
+  pps_results <- run_beast_pps(beast_command, pps_files)
+  write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
+}
+
+
+args <- commandArgs(trailingOnly = T)
+model <- args[1]
+tree_file <- args[2]
+beast_command <- args[3]
+print(args)
+#beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
+# To run Rscript model pps_pipleline.R tr1.tree beastcommand
+if(model == 'cc'){
+  cc_run(tree_file, beast_command)
+}else if(model == 'ce'){
+  ce_run(tree_file, beast_command)
+}else if(model == 'bd'){
+  bd_run(tree_file, beast_command)
+}
