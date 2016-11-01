@@ -5,7 +5,7 @@
 
 # Input settings are:
 
-library(ape)
+library(NELSI)
 
 make_cc_template <- function(trees_lines, rep_name){
 
@@ -191,7 +191,7 @@ make_bd_template <- function(trees_lines, rep_name){
 
   <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"10000000\" sampleFromPrior=\"false\">
       <state id=\"state\" storeEvery=\"5000\">
-          <parameter id=\"origin.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">100.0</parameter>
+          <parameter id=\"origin.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">ORIGIN_START</parameter>
           <parameter id=\"samplingProportion.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"1.0\">0.01</parameter>
           <parameter id=\"becomeUninfectiousRate.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">4.0</parameter>
           <parameter id=\"R0.s.t:dummy_aln\" dimension=\"10\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">3</parameter>
@@ -280,6 +280,8 @@ make_bd_template <- function(trees_lines, rep_name){
     tr_temp <- read.tree(text = trees_lines[i])
     taxon_sets <- paste0("<taxon id=\"", tr_temp$tip.label, "\" spec=\"Taxon\"/>", collapse = "\n")
     xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], bd_template)))
+    tree_height <- round(max(intnode.times(tr_temp)), 2)
+    xml_temp <- gsub('ORIGIN_START', tree_height+10, xml_temp)
     cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
   }
 }
