@@ -107,7 +107,7 @@ make_ce_template <- function(trees_lines, rep_name){
 
   <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"4000000\" sampleFromPrior=\"false\">
       <state id=\"state\" storeEvery=\"5000\">
-        <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">1E7</parameter>
+        <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">1E11</parameter>
         <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">0</parameter>
       </state>
 
@@ -270,10 +270,10 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
 
       <logger id=\"screenlog\" fileName=\"\" logEvery=\"20000\">
           <log idref=\"posterior\"/>
-          <log idref=\"TreeHeight.t:dummy_aln\"/>
           <log id=\"ESS.0\" spec=\"util.ESS\" arg=\"@posterior\"/>
           <log idref=\"likelihood\"/>
           <log idref=\"prior\"/>
+          <log idref=\"TreeHeight.t:dummy_aln\"/>
       </logger>
   </run>
   </beast>
@@ -284,6 +284,7 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
     xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], bd_template)))
     tree_height <- round(max(intnode.times(tr_temp)), 2)
     xml_temp <- gsub('ORIGIN_START', tree_height+10, xml_temp)
+    xml_temp <- gsub('SAMPLING_PROPORTION', sampling_proportion, xml_temp)
     cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
   }
 }
@@ -456,7 +457,7 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
           <taxonset idref=\"TaxonSet.dummy_aln\"/>
         </tree>
         <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">E_POP_SIZE_MEAN</parameter>
-        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">GROWTH_RATE_MEAN</parameter>
+        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">GROWTH_RATE_INIT</parameter>
         <parameter id=\"clockRate.c:dummy_aln\" name=\"stateNode\">1.0</parameter>
       </state>
 
@@ -481,17 +482,26 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
 
           </prior>
           <prior id=\"GrowthRatePrior.t:dummy_aln\" name=\"distribution\" x=\"@growthRate.t:dummy_aln\">
+
+                <Normal id=\"NormalDistribution.1\" name=\"distr\">
+                    <parameter id=\"RealParameter.1\" estimate=\"false\" name=\"mean\">GROWTH_RATE_MEAN</parameter>
+                    <parameter id=\"RealParameter.11\" estimate=\"false\" lower=\"0.0\" name=\"sigma\" upper=\"5.0\">GROWTH_RATE_SD</parameter>
+                </Normal>
+
+
+
 <!--
                 <LogNormal id=\"LogNormalDistribution.1\" name=\"distr\">
                     <parameter id=\"RealParameter.1\" estimate=\"false\" name=\"M\">GROWTH_RATE_MEAN</parameter>
                     <parameter id=\"RealParameter.11\" estimate=\"false\" lower=\"0.0\" name=\"S\" upper=\"5.0\">GROWTH_RATE_SD</parameter>
                 </LogNormal>
 -->
+<!--
                 <Gamma id="Gamma.0" mode="ShapeRate" name="distr">
                     <parameter id="RealParameter.1" estimate="false" name="alpha">GROWTH_RATE_SHAPE</parameter>
                     <parameter id="RealParameter.11" estimate="false" name="beta">GROWTH_RATE_RATE</parameter>
                 </Gamma>
-
+-->
 
           </prior>
           <prior id=\"ClockPrior.c:dummy_aln\" name=\"distribution\" x=\"@clockRate.c:dummy_aln\">
@@ -555,20 +565,22 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
   burnin <- ceiling(nrow(posterior_log_data)*0.2)
   posterior_log_data <- posterior_log_data[-(1:burnin), ]
   epopsize <- round(c(mean(log(posterior_log_data$ePopSize)), sd(log(posterior_log_data$ePopSize))), 4)
-  
- 
-  fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
-  growth_rate <- fit_growth_rate$estimate
- 
-#  growthrate <- round(c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.))), 4)
+  #fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
+  #growth_rate_gamma <- fit_growth_rate$estimate
+  if(sd(posterior_log_data$growthRate.) != 0){
+    growth_rate_norm <- round(c(mean(posterior_log_data$growthRate.), sd(posterior_log_data$growthRate.)), 4)
+  }else{
+    growth_rate_norm <- c(round(mean(posterior_log_data$growthRate.), 4), 1e-10)
+  }
   xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, ce_template))
   xml_temp <- gsub('CE_SIM_TREE_FILE', paste0(output_name, '_pps'), xml_temp)
   xml_temp <- gsub('E_POP_SIZE_MEAN', epopsize[1], xml_temp)
   xml_temp <- gsub('E_POP_SIZE_SD', epopsize[2], xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_SHAPE', growth_rate[1], xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_RATE', growth_rate[2], xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_MEAN', mean(posterior_log_data$growthRate.), xml_temp)
-#  xml_temp <- gsub('GROWTH_RATE_SD', growthrate[2], xml_temp)
+#  xml_temp <- gsub('GROWTH_RATE_SHAPE', growth_rate[1], xml_temp)
+#  xml_temp <- gsub('GROWTH_RATE_RATE', growth_rate[2], xml_temp)
+  xml_temp <- gsub('GROWTH_RATE_INIT', mean(posterior_log_data$growthRate.), xml_temp)
+  xml_temp <- gsub('GROWTH_RATE_MEAN', growth_rate_norm[1], xml_temp)
+  xml_temp <- gsub('GROWTH_RATE_SD', growth_rate_norm[2], xml_temp)
 
   cat(xml_temp, file = paste0(output_name, '_pps.xml'), sep = '\n')
 
@@ -757,9 +769,9 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
 
     origin <- round(c(mean(posterior_log_data$origin), sd(posterior_log_data$origin)), 2)
     sampling <- round(c(mean(posterior_log_data$samplingProportion),
-                        sd(posterior_log_data$samplingProportion)), 2)
+                        sd(posterior_log_data$samplingProportion)), 15)
     becomeUninfect <- round(c(mean(posterior_log_data$becomeUninfectiousRate),
-                              sd(posterior_log_data$becomeUninfectiousRate)), 2)
+                              sd(posterior_log_data$becomeUninfectiousRate)), 4)
     r0s <- posterior_log_data[, grep('R0', colnames(posterior_log_data))]
     r0s_means <- round(colMeans(r0s), 2)
     r0s_sds <- round(sapply(1:ncol(r0s), function(x) sd(r0s[, x])), 2)
@@ -866,16 +878,17 @@ args <- commandArgs(trailingOnly = T)
 model <- args[1]
 tree_file <- args[2]
 beast_command <- args[3]
+
 print(args)
 #beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
 # To run Rscript model pps_pipleline.R tr1.tree beastcommand
 if(model == 'cc'){
-  cc_run(tree_file, beast_command)
+    cc_run(tree_file, beast_command)
 }else if(model == 'ce'){
-  ce_run(tree_file, beast_command)
+    ce_run(tree_file, beast_command)
 }else if(model == 'bd'){
     pop_size <- args[4]
     emp_tree <- read.tree(tree_file)
     sampling_proportion <- length(emp_tree$tip.label) / as.numeric(pop_size)
-    bd_run(tree_file, beast_command)
+    bd_run(tree_file, beast_command, sampling_proportion)
 }

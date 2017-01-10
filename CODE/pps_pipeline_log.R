@@ -133,7 +133,7 @@ make_ce_template <- function(trees_lines, rep_name){
       </distribution>
   <!-- Kill topology operators to for analysis -->
       <operator id=\"ePopSizeScaler.t:dummy_aln\" spec=\"ScaleOperator\" parameter=\"@ePopSize.t:dummy_aln\" scaleFactor=\"0.75\" weight=\"3.0\"/>
-      <operator id=\"GrowthRateRandomWalk.t:dummy_aln\" spec=\"RealRandomWalkOperator\" parameter=\"@growthRate.t:dummy_aln\" weight=\"3.0\" windowSize=\"1.0\"/>
+      <operator id=\"GrowthRateRandomWalk.t:dummy_aln\" spec=\"RealRandomWalkOperator\" parameter=\"@growthRate.t:dummy_aln\" weight=\"3.0\" windowSize=\"1E-5\"/>
 
       <logger id=\"tracelog\" fileName=\"POSTERIOR_OUTPUT_FILE.log\" logEvery=\"10000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
           <log idref=\"posterior\"/>
@@ -559,7 +559,11 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
   epopsize <- round(c(mean(log(posterior_log_data$ePopSize)), sd(log(posterior_log_data$ePopSize))), 4)
   #fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
   #growth_rate_gamma <- fit_growth_rate$estimate
-  growth_rate_lnorm <- round(c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.))), 4)
+  if(sd(posterior_log_data$growthRate.) > 0){
+    growth_rate_lnorm <- round(c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.))), 4)
+  }else{
+    growth_rate_lnorm <- c(round(mean(log(posterior_log_data$growthRate.)), 4), 1e-10)
+  }
   xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, ce_template))
   xml_temp <- gsub('CE_SIM_TREE_FILE', paste0(output_name, '_pps'), xml_temp)
   xml_temp <- gsub('E_POP_SIZE_MEAN', epopsize[1], xml_temp)
