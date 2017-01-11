@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+
+
+    <data
+id="staxa"
+name="alignment">
+                        <sequence id="seq_t1000_4.94" taxon="t1000_4.94" totalcount="4" value="tacaccggga"/>
+                        <sequence id="seq_t100_7.96" taxon="t100_7.96" totalcount="4" value="ataaggtaac"/>
+                        <sequence id="seq_t101_8.12" taxon="t101_8.12" totalcount="4" value="ccggatgaaa"/>
+                        <sequence id="seq_t102_8.56" taxon="t102_8.56" totalcount="4" value="ctctgccata"/>
+                        <sequence id="seq_t103_7.74" taxon="t103_7.74" totalcount="4" value="taggcgcaga"/>
+                        <sequence id="seq_t104_8.52" taxon="t104_8.52" totalcount="4" value="ttagttgatt"/>
+                        <sequence id="seq_t105_9.71" taxon="t105_9.71" totalcount="4" value="tcgactctca"/>
+                        <sequence id="seq_t106_9.41" taxon="t106_9.41" totalcount="4" value="ccgcctcacg"/>
+                        <sequence id="seq_t107_8.42" taxon="t107_8.42" totalcount="4" value="ttagagagca"/>
+                        <sequence id="seq_t108_7.93" taxon="t108_7.93" totalcount="4" value="atttgtgaga"/>
+                        <sequence id="seq_t109_9.4" taxon="t109_9.4" totalcount="4" value="caacatggat"/>
+                        <sequence id="seq_t10_3.11" taxon="t10_3.11" totalcount="4" value="agagacgact"/>
+                        <sequence id="seq_t110_9.75" taxon="t110_9.75" totalcount="4" value="taccctatgt"/>
+                        <sequence id="seq_t111_9.47" taxon="t111_9.47" totalcount="4" value="ccgcccacat"/>
+                        <sequence id="seq_t112_8.74" taxon="t112_8.74" totalcount="4" value="cgggcaacgg"/>
+                        <sequence id="seq_t113_9.74" taxon="t113_9.74" totalcount="4" value="ctagttactg"/>
+                        <sequence id="seq_t114_8.97" taxon="t114_8.97" totalcount="4" value="atagttagag"/>
+                        <sequence id="seq_t115_8.59" taxon="t115_8.59" totalcount="4" value="ttaatccaga"/>
+                        <sequence id="seq_t116_8.2" taxon="t116_8.2" totalcount="4" value="agagtacgag"/>
+                        <sequence id="seq_t117_9.15" taxon="t117_9.15" totalcount="4" value="ccctaccgtg"/>
+                        <sequence id="seq_t118_9.27" taxon="t118_9.27" totalcount="4" value="cggtaagttc"/>
+                        <sequence id="seq_t119_9.35" taxon="t119_9.35" totalcount="4" value="cggtgccgac"/>
+                        <sequence id="seq_t11_1.74" taxon="t11_1.74" totalcount="4" value="attttgctga"/>
+                        <sequence id="seq_t120_9.39" taxon="t120_9.39" totalcount="4" value="cggcgaggta"/>
+                        <sequence id="seq_t121_10.56" taxon="t121_10.56" totalcount="4" value="gttttggtta"/>
+                        <sequence id="seq_t122_11.55" taxon="t122_11.55" totalcount="4" value="tgaggtaatg"/>
+                        <sequence id="seq_t123_12.28" taxon="t123_12.28" totalcount="4" value="cttccgagtc"/>
+                        <sequence id="seq_t124_10.3" taxon="t124_10.3" totalcount="4" value="ctccgttccg"/>
+                        <sequence id="seq_t125_10.26" taxon="t125_10.26" totalcount="4" value="ccatgtaagg"/>
+                        <sequence id="seq_t126_10.46" taxon="t126_10.46" totalcount="4" value="cgtagagtag"/>
+                        <sequence id="seq_t127_10.76" taxon="t127_10.76" totalcount="4" value="cacaccgtag"/>
+                        <sequence id="seq_t128_9.84" taxon="t128_9.84" totalcount="4" value="tataacgggc"/>
+                        <sequence id="seq_t129_10.95" taxon="t129_10.95" totalcount="4" value="tggtgcgagt"/>
+                        <sequence id="seq_t12_2.03" taxon="t12_2.03" totalcount="4" value="acttatatca"/>
+                        <sequence id="seq_t130_10.36" taxon="t130_10.36" totalcount="4" value="tatagcgggg"/>
+                        <sequence id="seq_t131_8.69" taxon="t131_8.69" totalcount="4" value="tacagtcaga"/>
+                        <sequence id="seq_t132_8.76" taxon="t132_8.76" totalcount="4" value="ggtgaccatt"/>
+                        <sequence id="seq_t133_9.14" taxon="t133_9.14" totalcount="4" value="cataagaacc"/>
+                        <sequence id="seq_t134_8.41" taxon="t134_8.41" totalcount="4" value="ggattcatgg"/>
+                        <sequence id="seq_t135_8.77" taxon="t135_8.77" totalcount="4" value="gctgcagaga"/>
+                        <sequence id="seq_t136_8.67" taxon="t136_8.67" totalcount="4" value="gagggaatga"/>
+                        <sequence id="seq_t137_8.84" taxon="t137_8.84" totalcount="4" value="gtttcggctt"/>
+                        <sequence id="seq_t138_9.43" taxon="t138_9.43" totalcount="4" value="gaatcgataa"/>
+                        <sequence id="seq_t139_9.99" taxon="t139_9.99" totalcount="4" value="aaatccagat"/>
+                        <sequence id="seq_t13_3.03" taxon="t13_3.03" totalcount="4" value="cttcagataa"/>
+                        <sequence id="seq_t140_10.52" taxon="t140_10.52" totalcount="4" value="ggtcactgac"/>
+                        <sequence id="seq_t141_10.16" taxon="t141_10.16" totalcount="4" value="tctcagtagc"/>
+                        <sequence id="seq_t142_7.69" taxon="t142_7.69" totalcount="4" value="cctataacag"/>
+                        <sequence id="seq_t143_7.57" taxon="t143_7.57" totalcount="4" value="cctaaggcgg"/>
+                        <sequence id="seq_t144_8.88" taxon="t144_8.88" totalcount="4" value="tggacccctg"/>
+                        <sequence id="seq_t145_9.45" taxon="t145_9.45" totalcount="4" value="acatgtggga"/>
+                        <sequence id="seq_t146_9.12" taxon="t146_9.12" totalcount="4" value="cgacgggaga"/>
+                        <sequence id="seq_t147_8.2" taxon="t147_8.2" totalcount="4" value="cactcaacca"/>
+                        <sequence id="seq_t148_7.52" taxon="t148_7.52" totalcount="4" value="gcctgttacg"/>
+                        <sequence id="seq_t149_7.29" taxon="t149_7.29" totalcount="4" value="acgtggccgg"/>
+                        <sequence id="seq_t14_3.73" taxon="t14_3.73" totalcount="4" value="ccttcaatcg"/>
+                        <sequence id="seq_t150_7.73" taxon="t150_7.73" totalcount="4" value="aacccaaacg"/>
+                        <sequence id="seq_t151_8.3" taxon="t151_8.3" totalcount="4" value="cgctccgcct"/>
+                        <sequence id="seq_t152_9.82" taxon="t152_9.82" totalcount="4" value="atattcctaa"/>
+                        <sequence id="seq_t153_9.55" taxon="t153_9.55" totalcount="4" value="ctacctatgc"/>
+                        <sequence id="seq_t154_8.18" taxon="t154_8.18" totalcount="4" value="atattgagaa"/>
+                        <sequence id="seq_t155_8.44" taxon="t155_8.44" totalcount="4" value="aaatcaggaa"/>
+                        <sequence id="seq_t156_8.03" taxon="t156_8.03" totalcount="4" value="catctacatg"/>
+                        <sequence id="seq_t157_8.3" taxon="t157_8.3" totalcount="4" value="aacgctccat"/>
+                        <sequence id="seq_t158_7.67" taxon="t158_7.67" totalcount="4" value="accgttactt"/>
+                        <sequence id="seq_t159_7.74" taxon="t159_7.74" totalcount="4" value="actattatag"/>
+                        <sequence id="seq_t15_3.31" taxon="t15_3.31" totalcount="4" value="accggccctc"/>
+                        <sequence id="seq_t160_7.12" taxon="t160_7.12" totalcount="4" value="aaccgtggca"/>
+                        <sequence id="seq_t161_8.52" taxon="t161_8.52" totalcount="4" value="ccagcgaagc"/>
+                        <sequence id="seq_t162_8.01" taxon="t162_8.01" totalcount="4" value="actcctttgt"/>
+                        <sequence id="seq_t163_6.78" taxon="t163_6.78" totalcount="4" value="tgggcgaata"/>
+                        <sequence id="seq_t164_7.05" taxon="t164_7.05" totalcount="4" value="atcattgaag"/>
+                        <sequence id="seq_t165_6.94" taxon="t165_6.94" totalcount="4" value="atcatacaag"/>
+                        <sequence id="seq_t166_7.25" taxon="t166_7.25" totalcount="4" value="aacaaaccac"/>
+                        <sequence id="seq_t167_7.75" taxon="t167_7.75" totalcount="4" value="aagggtgcct"/>
+                        <sequence id="seq_t168_7.8" taxon="t168_7.8" totalcount="4" value="caaagactag"/>
+                        <sequence id="seq_t169_7.39" taxon="t169_7.39" totalcount="4" value="tctgaagtcg"/>
+                        <sequence id="seq_t16_3.21" taxon="t16_3.21" totalcount="4" value="ttgggccttc"/>
+                        <sequence id="seq_t170_7.63" taxon="t170_7.63" totalcount="4" value="tgcgtgaaga"/>
+                        <sequence id="seq_t171_7.7" taxon="t171_7.7" totalcount="4" value="tgcgtgaaga"/>
+                        <sequence id="seq_t172_6.99" taxon="t172_6.99" totalcount="4" value="ccttatacta"/>
+                        <sequence id="seq_t173_7.93" taxon="t173_7.93" totalcount="4" value="ggtgcaccac"/>
+                        <sequence id="seq_t174_8.48" taxon="t174_8.48" totalcount="4" value="agtgatccag"/>
+                        <sequence id="seq_t175_7.65" taxon="t175_7.65" totalcount="4" value="cgctcatata"/>
+                        <sequence id="seq_t176_7.97" taxon="t176_7.97" totalcount="4" value="cccgccaaat"/>
+                        <sequence id="seq_t177_7.83" taxon="t177_7.83" totalcount="4" value="caattttttc"/>
+                        <sequence id="seq_t178_7.29" taxon="t178_7.29" totalcount="4" value="taatacgttc"/>
+                        <sequence id="seq_t179_7.15" taxon="t179_7.15" totalcount="4" value="tcgttagacc"/>
+                        <sequence id="seq_t17_4.71" taxon="t17_4.71" totalcount="4" value="cctgccgatc"/>
+                        <sequence id="seq_t180_7.86" taxon="t180_7.86" totalcount="4" value="tccatacact"/>
+                        <sequence id="seq_t181_7.1" taxon="t181_7.1" totalcount="4" value="gtctacggtg"/>
+                        <sequence id="seq_t182_6.84" taxon="t182_6.84" totalcount="4" value="acgtactgtg"/>
+                        <sequence id="seq_t183_7.53" taxon="t183_7.53" totalcount="4" value="ggttggtgtt"/>
+                        <sequence id="seq_t184_4.79" taxon="t184_4.79" totalcount="4" value="agcttgtgtg"/>
+                        <sequence id="seq_t185_4.68" taxon="t185_4.68" totalcount="4" value="ggcttctgag"/>
+                        <sequence id="seq_t186_5.29" taxon="t186_5.29" totalcount="4" value="aattatgtat"/>
+                        <sequence id="seq_t187_8.39" taxon="t187_8.39" totalcount="4" value="ccacctgtcc"/>
+                        <sequence id="seq_t188_8.83" taxon="t188_8.83" totalcount="4" value="tacacggtct"/>
+                        <sequence id="seq_t189_8.18" taxon="t189_8.18" totalcount="4" value="ctagaccccg"/>
+                        <sequence id="seq_t18_4.99" taxon="t18_4.99" totalcount="4" value="acgatgaaca"/>
+                        <sequence id="seq_t190_8.09" taxon="t190_8.09" totalcount="4" value="tgcgggcagc"/>
+                        <sequence id="seq_t191_7.66" taxon="t191_7.66" totalcount="4" value="ggctggccta"/>
+                        <sequence id="seq_t192_6.24" taxon="t192_6.24" totalcount="4" value="attgtgtgag"/>
+                        <sequence id="seq_t193_6.75" taxon="t193_6.75" totalcount="4" value="tagcatcctc"/>
+                        <sequence id="seq_t194_7.32" taxon="t194_7.32" totalcount="4" value="ttgcatcagc"/>
+                        <sequence id="seq_t195_6.95" taxon="t195_6.95" totalcount="4" value="cgaatcgcgt"/>
+                        <sequence id="seq_t196_6.61" taxon="t196_6.61" totalcount="4" value="accgcttagt"/>
+                        <sequence id="seq_t197_5.81" taxon="t197_5.81" totalcount="4" value="aacctatgtt"/>
+                        <sequence id="seq_t198_6.1" taxon="t198_6.1" totalcount="4" value="aaccaacttg"/>
+                        <sequence id="seq_t199_6.25" taxon="t199_6.25" totalcount="4" value="aacagatggg"/>
+                        <sequence id="seq_t19_5.21" taxon="t19_5.21" totalcount="4" value="attattgggt"/>
+                        <sequence id="seq_t1_2.9" taxon="t1_2.9" totalcount="4" value="tttatgtcgt"/>
+                        <sequence id="seq_t200_5.89" taxon="t200_5.89" totalcount="4" value="aacttatgtg"/>
+                        <sequence id="seq_t201_4.67" taxon="t201_4.67" totalcount="4" value="cctaagtaaa"/>
+                        <sequence id="seq_t202_4.73" taxon="t202_4.73" totalcount="4" value="cgtatattta"/>
+                        <sequence id="seq_t203_4.79" taxon="t203_4.79" totalcount="4" value="gctagcttta"/>
+                        <sequence id="seq_t204_7.52" taxon="t204_7.52" totalcount="4" value="actggcggac"/>
+                        <sequence id="seq_t205_7.72" taxon="t205_7.72" totalcount="4" value="gcacctcacg"/>
+                        <sequence id="seq_t206_5.88" taxon="t206_5.88" totalcount="4" value="gcacgtcgta"/>
+                        <sequence id="seq_t207_6.36" taxon="t207_6.36" totalcount="4" value="ctatgtcctg"/>
+                        <sequence id="seq_t208_6.98" taxon="t208_6.98" totalcount="4" value="tcatcttccc"/>
+                        <sequence id="seq_t209_7.23" taxon="t209_7.23" totalcount="4" value="cagatgtcac"/>
+                        <sequence id="seq_t20_5.73" taxon="t20_5.73" totalcount="4" value="aatttggagt"/>
+                        <sequence id="seq_t210_6.98" taxon="t210_6.98" totalcount="4" value="agtatagcaa"/>
+                        <sequence id="seq_t211_6.72" taxon="t211_6.72" totalcount="4" value="tggctacccg"/>
+                        <sequence id="seq_t212_5.94" taxon="t212_5.94" totalcount="4" value="gctacaaccg"/>
+                        <sequence id="seq_t213_6.5" taxon="t213_6.5" totalcount="4" value="ggtcaggctg"/>
+                        <sequence id="seq_t214_6.76" taxon="t214_6.76" totalcount="4" value="gggccggatt"/>
+                        <sequence id="seq_t215_4.84" taxon="t215_4.84" totalcount="4" value="atcgtcagtg"/>
+                        <sequence id="seq_t216_5.16" taxon="t216_5.16" totalcount="4" value="agcgtccatg"/>
+                        <sequence id="seq_t217_4.95" taxon="t217_4.95" totalcount="4" value="agggtcaatg"/>
+                        <sequence id="seq_t218_4.96" taxon="t218_4.96" totalcount="4" value="agtccctatg"/>
+                        <sequence id="seq_t219_5.2" taxon="t219_5.2" totalcount="4" value="aatccggttg"/>
+                        <sequence id="seq_t21_5.86" taxon="t21_5.86" totalcount="4" value="gaggtacatt"/>
+                        <sequence id="seq_t220_5.82" taxon="t220_5.82" totalcount="4" value="accacccttg"/>
+                        <sequence id="seq_t221_6.06" taxon="t221_6.06" totalcount="4" value="caggcccgaa"/>
+                        <sequence id="seq_t222_6.61" taxon="t222_6.61" totalcount="4" value="ggtacctgct"/>
+                        <sequence id="seq_t223_5.49" taxon="t223_5.49" totalcount="4" value="agtcacctag"/>
+                        <sequence id="seq_t224_5.61" taxon="t224_5.61" totalcount="4" value="aattactgaa"/>
+                        <sequence id="seq_t225_5.65" taxon="t225_5.65" totalcount="4" value="agcattagac"/>
+                        <sequence id="seq_t226_6.16" taxon="t226_6.16" totalcount="4" value="agagtacctt"/>
+                        <sequence id="seq_t227_5.84" taxon="t227_5.84" totalcount="4" value="agggtcagag"/>
+                        <sequence id="seq_t228_4.71" taxon="t228_4.71" totalcount="4" value="tcacctctat"/>
+                        <sequence id="seq_t229_4.62" taxon="t229_4.62" totalcount="4" value="cgacgtctag"/>
+                        <sequence id="seq_t22_5.55" taxon="t22_5.55" totalcount="4" value="ctcgaaactc"/>
+                        <sequence id="seq_t230_4.63" taxon="t230_4.63" totalcount="4" value="tggcttcaat"/>
+                        <sequence id="seq_t231_4.8" taxon="t231_4.8" totalcount="4" value="tgacttctat"/>
+                        <sequence id="seq_t232_4.23" taxon="t232_4.23" totalcount="4" value="ttgccggatt"/>
+                        <sequence id="seq_t233_4.85" taxon="t233_4.85" totalcount="4" value="tcgccactgt"/>
+                        <sequence id="seq_t234_4.26" taxon="t234_4.26" totalcount="4" value="tgttgggtct"/>
+                        <sequence id="seq_t235_4.03" taxon="t235_4.03" totalcount="4" value="aggacccgag"/>
+                        <sequence id="seq_t236_2.34" taxon="t236_2.34" totalcount="4" value="atcccgctcg"/>
+                        <sequence id="seq_t237_2.69" taxon="t237_2.69" totalcount="4" value="cgccgtgtcg"/>
+                        <sequence id="seq_t238_3.34" taxon="t238_3.34" totalcount="4" value="cgactgttcg"/>
+                        <sequence id="seq_t239_3.37" taxon="t239_3.37" totalcount="4" value="cgggagtgcg"/>
+                        <sequence id="seq_t23_6.1" taxon="t23_6.1" totalcount="4" value="acttatcttc"/>
+                        <sequence id="seq_t240_2.25" taxon="t240_2.25" totalcount="4" value="accccgttag"/>
+                        <sequence id="seq_t241_6.22" taxon="t241_6.22" totalcount="4" value="ggcggttgcc"/>
+                        <sequence id="seq_t242_6.72" taxon="t242_6.72" totalcount="4" value="accgtaggat"/>
+                        <sequence id="seq_t243_6.41" taxon="t243_6.41" totalcount="4" value="ctggggtatt"/>
+                        <sequence id="seq_t244_5.46" taxon="t244_5.46" totalcount="4" value="acaatgagcg"/>
+                        <sequence id="seq_t245_6.08" taxon="t245_6.08" totalcount="4" value="ccaatacgtg"/>
+                        <sequence id="seq_t246_5.54" taxon="t246_5.54" totalcount="4" value="attgtgtacg"/>
+                        <sequence id="seq_t247_7.14" taxon="t247_7.14" totalcount="4" value="agccgttcat"/>
+                        <sequence id="seq_t248_9.08" taxon="t248_9.08" totalcount="4" value="agcctcttag"/>
+                        <sequence id="seq_t249_8.61" taxon="t249_8.61" totalcount="4" value="agcttcgttt"/>
+                        <sequence id="seq_t24_6.32" taxon="t24_6.32" totalcount="4" value="ttagactctc"/>
+                        <sequence id="seq_t250_7.83" taxon="t250_7.83" totalcount="4" value="gcgacattgc"/>
+                        <sequence id="seq_t251_7.84" taxon="t251_7.84" totalcount="4" value="ggtacatgcc"/>
+                        <sequence id="seq_t252_7.65" taxon="t252_7.65" totalcount="4" value="acgtgctgac"/>
+                        <sequence id="seq_t253_7.85" taxon="t253_7.85" totalcount="4" value="gggcatacga"/>
+                        <sequence id="seq_t254_7.9" taxon="t254_7.9" totalcount="4" value="gccgcctttg"/>
+                        <sequence id="seq_t255_7.87" taxon="t255_7.87" totalcount="4" value="ctttccatta"/>
+                        <sequence id="seq_t256_6.65" taxon="t256_6.65" totalcount="4" value="gtccggttta"/>
+                        <sequence id="seq_t257_9.09" taxon="t257_9.09" totalcount="4" value="gagctctaag"/>
+                        <sequence id="seq_t258_8.8" taxon="t258_8.8" totalcount="4" value="ttgctggacc"/>
+                        <sequence id="seq_t259_8.33" taxon="t259_8.33" totalcount="4" value="tgcgtggtca"/>
+                        <sequence id="seq_t25_5.14" taxon="t25_5.14" totalcount="4" value="agacttctcg"/>
+                        <sequence id="seq_t260_8.46" taxon="t260_8.46" totalcount="4" value="tttctgagct"/>
+                        <sequence id="seq_t261_8.23" taxon="t261_8.23" totalcount="4" value="ttccagccct"/>
+                        <sequence id="seq_t262_6.62" taxon="t262_6.62" totalcount="4" value="ctcggttcat"/>
+                        <sequence id="seq_t263_6.75" taxon="t263_6.75" totalcount="4" value="gttaatctcg"/>
+                        <sequence id="seq_t264_6.41" taxon="t264_6.41" totalcount="4" value="cttaagttct"/>
+                        <sequence id="seq_t265_6.82" taxon="t265_6.82" totalcount="4" value="ctatcctgcc"/>
+                        <sequence id="seq_t266_7" taxon="t266_7" totalcount="4" value="tgctgccacg"/>
+                        <sequence id="seq_t267_6.24" taxon="t267_6.24" totalcount="4" value="ccctatatgt"/>
+                        <sequence id="seq_t268_7.27" taxon="t268_7.27" totalcount="4" value="ctccatgata"/>
+                        <sequence id="seq_t269_7.49" taxon="t269_7.49" totalcount="4" value="taccacgcga"/>
+                        <sequence id="seq_t26_6.43" taxon="t26_6.43" totalcount="4" value="gggctgtctg"/>
+                        <sequence id="seq_t270_5.93" taxon="t270_5.93" totalcount="4" value="gaccaggtat"/>
+                        <sequence id="seq_t271_5.46" taxon="t271_5.46" totalcount="4" value="gcccgggtat"/>
+                        <sequence id="seq_t272_6.87" taxon="t272_6.87" totalcount="4" value="gtcgtgccat"/>
+                        <sequence id="seq_t273_8.39" taxon="t273_8.39" totalcount="4" value="ttaacaatct"/>
+                        <sequence id="seq_t274_7.75" taxon="t274_7.75" totalcount="4" value="tatcatttct"/>
+                        <sequence id="seq_t275_8.22" taxon="t275_8.22" totalcount="4" value="aacggaattc"/>
+                        <sequence id="seq_t276_9.04" taxon="t276_9.04" totalcount="4" value="gccgacgttc"/>
+                        <sequence id="seq_t277_7.17" taxon="t277_7.17" totalcount="4" value="agcttagtgt"/>
+                        <sequence id="seq_t278_7.02" taxon="t278_7.02" totalcount="4" value="agcttaatgt"/>
+                        <sequence id="seq_t279_6.92" taxon="t279_6.92" totalcount="4" value="tgaaggcatt"/>
+                        <sequence id="seq_t27_5.9" taxon="t27_5.9" totalcount="4" value="ttacgactcg"/>
+                        <sequence id="seq_t280_6.46" taxon="t280_6.46" totalcount="4" value="tgggtgcaac"/>
+                        <sequence id="seq_t281_7.38" taxon="t281_7.38" totalcount="4" value="tttgtgttac"/>
+                        <sequence id="seq_t282_7.92" taxon="t282_7.92" totalcount="4" value="attctcttac"/>
+                        <sequence id="seq_t283_7.36" taxon="t283_7.36" totalcount="4" value="ctcgggctct"/>
+                        <sequence id="seq_t284_5.41" taxon="t284_5.41" totalcount="4" value="gacatgtcgg"/>
+                        <sequence id="seq_t285_5.8" taxon="t285_5.8" totalcount="4" value="ccaaggcagt"/>
+                        <sequence id="seq_t286_5.85" taxon="t286_5.85" totalcount="4" value="gaaaagcatt"/>
+                        <sequence id="seq_t287_6.53" taxon="t287_6.53" totalcount="4" value="ccttgacagg"/>
+                        <sequence id="seq_t288_6.47" taxon="t288_6.47" totalcount="4" value="ccgtcaatgg"/>
+                        <sequence id="seq_t289_6.01" taxon="t289_6.01" totalcount="4" value="atgtctcaac"/>
+                        <sequence id="seq_t28_4.57" taxon="t28_4.57" totalcount="4" value="tatattctcg"/>
+                        <sequence id="seq_t290_5.98" taxon="t290_5.98" totalcount="4" value="caaccgaaat"/>
+                        <sequence id="seq_t291_6.31" taxon="t291_6.31" totalcount="4" value="gcggtcagac"/>
+                        <sequence id="seq_t292_6.2" taxon="t292_6.2" totalcount="4" value="ttactgaacc"/>
+                        <sequence id="seq_t293_6.66" taxon="t293_6.66" totalcount="4" value="aattaattgt"/>
+                        <sequence id="seq_t294_8.12" taxon="t294_8.12" totalcount="4" value="accaaatggc"/>
+                        <sequence id="seq_t295_7.81" taxon="t295_7.81" totalcount="4" value="atccaataga"/>
+                        <sequence id="seq_t296_7.56" taxon="t296_7.56" totalcount="4" value="ggtcctagag"/>
+                        <sequence id="seq_t297_7.22" taxon="t297_7.22" totalcount="4" value="ttaccaaggg"/>
+                        <sequence id="seq_t298_6.62" taxon="t298_6.62" totalcount="4" value="gatccaagca"/>
+                        <sequence id="seq_t299_7.58" taxon="t299_7.58" totalcount="4" value="tttctccaag"/>
+                        <sequence id="seq_t29_6.51" taxon="t29_6.51" totalcount="4" value="tcgttccagc"/>
+                        <sequence id="seq_t2_2.28" taxon="t2_2.28" totalcount="4" value="gtcccgctgt"/>
+                        <sequence id="seq_t300_7.1" taxon="t300_7.1" totalcount="4" value="taactcgaac"/>
+                        <sequence id="seq_t301_7.19" taxon="t301_7.19" totalcount="4" value="tgcggcgacg"/>
+                        <sequence id="seq_t302_7.96" taxon="t302_7.96" totalcount="4" value="ggtccgggaa"/>
+                        <sequence id="seq_t303_7.3" taxon="t303_7.3" totalcount="4" value="ccttcctgag"/>
+                        <sequence id="seq_t304_6.87" taxon="t304_6.87" totalcount="4" value="aaagctatga"/>
+                        <sequence id="seq_t305_9.07" taxon="t305_9.07" totalcount="4" value="tagggggtca"/>
+                        <sequence id="seq_t306_9.07" taxon="t306_9.07" totalcount="4" value="aatcagttcc"/>
+                        <sequence id="seq_t307_8.4" taxon="t307_8.4" totalcount="4" value="tgactcgtat"/>
+                        <sequence id="seq_t308_9.32" taxon="t308_9.32" totalcount="4" value="cgatttctta"/>
+                        <sequence id="seq_t309_9.76" taxon="t309_9.76" totalcount="4" value="cgacgtctca"/>
+                        <sequence id="seq_t30_6.45" taxon="t30_6.45" totalcount="4" value="tcgttgccgc"/>
+                        <sequence id="seq_t310_9.77" taxon="t310_9.77" totalcount="4" value="atacgccctc"/>
+                        <sequence id="seq_t311_9.79" taxon="t311_9.79" totalcount="4" value="atacattgag"/>
+                        <sequence id="seq_t312_8.57" taxon="t312_8.57" totalcount="4" value="ccagttaact"/>
+                        <sequence id="seq_t313_7.92" taxon="t313_7.92" totalcount="4" value="catcctgacc"/>
+                        <sequence id="seq_t314_9.01" taxon="t314_9.01" totalcount="4" value="gagacaagtc"/>
+                        <sequence id="seq_t315_9.04" taxon="t315_9.04" totalcount="4" value="cgtacaatcc"/>
+                        <sequence id="seq_t316_8.69" taxon="t316_8.69" totalcount="4" value="ctgttagcac"/>
+                        <sequence id="seq_t317_9.05" taxon="t317_9.05" totalcount="4" value="ccggtcctac"/>
+                        <sequence id="seq_t318_9.06" taxon="t318_9.06" totalcount="4" value="acgatgtcaa"/>
+                        <sequence id="seq_t319_9.19" taxon="t319_9.19" totalcount="4" value="gcaatttacg"/>
+                        <sequence id="seq_t31_5.96" taxon="t31_5.96" totalcount="4" value="tggttactta"/>
+                        <sequence id="seq_t320_8.3" taxon="t320_8.3" totalcount="4" value="aacagatcag"/>
+                        <sequence id="seq_t321_8.26" taxon="t321_8.26" totalcount="4" value="caggcagcac"/>
+                        <sequence id="seq_t322_8.59" taxon="t322_8.59" totalcount="4" value="ggcaatgaca"/>
+                        <sequence id="seq_t323_8.86" taxon="t323_8.86" totalcount="4" value="ggcagcatgg"/>
+                        <sequence id="seq_t324_9.47" taxon="t324_9.47" totalcount="4" value="ctctaggcct"/>
+                        <sequence id="seq_t325_9.5" taxon="t325_9.5" totalcount="4" value="gttaggtttc"/>
+                        <sequence id="seq_t326_6.94" taxon="t326_6.94" totalcount="4" value="attcaaaagg"/>
+                        <sequence id="seq_t327_6.7" taxon="t327_6.7" totalcount="4" value="cgtaaggacg"/>
+                        <sequence id="seq_t328_6.74" taxon="t328_6.74" totalcount="4" value="cggcccggcc"/>
+                        <sequence id="seq_t329_6.62" taxon="t329_6.62" totalcount="4" value="ctctgaccca"/>
+                        <sequence id="seq_t32_6.06" taxon="t32_6.06" totalcount="4" value="acgtttctaa"/>
+                        <sequence id="seq_t330_6.67" taxon="t330_6.67" totalcount="4" value="tgccgatagt"/>
+                        <sequence id="seq_t331_5.79" taxon="t331_5.79" totalcount="4" value="aagacattct"/>
+                        <sequence id="seq_t332_5.03" taxon="t332_5.03" totalcount="4" value="aggaaggtgt"/>
+                        <sequence id="seq_t333_5.95" taxon="t333_5.95" totalcount="4" value="aggattgtct"/>
+                        <sequence id="seq_t334_7.07" taxon="t334_7.07" totalcount="4" value="tatactggcc"/>
+                        <sequence id="seq_t335_7.91" taxon="t335_7.91" totalcount="4" value="tggagaggct"/>
+                        <sequence id="seq_t336_7.08" taxon="t336_7.08" totalcount="4" value="gatcacactt"/>
+                        <sequence id="seq_t337_7.89" taxon="t337_7.89" totalcount="4" value="cagcccccta"/>
+                        <sequence id="seq_t338_5.67" taxon="t338_5.67" totalcount="4" value="agtacatttt"/>
+                        <sequence id="seq_t339_6.01" taxon="t339_6.01" totalcount="4" value="agtcgtacgt"/>
+                        <sequence id="seq_t33_6.58" taxon="t33_6.58" totalcount="4" value="gtgtcgcaac"/>
+                        <sequence id="seq_t340_6.36" taxon="t340_6.36" totalcount="4" value="cctcggcggt"/>
+                        <sequence id="seq_t341_6.98" taxon="t341_6.98" totalcount="4" value="tgagtcggaa"/>
+                        <sequence id="seq_t342_7.2" taxon="t342_7.2" totalcount="4" value="ttaaccatga"/>
+                        <sequence id="seq_t343_6.14" taxon="t343_6.14" totalcount="4" value="cgtatggttt"/>
+                        <sequence id="seq_t344_5.26" taxon="t344_5.26" totalcount="4" value="attaacatga"/>
+                        <sequence id="seq_t345_3.73" taxon="t345_3.73" totalcount="4" value="gtcttaagaa"/>
+                        <sequence id="seq_t346_5.27" taxon="t346_5.27" totalcount="4" value="gtataggaac"/>
+                        <sequence id="seq_t347_5.4" taxon="t347_5.4" totalcount="4" value="gagaagcggt"/>
+                        <sequence id="seq_t348_4.85" taxon="t348_4.85" totalcount="4" value="gtactatgaa"/>
+                        <sequence id="seq_t349_4.95" taxon="t349_4.95" totalcount="4" value="ctagttacaa"/>
+                        <sequence id="seq_t34_7.46" taxon="t34_7.46" totalcount="4" value="gccgctagcc"/>
+                        <sequence id="seq_t350_5.36" taxon="t350_5.36" totalcount="4" value="cgagttagaa"/>
+                        <sequence id="seq_t351_5.37" taxon="t351_5.37" totalcount="4" value="agttttagtc"/>
+                        <sequence id="seq_t352_8.88" taxon="t352_8.88" totalcount="4" value="acgaccggcg"/>
+                        <sequence id="seq_t353_8.12" taxon="t353_8.12" totalcount="4" value="caaaatgcta"/>
+                        <sequence id="seq_t354_8" taxon="t354_8" totalcount="4" value="caatgtgatg"/>
+                        <sequence id="seq_t355_8.26" taxon="t355_8.26" totalcount="4" value="cacgaccgat"/>
+                        <sequence id="seq_t356_8.41" taxon="t356_8.41" totalcount="4" value="gagctacttc"/>
+                        <sequence id="seq_t357_6.67" taxon="t357_6.67" totalcount="4" value="ataattagag"/>
+                        <sequence id="seq_t358_6.76" taxon="t358_6.76" totalcount="4" value="aaaattggag"/>
+                        <sequence id="seq_t359_7.24" taxon="t359_7.24" totalcount="4" value="gccgctgggc"/>
+                        <sequence id="seq_t35_7.14" taxon="t35_7.14" totalcount="4" value="gcgtcgcatc"/>
+                        <sequence id="seq_t360_7.03" taxon="t360_7.03" totalcount="4" value="gcgtgttgac"/>
+                        <sequence id="seq_t361_6.58" taxon="t361_6.58" totalcount="4" value="ataagtaaac"/>
+                        <sequence id="seq_t362_5.63" taxon="t362_5.63" totalcount="4" value="ttaaacataa"/>
+                        <sequence id="seq_t363_3.53" taxon="t363_3.53" totalcount="4" value="agatggtgga"/>
+                        <sequence id="seq_t364_4.21" taxon="t364_4.21" totalcount="4" value="taagggcgaa"/>
+                        <sequence id="seq_t365_5.58" taxon="t365_5.58" totalcount="4" value="tatctgtttc"/>
+                        <sequence id="seq_t366_5.37" taxon="t366_5.37" totalcount="4" value="tatctgttcc"/>
+                        <sequence id="seq_t367_4.76" taxon="t367_4.76" totalcount="4" value="tgggacatca"/>
+                        <sequence id="seq_t368_5.24" taxon="t368_5.24" totalcount="4" value="tggagagtat"/>
+                        <sequence id="seq_t369_4.76" taxon="t369_4.76" totalcount="4" value="tggggtggat"/>
+                        <sequence id="seq_t36_6.59" taxon="t36_6.59" totalcount="4" value="cagagacgct"/>
+                        <sequence id="seq_t370_6.03" taxon="t370_6.03" totalcount="4" value="ttattgctcc"/>
+                        <sequence id="seq_t371_6" taxon="t371_6" totalcount="4" value="gttttgcata"/>
+                        <sequence id="seq_t372_6.13" taxon="t372_6.13" totalcount="4" value="ggttttaccg"/>
+                        <sequence id="seq_t373_6.75" taxon="t373_6.75" totalcount="4" value="tatatgtcgg"/>
+                        <sequence id="seq_t374_5.43" taxon="t374_5.43" totalcount="4" value="cttcgtgccc"/>
+                        <sequence id="seq_t375_4.74" taxon="t375_4.74" totalcount="4" value="tcatccgttc"/>
+                        <sequence id="seq_t376_5.39" taxon="t376_5.39" totalcount="4" value="caatcgaagc"/>
+                        <sequence id="seq_t377_7.23" taxon="t377_7.23" totalcount="4" value="aatgaaatga"/>
+                        <sequence id="seq_t378_7.67" taxon="t378_7.67" totalcount="4" value="cgtgatctca"/>
+                        <sequence id="seq_t379_6.49" taxon="t379_6.49" totalcount="4" value="cattagatta"/>
+                        <sequence id="seq_t37_7.94" taxon="t37_7.94" totalcount="4" value="gccagggtga"/>
+                        <sequence id="seq_t380_6.48" taxon="t380_6.48" totalcount="4" value="tgattgcggt"/>
+                        <sequence id="seq_t381_7.57" taxon="t381_7.57" totalcount="4" value="gagttgcacg"/>
+                        <sequence id="seq_t382_7.39" taxon="t382_7.39" totalcount="4" value="gttgggatac"/>
+                        <sequence id="seq_t383_6.39" taxon="t383_6.39" totalcount="4" value="ttcctttcct"/>
+                        <sequence id="seq_t384_6.92" taxon="t384_6.92" totalcount="4" value="taccaccgcg"/>
+                        <sequence id="seq_t385_5.54" taxon="t385_5.54" totalcount="4" value="gatgaactga"/>
+                        <sequence id="seq_t386_5.4" taxon="t386_5.4" totalcount="4" value="gctacagcga"/>
+                        <sequence id="seq_t387_6.06" taxon="t387_6.06" totalcount="4" value="tgcccggcga"/>
+                        <sequence id="seq_t388_5.62" taxon="t388_5.62" totalcount="4" value="gcttctggtt"/>
+                        <sequence id="seq_t389_4.68" taxon="t389_4.68" totalcount="4" value="gccctgccca"/>
+                        <sequence id="seq_t38_7.65" taxon="t38_7.65" totalcount="4" value="gctagggcga"/>
+                        <sequence id="seq_t390_4.93" taxon="t390_4.93" totalcount="4" value="gcactagccg"/>
+                        <sequence id="seq_t391_4.89" taxon="t391_4.89" totalcount="4" value="cttatacgcg"/>
+                        <sequence id="seq_t392_4.54" taxon="t392_4.54" totalcount="4" value="ggatatctag"/>
+                        <sequence id="seq_t393_4.33" taxon="t393_4.33" totalcount="4" value="ggatgacact"/>
+                        <sequence id="seq_t394_6.56" taxon="t394_6.56" totalcount="4" value="gacaacgctg"/>
+                        <sequence id="seq_t395_6.59" taxon="t395_6.59" totalcount="4" value="gagagcctaa"/>
+                        <sequence id="seq_t396_6.37" taxon="t396_6.37" totalcount="4" value="ttcacccggc"/>
+                        <sequence id="seq_t397_5.84" taxon="t397_5.84" totalcount="4" value="ttcaacctgt"/>
+                        <sequence id="seq_t398_6.16" taxon="t398_6.16" totalcount="4" value="ttttgcaggc"/>
+                        <sequence id="seq_t399_5.79" taxon="t399_5.79" totalcount="4" value="tagtacaact"/>
+                        <sequence id="seq_t39_7.11" taxon="t39_7.11" totalcount="4" value="ccgagccgaa"/>
+                        <sequence id="seq_t3_2.26" taxon="t3_2.26" totalcount="4" value="ctcctgtatc"/>
+                        <sequence id="seq_t400_5.61" taxon="t400_5.61" totalcount="4" value="aggtgagcta"/>
+                        <sequence id="seq_t401_6.82" taxon="t401_6.82" totalcount="4" value="caccatttcg"/>
+                        <sequence id="seq_t402_7.7" taxon="t402_7.7" totalcount="4" value="catttggtca"/>
+                        <sequence id="seq_t403_7.06" taxon="t403_7.06" totalcount="4" value="taagatttca"/>
+                        <sequence id="seq_t404_6.86" taxon="t404_6.86" totalcount="4" value="gtagacttca"/>
+                        <sequence id="seq_t405_7.36" taxon="t405_7.36" totalcount="4" value="acacagacca"/>
+                        <sequence id="seq_t406_7.46" taxon="t406_7.46" totalcount="4" value="atactgcagc"/>
+                        <sequence id="seq_t407_7.76" taxon="t407_7.76" totalcount="4" value="atagtcccgt"/>
+                        <sequence id="seq_t408_5.79" taxon="t408_5.79" totalcount="4" value="tggaatgtca"/>
+                        <sequence id="seq_t409_7.47" taxon="t409_7.47" totalcount="4" value="cgatcaaagt"/>
+                        <sequence id="seq_t40_10.16" taxon="t40_10.16" totalcount="4" value="gccaccgatt"/>
+                        <sequence id="seq_t410_8.08" taxon="t410_8.08" totalcount="4" value="ccaccaaaac"/>
+                        <sequence id="seq_t411_6.49" taxon="t411_6.49" totalcount="4" value="cgggcctagc"/>
+                        <sequence id="seq_t412_6.67" taxon="t412_6.67" totalcount="4" value="aagaccgttt"/>
+                        <sequence id="seq_t413_7.91" taxon="t413_7.91" totalcount="4" value="aactccggac"/>
+                        <sequence id="seq_t414_7.66" taxon="t414_7.66" totalcount="4" value="cccaacgtca"/>
+                        <sequence id="seq_t415_7.27" taxon="t415_7.27" totalcount="4" value="acgagccctt"/>
+                        <sequence id="seq_t416_7.21" taxon="t416_7.21" totalcount="4" value="ctgtcggtcc"/>
+                        <sequence id="seq_t417_7.68" taxon="t417_7.68" totalcount="4" value="ggatcgcccc"/>
+                        <sequence id="seq_t418_7.11" taxon="t418_7.11" totalcount="4" value="cttccgatcc"/>
+                        <sequence id="seq_t419_7.97" taxon="t419_7.97" totalcount="4" value="cttagtcgat"/>
+                        <sequence id="seq_t41_10.14" taxon="t41_10.14" totalcount="4" value="gcacctgaag"/>
+                        <sequence id="seq_t420_8.64" taxon="t420_8.64" totalcount="4" value="agctgccaat"/>
+                        <sequence id="seq_t421_8" taxon="t421_8" totalcount="4" value="ctgtgcattg"/>
+                        <sequence id="seq_t422_7.45" taxon="t422_7.45" totalcount="4" value="gtctacactt"/>
+                        <sequence id="seq_t423_5.64" taxon="t423_5.64" totalcount="4" value="gagtcagggt"/>
+                        <sequence id="seq_t424_6.08" taxon="t424_6.08" totalcount="4" value="ctgctgccga"/>
+                        <sequence id="seq_t425_6.68" taxon="t425_6.68" totalcount="4" value="cagtacatga"/>
+                        <sequence id="seq_t426_7.48" taxon="t426_7.48" totalcount="4" value="ccccattgag"/>
+                        <sequence id="seq_t427_7.18" taxon="t427_7.18" totalcount="4" value="cctcagtgac"/>
+                        <sequence id="seq_t428_6.86" taxon="t428_6.86" totalcount="4" value="tgcgagacgg"/>
+                        <sequence id="seq_t429_7.29" taxon="t429_7.29" totalcount="4" value="agcgagatga"/>
+                        <sequence id="seq_t42_9.21" taxon="t42_9.21" totalcount="4" value="caggacgtgt"/>
+                        <sequence id="seq_t430_6.32" taxon="t430_6.32" totalcount="4" value="agccgccgct"/>
+                        <sequence id="seq_t431_7.35" taxon="t431_7.35" totalcount="4" value="gtcaggcgcc"/>
+                        <sequence id="seq_t432_7.48" taxon="t432_7.48" totalcount="4" value="gttagctaca"/>
+                        <sequence id="seq_t433_7.21" taxon="t433_7.21" totalcount="4" value="gtttcccgct"/>
+                        <sequence id="seq_t434_5.37" taxon="t434_5.37" totalcount="4" value="cccgctaact"/>
+                        <sequence id="seq_t435_4.97" taxon="t435_4.97" totalcount="4" value="gataacacac"/>
+                        <sequence id="seq_t436_4.51" taxon="t436_4.51" totalcount="4" value="aatagctcaa"/>
+                        <sequence id="seq_t437_6.05" taxon="t437_6.05" totalcount="4" value="ttgagagcag"/>
+                        <sequence id="seq_t438_5.61" taxon="t438_5.61" totalcount="4" value="aaaagagcag"/>
+                        <sequence id="seq_t439_5.01" taxon="t439_5.01" totalcount="4" value="gattgctcga"/>
+                        <sequence id="seq_t43_9.76" taxon="t43_9.76" totalcount="4" value="gctgtggtgc"/>
+                        <sequence id="seq_t440_5.03" taxon="t440_5.03" totalcount="4" value="tctacggcca"/>
+                        <sequence id="seq_t441_5.46" taxon="t441_5.46" totalcount="4" value="tctaccttcc"/>
+                        <sequence id="seq_t442_5.63" taxon="t442_5.63" totalcount="4" value="tagacgaaca"/>
+                        <sequence id="seq_t443_5.65" taxon="t443_5.65" totalcount="4" value="ggaccctgct"/>
+                        <sequence id="seq_t444_5.8" taxon="t444_5.8" totalcount="4" value="cctagctgta"/>
+                        <sequence id="seq_t445_5.54" taxon="t445_5.54" totalcount="4" value="actcctgatc"/>
+                        <sequence id="seq_t446_6.57" taxon="t446_6.57" totalcount="4" value="agttgttgga"/>
+                        <sequence id="seq_t447_6.94" taxon="t447_6.94" totalcount="4" value="agttgaagga"/>
+                        <sequence id="seq_t448_6.33" taxon="t448_6.33" totalcount="4" value="acccatacga"/>
+                        <sequence id="seq_t449_5.21" taxon="t449_5.21" totalcount="4" value="acccatgtcg"/>
+                        <sequence id="seq_t44_10.03" taxon="t44_10.03" totalcount="4" value="ctgcttcgtt"/>
+                        <sequence id="seq_t450_4.33" taxon="t450_4.33" totalcount="4" value="agactacacc"/>
+                        <sequence id="seq_t451_4.39" taxon="t451_4.39" totalcount="4" value="aactccgacc"/>
+                        <sequence id="seq_t452_4.81" taxon="t452_4.81" totalcount="4" value="ccacaaaggt"/>
+                        <sequence id="seq_t453_5.41" taxon="t453_5.41" totalcount="4" value="ctattacgta"/>
+                        <sequence id="seq_t454_5.71" taxon="t454_5.71" totalcount="4" value="tgatgcaata"/>
+                        <sequence id="seq_t455_4.6" taxon="t455_4.6" totalcount="4" value="aaacataggc"/>
+                        <sequence id="seq_t456_5.29" taxon="t456_5.29" totalcount="4" value="atagccacga"/>
+                        <sequence id="seq_t457_4.83" taxon="t457_4.83" totalcount="4" value="cccaataaca"/>
+                        <sequence id="seq_t458_4.34" taxon="t458_4.34" totalcount="4" value="tcgtatgcgt"/>
+                        <sequence id="seq_t459_4.7" taxon="t459_4.7" totalcount="4" value="tcagctcggg"/>
+                        <sequence id="seq_t45_9.94" taxon="t45_9.94" totalcount="4" value="ctattttgtg"/>
+                        <sequence id="seq_t460_4.13" taxon="t460_4.13" totalcount="4" value="ataaaggtgg"/>
+                        <sequence id="seq_t461_3.51" taxon="t461_3.51" totalcount="4" value="agaggcagat"/>
+                        <sequence id="seq_t462_3.36" taxon="t462_3.36" totalcount="4" value="agcctaaaaa"/>
+                        <sequence id="seq_t463_3.87" taxon="t463_3.87" totalcount="4" value="agacacagaa"/>
+                        <sequence id="seq_t464_4.35" taxon="t464_4.35" totalcount="4" value="aggcaggtgc"/>
+                        <sequence id="seq_t465_4.05" taxon="t465_4.05" totalcount="4" value="tcgcacgtgt"/>
+                        <sequence id="seq_t466_5.78" taxon="t466_5.78" totalcount="4" value="tccccctctc"/>
+                        <sequence id="seq_t467_5.98" taxon="t467_5.98" totalcount="4" value="tccccaaccc"/>
+                        <sequence id="seq_t468_5.39" taxon="t468_5.39" totalcount="4" value="gagaccggcc"/>
+                        <sequence id="seq_t469_4.76" taxon="t469_4.76" totalcount="4" value="gcagggaacc"/>
+                        <sequence id="seq_t46_11.48" taxon="t46_11.48" totalcount="4" value="tttagcgctc"/>
+                        <sequence id="seq_t470_3.59" taxon="t470_3.59" totalcount="4" value="cgcccggact"/>
+                        <sequence id="seq_t471_4.11" taxon="t471_4.11" totalcount="4" value="gcccgtccag"/>
+                        <sequence id="seq_t472_4.1" taxon="t472_4.1" totalcount="4" value="gtccttccaa"/>
+                        <sequence id="seq_t473_5.35" taxon="t473_5.35" totalcount="4" value="tcgcagcagg"/>
+                        <sequence id="seq_t474_5.78" taxon="t474_5.78" totalcount="4" value="gtatcgccac"/>
+                        <sequence id="seq_t475_6.6" taxon="t475_6.6" totalcount="4" value="ttgctggagc"/>
+                        <sequence id="seq_t476_6.01" taxon="t476_6.01" totalcount="4" value="ctgcggaaga"/>
+                        <sequence id="seq_t477_6.02" taxon="t477_6.02" totalcount="4" value="acggggcgta"/>
+                        <sequence id="seq_t478_5.08" taxon="t478_5.08" totalcount="4" value="ttgcagacgc"/>
+                        <sequence id="seq_t479_6.58" taxon="t479_6.58" totalcount="4" value="cggctaccat"/>
+                        <sequence id="seq_t47_10.59" taxon="t47_10.59" totalcount="4" value="ataacacacc"/>
+                        <sequence id="seq_t480_6.34" taxon="t480_6.34" totalcount="4" value="gagtgaatgc"/>
+                        <sequence id="seq_t481_4.67" taxon="t481_4.67" totalcount="4" value="ggcacactgg"/>
+                        <sequence id="seq_t482_4.3" taxon="t482_4.3" totalcount="4" value="ggcctaccag"/>
+                        <sequence id="seq_t483_3.59" taxon="t483_3.59" totalcount="4" value="gacgaatcgt"/>
+                        <sequence id="seq_t484_4.72" taxon="t484_4.72" totalcount="4" value="cctccgtcct"/>
+                        <sequence id="seq_t485_4.28" taxon="t485_4.28" totalcount="4" value="cgttaggtcg"/>
+                        <sequence id="seq_t486_6.13" taxon="t486_6.13" totalcount="4" value="gacgccgcta"/>
+                        <sequence id="seq_t487_6.44" taxon="t487_6.44" totalcount="4" value="ctcagcggaa"/>
+                        <sequence id="seq_t488_5.16" taxon="t488_5.16" totalcount="4" value="cactagtcac"/>
+                        <sequence id="seq_t489_4.07" taxon="t489_4.07" totalcount="4" value="ggcacgtaaa"/>
+                        <sequence id="seq_t48_11.13" taxon="t48_11.13" totalcount="4" value="ggaaaattat"/>
+                        <sequence id="seq_t490_4.31" taxon="t490_4.31" totalcount="4" value="ttcggacgct"/>
+                        <sequence id="seq_t491_4.68" taxon="t491_4.68" totalcount="4" value="tctgggcaca"/>
+                        <sequence id="seq_t492_4.41" taxon="t492_4.41" totalcount="4" value="tgagcctact"/>
+                        <sequence id="seq_t493_3.34" taxon="t493_3.34" totalcount="4" value="ccacatctat"/>
+                        <sequence id="seq_t494_5.68" taxon="t494_5.68" totalcount="4" value="aaagtccctt"/>
+                        <sequence id="seq_t495_6.14" taxon="t495_6.14" totalcount="4" value="aatgcccatt"/>
+                        <sequence id="seq_t496_6.57" taxon="t496_6.57" totalcount="4" value="aaggtcaaat"/>
+                        <sequence id="seq_t497_6.67" taxon="t497_6.67" totalcount="4" value="aaggccataa"/>
+                        <sequence id="seq_t498_6.19" taxon="t498_6.19" totalcount="4" value="aaagtctatt"/>
+                        <sequence id="seq_t499_8.04" taxon="t499_8.04" totalcount="4" value="aaacactatc"/>
+                        <sequence id="seq_t49_11.75" taxon="t49_11.75" totalcount="4" value="atgaaatatg"/>
+                        <sequence id="seq_t4_3.49" taxon="t4_3.49" totalcount="4" value="acaaatcaag"/>
+                        <sequence id="seq_t500_8.08" taxon="t500_8.08" totalcount="4" value="aaaaactata"/>
+                        <sequence id="seq_t501_8.09" taxon="t501_8.09" totalcount="4" value="caaaactata"/>
+                        <sequence id="seq_t502_8.02" taxon="t502_8.02" totalcount="4" value="ttcgcccacc"/>
+                        <sequence id="seq_t503_7.41" taxon="t503_7.41" totalcount="4" value="cttgcggaga"/>
+                        <sequence id="seq_t504_8.22" taxon="t504_8.22" totalcount="4" value="ttacctggct"/>
+                        <sequence id="seq_t505_8.24" taxon="t505_8.24" totalcount="4" value="aaagaggacc"/>
+                        <sequence id="seq_t506_7.57" taxon="t506_7.57" totalcount="4" value="ccacacaatc"/>
+                        <sequence id="seq_t507_7.49" taxon="t507_7.49" totalcount="4" value="aaacccagtt"/>
+                        <sequence id="seq_t508_6.84" taxon="t508_6.84" totalcount="4" value="tatcgctgag"/>
+                        <sequence id="seq_t509_6.79" taxon="t509_6.79" totalcount="4" value="tatggcggag"/>
+                        <sequence id="seq_t50_8.81" taxon="t50_8.81" totalcount="4" value="tcggaaaatg"/>
+                        <sequence id="seq_t510_6.79" taxon="t510_6.79" totalcount="4" value="gatggctcgt"/>
+                        <sequence id="seq_t511_4.65" taxon="t511_4.65" totalcount="4" value="catgcgcaat"/>
+                        <sequence id="seq_t512_6.06" taxon="t512_6.06" totalcount="4" value="ccagccgagt"/>
+                        <sequence id="seq_t513_5.96" taxon="t513_5.96" totalcount="4" value="aatgagcctt"/>
+                        <sequence id="seq_t514_5.14" taxon="t514_5.14" totalcount="4" value="ttaacaagaa"/>
+                        <sequence id="seq_t515_5.73" taxon="t515_5.73" totalcount="4" value="gaacgctgtt"/>
+                        <sequence id="seq_t516_5.41" taxon="t516_5.41" totalcount="4" value="gtacgcggtt"/>
+                        <sequence id="seq_t517_5.64" taxon="t517_5.64" totalcount="4" value="ttaccgcggc"/>
+                        <sequence id="seq_t518_4.14" taxon="t518_4.14" totalcount="4" value="ctgatgccct"/>
+                        <sequence id="seq_t519_5.62" taxon="t519_5.62" totalcount="4" value="gactcgtccc"/>
+                        <sequence id="seq_t51_8.78" taxon="t51_8.78" totalcount="4" value="cacagcgcat"/>
+                        <sequence id="seq_t520_5.95" taxon="t520_5.95" totalcount="4" value="cgctcgtccc"/>
+                        <sequence id="seq_t521_6.58" taxon="t521_6.58" totalcount="4" value="caggttcaat"/>
+                        <sequence id="seq_t522_5.78" taxon="t522_5.78" totalcount="4" value="caggctccta"/>
+                        <sequence id="seq_t523_5.04" taxon="t523_5.04" totalcount="4" value="cggttagtac"/>
+                        <sequence id="seq_t524_5.46" taxon="t524_5.46" totalcount="4" value="ccggcggttc"/>
+                        <sequence id="seq_t525_6.44" taxon="t525_6.44" totalcount="4" value="cctagcagtt"/>
+                        <sequence id="seq_t526_5.74" taxon="t526_5.74" totalcount="4" value="acccacattt"/>
+                        <sequence id="seq_t527_5.47" taxon="t527_5.47" totalcount="4" value="atgatgacgt"/>
+                        <sequence id="seq_t528_7.22" taxon="t528_7.22" totalcount="4" value="ttggataaga"/>
+                        <sequence id="seq_t529_6.47" taxon="t529_6.47" totalcount="4" value="cggttcagga"/>
+                        <sequence id="seq_t52_7.95" taxon="t52_7.95" totalcount="4" value="ctgataccat"/>
+                        <sequence id="seq_t530_6.32" taxon="t530_6.32" totalcount="4" value="gttaaggggc"/>
+                        <sequence id="seq_t531_5.53" taxon="t531_5.53" totalcount="4" value="aacgttctac"/>
+                        <sequence id="seq_t532_5.97" taxon="t532_5.97" totalcount="4" value="ctcagcccaa"/>
+                        <sequence id="seq_t533_7.26" taxon="t533_7.26" totalcount="4" value="ttccacttaa"/>
+                        <sequence id="seq_t534_7.32" taxon="t534_7.32" totalcount="4" value="ctggtccaga"/>
+                        <sequence id="seq_t535_7.41" taxon="t535_7.41" totalcount="4" value="tattaccaat"/>
+                        <sequence id="seq_t536_7.08" taxon="t536_7.08" totalcount="4" value="cggatgtaat"/>
+                        <sequence id="seq_t537_7.62" taxon="t537_7.62" totalcount="4" value="cctcggattc"/>
+                        <sequence id="seq_t538_7.89" taxon="t538_7.89" totalcount="4" value="actcctcaaa"/>
+                        <sequence id="seq_t539_8.34" taxon="t539_8.34" totalcount="4" value="ggcatcgata"/>
+                        <sequence id="seq_t53_8.02" taxon="t53_8.02" totalcount="4" value="aaaaatcccc"/>
+                        <sequence id="seq_t540_8.92" taxon="t540_8.92" totalcount="4" value="tctcgaaaca"/>
+                        <sequence id="seq_t541_8.41" taxon="t541_8.41" totalcount="4" value="ctatagcata"/>
+                        <sequence id="seq_t542_8.93" taxon="t542_8.93" totalcount="4" value="ccagcgccta"/>
+                        <sequence id="seq_t543_8.61" taxon="t543_8.61" totalcount="4" value="tccgggcata"/>
+                        <sequence id="seq_t544_6.42" taxon="t544_6.42" totalcount="4" value="catgggctaa"/>
+                        <sequence id="seq_t545_7.12" taxon="t545_7.12" totalcount="4" value="ttgcatatcg"/>
+                        <sequence id="seq_t546_6.48" taxon="t546_6.48" totalcount="4" value="atcggaaccg"/>
+                        <sequence id="seq_t547_6.32" taxon="t547_6.32" totalcount="4" value="atcagatatg"/>
+                        <sequence id="seq_t548_5.89" taxon="t548_5.89" totalcount="4" value="ataccgtata"/>
+                        <sequence id="seq_t549_5.87" taxon="t549_5.87" totalcount="4" value="tcggtagtgg"/>
+                        <sequence id="seq_t54_9.01" taxon="t54_9.01" totalcount="4" value="gccaggaagt"/>
+                        <sequence id="seq_t550_6.33" taxon="t550_6.33" totalcount="4" value="tctgcaaggc"/>
+                        <sequence id="seq_t551_6.58" taxon="t551_6.58" totalcount="4" value="taaaatgcgg"/>
+                        <sequence id="seq_t552_5.28" taxon="t552_5.28" totalcount="4" value="tttttacctt"/>
+                        <sequence id="seq_t553_6.64" taxon="t553_6.64" totalcount="4" value="ttatcaccgg"/>
+                        <sequence id="seq_t554_6.58" taxon="t554_6.58" totalcount="4" value="gtataatccc"/>
+                        <sequence id="seq_t555_7.31" taxon="t555_7.31" totalcount="4" value="tcgagacgat"/>
+                        <sequence id="seq_t556_6.9" taxon="t556_6.9" totalcount="4" value="gccagggcct"/>
+                        <sequence id="seq_t557_6.43" taxon="t557_6.43" totalcount="4" value="gccagacgct"/>
+                        <sequence id="seq_t558_6.57" taxon="t558_6.57" totalcount="4" value="acccatgtag"/>
+                        <sequence id="seq_t559_7.52" taxon="t559_7.52" totalcount="4" value="ctcgcaagtt"/>
+                        <sequence id="seq_t55_8.99" taxon="t55_8.99" totalcount="4" value="gacaagtgag"/>
+                        <sequence id="seq_t560_7.46" taxon="t560_7.46" totalcount="4" value="gatcggggta"/>
+                        <sequence id="seq_t561_6.55" taxon="t561_6.55" totalcount="4" value="aacacaggac"/>
+                        <sequence id="seq_t562_7.8" taxon="t562_7.8" totalcount="4" value="caagcaggga"/>
+                        <sequence id="seq_t563_7.6" taxon="t563_7.6" totalcount="4" value="cttgcgggtc"/>
+                        <sequence id="seq_t564_8.57" taxon="t564_8.57" totalcount="4" value="atgatggcta"/>
+                        <sequence id="seq_t565_8.34" taxon="t565_8.34" totalcount="4" value="agtacgcctc"/>
+                        <sequence id="seq_t566_8.89" taxon="t566_8.89" totalcount="4" value="accattcatc"/>
+                        <sequence id="seq_t567_8.03" taxon="t567_8.03" totalcount="4" value="caacggaggc"/>
+                        <sequence id="seq_t568_8.01" taxon="t568_8.01" totalcount="4" value="ggtggctgat"/>
+                        <sequence id="seq_t569_7.73" taxon="t569_7.73" totalcount="4" value="ggcgggattt"/>
+                        <sequence id="seq_t56_8.34" taxon="t56_8.34" totalcount="4" value="gtaccaaaaa"/>
+                        <sequence id="seq_t570_8.05" taxon="t570_8.05" totalcount="4" value="gtcagccgat"/>
+                        <sequence id="seq_t571_8.43" taxon="t571_8.43" totalcount="4" value="gccatttttt"/>
+                        <sequence id="seq_t572_8.66" taxon="t572_8.66" totalcount="4" value="gcaacaaaca"/>
+                        <sequence id="seq_t573_8.68" taxon="t573_8.68" totalcount="4" value="gcgacatacc"/>
+                        <sequence id="seq_t574_8.81" taxon="t574_8.81" totalcount="4" value="aaagcctcag"/>
+                        <sequence id="seq_t575_9.3" taxon="t575_9.3" totalcount="4" value="cgtaaattgg"/>
+                        <sequence id="seq_t576_9.09" taxon="t576_9.09" totalcount="4" value="gtatcgttct"/>
+                        <sequence id="seq_t577_7.99" taxon="t577_7.99" totalcount="4" value="acatctaagc"/>
+                        <sequence id="seq_t578_7.22" taxon="t578_7.22" totalcount="4" value="tggtgtctct"/>
+                        <sequence id="seq_t579_7.13" taxon="t579_7.13" totalcount="4" value="tggtgtctct"/>
+                        <sequence id="seq_t57_7.81" taxon="t57_7.81" totalcount="4" value="gtacagcggt"/>
+                        <sequence id="seq_t580_7.48" taxon="t580_7.48" totalcount="4" value="cggtgcatct"/>
+                        <sequence id="seq_t581_8.34" taxon="t581_8.34" totalcount="4" value="gggcgtttgc"/>
+                        <sequence id="seq_t582_8.57" taxon="t582_8.57" totalcount="4" value="gagccggagc"/>
+                        <sequence id="seq_t583_9.44" taxon="t583_9.44" totalcount="4" value="acgaagtcgc"/>
+                        <sequence id="seq_t584_8.04" taxon="t584_8.04" totalcount="4" value="tgcggttacc"/>
+                        <sequence id="seq_t585_7.31" taxon="t585_7.31" totalcount="4" value="ccgttgagga"/>
+                        <sequence id="seq_t586_6.81" taxon="t586_6.81" totalcount="4" value="ttgtgtcctc"/>
+                        <sequence id="seq_t587_6.98" taxon="t587_6.98" totalcount="4" value="gcgtggcttg"/>
+                        <sequence id="seq_t588_6.75" taxon="t588_6.75" totalcount="4" value="caacactacg"/>
+                        <sequence id="seq_t589_8.04" taxon="t589_8.04" totalcount="4" value="cgccggaggg"/>
+                        <sequence id="seq_t58_7.91" taxon="t58_7.91" totalcount="4" value="gtcgagccag"/>
+                        <sequence id="seq_t590_7.68" taxon="t590_7.68" totalcount="4" value="ctacgcagct"/>
+                        <sequence id="seq_t591_6.97" taxon="t591_6.97" totalcount="4" value="gagcggctcc"/>
+                        <sequence id="seq_t592_6.57" taxon="t592_6.57" totalcount="4" value="tgacgtatca"/>
+                        <sequence id="seq_t593_8.09" taxon="t593_8.09" totalcount="4" value="gcagatcctc"/>
+                        <sequence id="seq_t594_8.74" taxon="t594_8.74" totalcount="4" value="cactgaaaaa"/>
+                        <sequence id="seq_t595_8.09" taxon="t595_8.09" totalcount="4" value="taataatcaa"/>
+                        <sequence id="seq_t596_8.18" taxon="t596_8.18" totalcount="4" value="gttctaacgt"/>
+                        <sequence id="seq_t597_8.51" taxon="t597_8.51" totalcount="4" value="acataagtcg"/>
+                        <sequence id="seq_t598_8.59" taxon="t598_8.59" totalcount="4" value="gggtaagaaa"/>
+                        <sequence id="seq_t599_7.59" taxon="t599_7.59" totalcount="4" value="ttcggaaagt"/>
+                        <sequence id="seq_t59_8.36" taxon="t59_8.36" totalcount="4" value="gtcagtagat"/>
+                        <sequence id="seq_t5_3.5" taxon="t5_3.5" totalcount="4" value="taatgacagg"/>
+                        <sequence id="seq_t600_7.84" taxon="t600_7.84" totalcount="4" value="tgtgcaatac"/>
+                        <sequence id="seq_t601_7.17" taxon="t601_7.17" totalcount="4" value="gtagggaaac"/>
+                        <sequence id="seq_t602_7.49" taxon="t602_7.49" totalcount="4" value="atgtacgtct"/>
+                        <sequence id="seq_t603_7.4" taxon="t603_7.4" totalcount="4" value="ctaaacattc"/>
+                        <sequence id="seq_t604_7.8" taxon="t604_7.8" totalcount="4" value="ctcctctgtg"/>
+                        <sequence id="seq_t605_7.84" taxon="t605_7.84" totalcount="4" value="ctaacgcgtg"/>
+                        <sequence id="seq_t606_8.72" taxon="t606_8.72" totalcount="4" value="gtacttcggc"/>
+                        <sequence id="seq_t607_9.22" taxon="t607_9.22" totalcount="4" value="aagtgttatt"/>
+                        <sequence id="seq_t608_8.42" taxon="t608_8.42" totalcount="4" value="gtactgttgc"/>
+                        <sequence id="seq_t609_8.47" taxon="t609_8.47" totalcount="4" value="tccgtaacag"/>
+                        <sequence id="seq_t60_9.18" taxon="t60_9.18" totalcount="4" value="ttcttataaa"/>
+                        <sequence id="seq_t610_9.59" taxon="t610_9.59" totalcount="4" value="cacataaggc"/>
+                        <sequence id="seq_t611_10.35" taxon="t611_10.35" totalcount="4" value="gaaacccaag"/>
+                        <sequence id="seq_t612_10.47" taxon="t612_10.47" totalcount="4" value="tcgtgcccgc"/>
+                        <sequence id="seq_t613_9.17" taxon="t613_9.17" totalcount="4" value="acaataaacc"/>
+                        <sequence id="seq_t614_9.46" taxon="t614_9.46" totalcount="4" value="caactagcgc"/>
+                        <sequence id="seq_t615_8.21" taxon="t615_8.21" totalcount="4" value="ctaccgactc"/>
+                        <sequence id="seq_t616_11.18" taxon="t616_11.18" totalcount="4" value="gcgcgaccgt"/>
+                        <sequence id="seq_t617_10.55" taxon="t617_10.55" totalcount="4" value="cagcggccgt"/>
+                        <sequence id="seq_t618_9.56" taxon="t618_9.56" totalcount="4" value="aggtgtcgtg"/>
+                        <sequence id="seq_t619_9.5" taxon="t619_9.5" totalcount="4" value="agccaagtgg"/>
+                        <sequence id="seq_t61_8.73" taxon="t61_8.73" totalcount="4" value="gggtaagagt"/>
+                        <sequence id="seq_t620_9.74" taxon="t620_9.74" totalcount="4" value="tacgtagtgg"/>
+                        <sequence id="seq_t621_7.63" taxon="t621_7.63" totalcount="4" value="cttaaaaatg"/>
+                        <sequence id="seq_t622_7.93" taxon="t622_7.93" totalcount="4" value="gtcttgagaa"/>
+                        <sequence id="seq_t623_6.58" taxon="t623_6.58" totalcount="4" value="gcttgtctgc"/>
+                        <sequence id="seq_t624_6.77" taxon="t624_6.77" totalcount="4" value="gccctcaacc"/>
+                        <sequence id="seq_t625_6.83" taxon="t625_6.83" totalcount="4" value="gaaggtaaat"/>
+                        <sequence id="seq_t626_6.45" taxon="t626_6.45" totalcount="4" value="gaaccgatct"/>
+                        <sequence id="seq_t627_6.59" taxon="t627_6.59" totalcount="4" value="gacccggtct"/>
+                        <sequence id="seq_t628_6.51" taxon="t628_6.51" totalcount="4" value="gaacctgtct"/>
+                        <sequence id="seq_t629_6.67" taxon="t629_6.67" totalcount="4" value="atactgggct"/>
+                        <sequence id="seq_t62_8.96" taxon="t62_8.96" totalcount="4" value="gggtaagaag"/>
+                        <sequence id="seq_t630_7.98" taxon="t630_7.98" totalcount="4" value="acaaccgaat"/>
+                        <sequence id="seq_t631_8.02" taxon="t631_8.02" totalcount="4" value="aggcacccat"/>
+                        <sequence id="seq_t632_7.62" taxon="t632_7.62" totalcount="4" value="accattttaa"/>
+                        <sequence id="seq_t633_6.62" taxon="t633_6.62" totalcount="4" value="ctaacattgt"/>
+                        <sequence id="seq_t634_7.07" taxon="t634_7.07" totalcount="4" value="tttcattttt"/>
+                        <sequence id="seq_t635_6.87" taxon="t635_6.87" totalcount="4" value="ttgtttatcc"/>
+                        <sequence id="seq_t636_8.33" taxon="t636_8.33" totalcount="4" value="ccacgctttc"/>
+                        <sequence id="seq_t637_8.57" taxon="t637_8.57" totalcount="4" value="ggagaaccac"/>
+                        <sequence id="seq_t638_6.87" taxon="t638_6.87" totalcount="4" value="attctctggc"/>
+                        <sequence id="seq_t639_6.17" taxon="t639_6.17" totalcount="4" value="ctttggtatt"/>
+                        <sequence id="seq_t63_8.33" taxon="t63_8.33" totalcount="4" value="ggataagagt"/>
+                        <sequence id="seq_t640_6.06" taxon="t640_6.06" totalcount="4" value="ttgcattttt"/>
+                        <sequence id="seq_t641_7.6" taxon="t641_7.6" totalcount="4" value="cttcgatacc"/>
+                        <sequence id="seq_t642_7.57" taxon="t642_7.57" totalcount="4" value="gctccttact"/>
+                        <sequence id="seq_t643_5.64" taxon="t643_5.64" totalcount="4" value="cgaactcaga"/>
+                        <sequence id="seq_t644_6.78" taxon="t644_6.78" totalcount="4" value="accagtggat"/>
+                        <sequence id="seq_t645_6.2" taxon="t645_6.2" totalcount="4" value="tacactacca"/>
+                        <sequence id="seq_t646_6.71" taxon="t646_6.71" totalcount="4" value="agcaaacaac"/>
+                        <sequence id="seq_t647_6.8" taxon="t647_6.8" totalcount="4" value="agcgaatgtc"/>
+                        <sequence id="seq_t648_5.84" taxon="t648_5.84" totalcount="4" value="tgcataaaac"/>
+                        <sequence id="seq_t649_5.2" taxon="t649_5.2" totalcount="4" value="tgctatccat"/>
+                        <sequence id="seq_t64_8.64" taxon="t64_8.64" totalcount="4" value="ctataaggat"/>
+                        <sequence id="seq_t650_5.67" taxon="t650_5.67" totalcount="4" value="ggctgctatt"/>
+                        <sequence id="seq_t651_5.61" taxon="t651_5.61" totalcount="4" value="agtggagttc"/>
+                        <sequence id="seq_t652_2.92" taxon="t652_2.92" totalcount="4" value="agggtgcccg"/>
+                        <sequence id="seq_t653_3.06" taxon="t653_3.06" totalcount="4" value="cgctatcccg"/>
+                        <sequence id="seq_t654_3.41" taxon="t654_3.41" totalcount="4" value="aggtctcctg"/>
+                        <sequence id="seq_t655_4" taxon="t655_4" totalcount="4" value="aggctttccg"/>
+                        <sequence id="seq_t656_4.15" taxon="t656_4.15" totalcount="4" value="accgcaacga"/>
+                        <sequence id="seq_t657_4.51" taxon="t657_4.51" totalcount="4" value="tagcttaata"/>
+                        <sequence id="seq_t658_4.58" taxon="t658_4.58" totalcount="4" value="tcgatcgaaa"/>
+                        <sequence id="seq_t659_5.48" taxon="t659_5.48" totalcount="4" value="taatgaccct"/>
+                        <sequence id="seq_t65_9.38" taxon="t65_9.38" totalcount="4" value="gtcgcagtgt"/>
+                        <sequence id="seq_t660_5.81" taxon="t660_5.81" totalcount="4" value="ctcagcccgg"/>
+                        <sequence id="seq_t661_5.77" taxon="t661_5.77" totalcount="4" value="tagccagtct"/>
+                        <sequence id="seq_t662_6.03" taxon="t662_6.03" totalcount="4" value="tcgccaccct"/>
+                        <sequence id="seq_t663_5.34" taxon="t663_5.34" totalcount="4" value="ccaatatcca"/>
+                        <sequence id="seq_t664_4.87" taxon="t664_4.87" totalcount="4" value="cgagctacct"/>
+                        <sequence id="seq_t665_3.98" taxon="t665_3.98" totalcount="4" value="cctttttaca"/>
+                        <sequence id="seq_t666_3.88" taxon="t666_3.88" totalcount="4" value="atgtcacgac"/>
+                        <sequence id="seq_t667_4.16" taxon="t667_4.16" totalcount="4" value="gtatatagcc"/>
+                        <sequence id="seq_t668_4.25" taxon="t668_4.25" totalcount="4" value="atgtatacct"/>
+                        <sequence id="seq_t669_4.63" taxon="t669_4.63" totalcount="4" value="acacagtcct"/>
+                        <sequence id="seq_t66_7.73" taxon="t66_7.73" totalcount="4" value="ctgatacgag"/>
+                        <sequence id="seq_t670_4.17" taxon="t670_4.17" totalcount="4" value="atgttttcat"/>
+                        <sequence id="seq_t671_3.81" taxon="t671_3.81" totalcount="4" value="acgtattcga"/>
+                        <sequence id="seq_t672_3.82" taxon="t672_3.82" totalcount="4" value="acgtattcca"/>
+                        <sequence id="seq_t673_4.78" taxon="t673_4.78" totalcount="4" value="tgcgtgctaa"/>
+                        <sequence id="seq_t674_4.8" taxon="t674_4.8" totalcount="4" value="tgcgggctaa"/>
+                        <sequence id="seq_t675_5.29" taxon="t675_5.29" totalcount="4" value="tattggcaca"/>
+                        <sequence id="seq_t676_5.81" taxon="t676_5.81" totalcount="4" value="taagtgcatt"/>
+                        <sequence id="seq_t677_4.59" taxon="t677_4.59" totalcount="4" value="ttccgcggac"/>
+                        <sequence id="seq_t678_5.2" taxon="t678_5.2" totalcount="4" value="tgccagcgac"/>
+                        <sequence id="seq_t679_5.51" taxon="t679_5.51" totalcount="4" value="tgcgaccaga"/>
+                        <sequence id="seq_t67_7.43" taxon="t67_7.43" totalcount="4" value="cagagcctaa"/>
+                        <sequence id="seq_t680_5.61" taxon="t680_5.61" totalcount="4" value="acacgagaga"/>
+                        <sequence id="seq_t681_5.39" taxon="t681_5.39" totalcount="4" value="actcgtcata"/>
+                        <sequence id="seq_t682_5.37" taxon="t682_5.37" totalcount="4" value="acccaactat"/>
+                        <sequence id="seq_t683_5.6" taxon="t683_5.6" totalcount="4" value="agtcagctat"/>
+                        <sequence id="seq_t684_6.05" taxon="t684_6.05" totalcount="4" value="ttccaactat"/>
+                        <sequence id="seq_t685_5.74" taxon="t685_5.74" totalcount="4" value="ccacgactat"/>
+                        <sequence id="seq_t686_5.27" taxon="t686_5.27" totalcount="4" value="acagacataa"/>
+                        <sequence id="seq_t687_5.29" taxon="t687_5.29" totalcount="4" value="ctctccattt"/>
+                        <sequence id="seq_t688_3.83" taxon="t688_3.83" totalcount="4" value="taaagatcaa"/>
+                        <sequence id="seq_t689_5.13" taxon="t689_5.13" totalcount="4" value="gatgctttag"/>
+                        <sequence id="seq_t68_8.34" taxon="t68_8.34" totalcount="4" value="gtgtgaattc"/>
+                        <sequence id="seq_t690_5.38" taxon="t690_5.38" totalcount="4" value="gaacatgaaa"/>
+                        <sequence id="seq_t691_6.44" taxon="t691_6.44" totalcount="4" value="ccactttagt"/>
+                        <sequence id="seq_t692_6.51" taxon="t692_6.51" totalcount="4" value="caaccagtag"/>
+                        <sequence id="seq_t693_4.57" taxon="t693_4.57" totalcount="4" value="caaatggctc"/>
+                        <sequence id="seq_t694_4.79" taxon="t694_4.79" totalcount="4" value="gaagagcgac"/>
+                        <sequence id="seq_t695_5.53" taxon="t695_5.53" totalcount="4" value="gaatagcatc"/>
+                        <sequence id="seq_t696_5.75" taxon="t696_5.75" totalcount="4" value="gaaatgagtc"/>
+                        <sequence id="seq_t697_5.48" taxon="t697_5.48" totalcount="4" value="gatcctgtct"/>
+                        <sequence id="seq_t698_6.21" taxon="t698_6.21" totalcount="4" value="gatccgttta"/>
+                        <sequence id="seq_t699_7.24" taxon="t699_7.24" totalcount="4" value="atgccgccca"/>
+                        <sequence id="seq_t69_9.46" taxon="t69_9.46" totalcount="4" value="ctgcgtacta"/>
+                        <sequence id="seq_t6_2.45" taxon="t6_2.45" totalcount="4" value="cattgtcgag"/>
+                        <sequence id="seq_t700_6.63" taxon="t700_6.63" totalcount="4" value="gctacgtcca"/>
+                        <sequence id="seq_t701_5.71" taxon="t701_5.71" totalcount="4" value="gacattaata"/>
+                        <sequence id="seq_t702_6.36" taxon="t702_6.36" totalcount="4" value="gttattcaat"/>
+                        <sequence id="seq_t703_6.47" taxon="t703_6.47" totalcount="4" value="gatatttatt"/>
+                        <sequence id="seq_t704_5.78" taxon="t704_5.78" totalcount="4" value="tcactgacat"/>
+                        <sequence id="seq_t705_6.07" taxon="t705_6.07" totalcount="4" value="attctgtttt"/>
+                        <sequence id="seq_t706_3.3" taxon="t706_3.3" totalcount="4" value="ccatttctag"/>
+                        <sequence id="seq_t707_4.52" taxon="t707_4.52" totalcount="4" value="gatttactct"/>
+                        <sequence id="seq_t708_4.39" taxon="t708_4.39" totalcount="4" value="catttgcaca"/>
+                        <sequence id="seq_t709_5" taxon="t709_5" totalcount="4" value="tctgggtgta"/>
+                        <sequence id="seq_t70_9.59" taxon="t70_9.59" totalcount="4" value="atgcttgcga"/>
+                        <sequence id="seq_t710_4.87" taxon="t710_4.87" totalcount="4" value="tccgggtcag"/>
+                        <sequence id="seq_t711_5.25" taxon="t711_5.25" totalcount="4" value="ccagtgtaac"/>
+                        <sequence id="seq_t712_5.05" taxon="t712_5.05" totalcount="4" value="cctatgtaac"/>
+                        <sequence id="seq_t713_6" taxon="t713_6" totalcount="4" value="ctggccacta"/>
+                        <sequence id="seq_t714_6.05" taxon="t714_6.05" totalcount="4" value="cccccttttg"/>
+                        <sequence id="seq_t715_6.62" taxon="t715_6.62" totalcount="4" value="ctacgaggtt"/>
+                        <sequence id="seq_t716_8.24" taxon="t716_8.24" totalcount="4" value="cccaatgagt"/>
+                        <sequence id="seq_t717_7.84" taxon="t717_7.84" totalcount="4" value="gtatatgggc"/>
+                        <sequence id="seq_t718_7.94" taxon="t718_7.94" totalcount="4" value="tgtttcgttt"/>
+                        <sequence id="seq_t719_8.44" taxon="t719_8.44" totalcount="4" value="acagtcctac"/>
+                        <sequence id="seq_t71_10.24" taxon="t71_10.24" totalcount="4" value="tggctgatga"/>
+                        <sequence id="seq_t720_7.08" taxon="t720_7.08" totalcount="4" value="tcgagcgacg"/>
+                        <sequence id="seq_t721_9.07" taxon="t721_9.07" totalcount="4" value="cgtagcgaca"/>
+                        <sequence id="seq_t722_8.7" taxon="t722_8.7" totalcount="4" value="tgtattgtgt"/>
+                        <sequence id="seq_t723_8.31" taxon="t723_8.31" totalcount="4" value="acgactgatt"/>
+                        <sequence id="seq_t724_8.73" taxon="t724_8.73" totalcount="4" value="ggaacatcgc"/>
+                        <sequence id="seq_t725_8.06" taxon="t725_8.06" totalcount="4" value="gcgtttgggt"/>
+                        <sequence id="seq_t726_6.01" taxon="t726_6.01" totalcount="4" value="tggaacccgc"/>
+                        <sequence id="seq_t727_6.85" taxon="t727_6.85" totalcount="4" value="gcctctgatt"/>
+                        <sequence id="seq_t728_6.1" taxon="t728_6.1" totalcount="4" value="ggaatccctc"/>
+                        <sequence id="seq_t729_6.48" taxon="t729_6.48" totalcount="4" value="gctgagtata"/>
+                        <sequence id="seq_t72_7.42" taxon="t72_7.42" totalcount="4" value="atcgctcaca"/>
+                        <sequence id="seq_t730_6.81" taxon="t730_6.81" totalcount="4" value="gcttctggga"/>
+                        <sequence id="seq_t731_5.76" taxon="t731_5.76" totalcount="4" value="ttggataaaa"/>
+                        <sequence id="seq_t732_5.62" taxon="t732_5.62" totalcount="4" value="ctagtgagga"/>
+                        <sequence id="seq_t733_5.81" taxon="t733_5.81" totalcount="4" value="tagcttagag"/>
+                        <sequence id="seq_t734_5.76" taxon="t734_5.76" totalcount="4" value="tggggcgcca"/>
+                        <sequence id="seq_t735_6" taxon="t735_6" totalcount="4" value="tggcttaggg"/>
+                        <sequence id="seq_t736_6.39" taxon="t736_6.39" totalcount="4" value="agccttagac"/>
+                        <sequence id="seq_t737_5.81" taxon="t737_5.81" totalcount="4" value="aggtgtgtta"/>
+                        <sequence id="seq_t738_6.99" taxon="t738_6.99" totalcount="4" value="gggtaagggg"/>
+                        <sequence id="seq_t739_6.75" taxon="t739_6.75" totalcount="4" value="cgctgcgttt"/>
+                        <sequence id="seq_t73_7.74" taxon="t73_7.74" totalcount="4" value="aaggctcaaa"/>
+                        <sequence id="seq_t740_6.53" taxon="t740_6.53" totalcount="4" value="ttccgcatga"/>
+                        <sequence id="seq_t741_6.88" taxon="t741_6.88" totalcount="4" value="aaccctgcag"/>
+                        <sequence id="seq_t742_6.89" taxon="t742_6.89" totalcount="4" value="ttaggttggt"/>
+                        <sequence id="seq_t743_6.26" taxon="t743_6.26" totalcount="4" value="ggccggcata"/>
+                        <sequence id="seq_t744_6.99" taxon="t744_6.99" totalcount="4" value="tgaatcgatc"/>
+                        <sequence id="seq_t745_5.4" taxon="t745_5.4" totalcount="4" value="tcccattgaa"/>
+                        <sequence id="seq_t746_6.12" taxon="t746_6.12" totalcount="4" value="agctgtgtca"/>
+                        <sequence id="seq_t747_5.7" taxon="t747_5.7" totalcount="4" value="ttacattgat"/>
+                        <sequence id="seq_t748_5.8" taxon="t748_5.8" totalcount="4" value="gtccggattg"/>
+                        <sequence id="seq_t749_7.14" taxon="t749_7.14" totalcount="4" value="cattgtttcg"/>
+                        <sequence id="seq_t74_9.78" taxon="t74_9.78" totalcount="4" value="ccgatattcg"/>
+                        <sequence id="seq_t750_6.86" taxon="t750_6.86" totalcount="4" value="tattgtaacc"/>
+                        <sequence id="seq_t751_5.22" taxon="t751_5.22" totalcount="4" value="ttttcacgat"/>
+                        <sequence id="seq_t752_6.52" taxon="t752_6.52" totalcount="4" value="cgcatgggaa"/>
+                        <sequence id="seq_t753_7.28" taxon="t753_7.28" totalcount="4" value="ttaggtccgc"/>
+                        <sequence id="seq_t754_7.03" taxon="t754_7.03" totalcount="4" value="ctacggttgc"/>
+                        <sequence id="seq_t755_7.42" taxon="t755_7.42" totalcount="4" value="ctaatctata"/>
+                        <sequence id="seq_t756_6.72" taxon="t756_6.72" totalcount="4" value="ctaatctttt"/>
+                        <sequence id="seq_t757_6.16" taxon="t757_6.16" totalcount="4" value="ttgtgtcaaa"/>
+                        <sequence id="seq_t758_7.07" taxon="t758_7.07" totalcount="4" value="gagcatcacg"/>
+                        <sequence id="seq_t759_4.76" taxon="t759_4.76" totalcount="4" value="cttcgatgaa"/>
+                        <sequence id="seq_t75_9.72" taxon="t75_9.72" totalcount="4" value="ctgtgtgtgc"/>
+                        <sequence id="seq_t760_4.61" taxon="t760_4.61" totalcount="4" value="ctgagttgac"/>
+                        <sequence id="seq_t761_4.65" taxon="t761_4.65" totalcount="4" value="gcccacagat"/>
+                        <sequence id="seq_t762_5.93" taxon="t762_5.93" totalcount="4" value="ttgaacgtgt"/>
+                        <sequence id="seq_t763_6.91" taxon="t763_6.91" totalcount="4" value="cgattcacta"/>
+                        <sequence id="seq_t764_7.08" taxon="t764_7.08" totalcount="4" value="gtcccggacg"/>
+                        <sequence id="seq_t765_5.84" taxon="t765_5.84" totalcount="4" value="ctctatgtct"/>
+                        <sequence id="seq_t766_6.34" taxon="t766_6.34" totalcount="4" value="ttcaactcac"/>
+                        <sequence id="seq_t767_6.52" taxon="t767_6.52" totalcount="4" value="ctatatgcta"/>
+                        <sequence id="seq_t768_6.07" taxon="t768_6.07" totalcount="4" value="atggacaccc"/>
+                        <sequence id="seq_t769_5.74" taxon="t769_5.74" totalcount="4" value="atggataccc"/>
+                        <sequence id="seq_t76_8.9" taxon="t76_8.9" totalcount="4" value="gatcgtacta"/>
+                        <sequence id="seq_t770_4.62" taxon="t770_4.62" totalcount="4" value="tgcgaagcaa"/>
+                        <sequence id="seq_t771_6.19" taxon="t771_6.19" totalcount="4" value="gatatccggc"/>
+                        <sequence id="seq_t772_5.59" taxon="t772_5.59" totalcount="4" value="acgatgcgct"/>
+                        <sequence id="seq_t773_6.77" taxon="t773_6.77" totalcount="4" value="gaagacgaac"/>
+                        <sequence id="seq_t774_6.85" taxon="t774_6.85" totalcount="4" value="atacatgaac"/>
+                        <sequence id="seq_t775_6.08" taxon="t775_6.08" totalcount="4" value="ataaacgaat"/>
+                        <sequence id="seq_t776_5.29" taxon="t776_5.29" totalcount="4" value="tcggctgact"/>
+                        <sequence id="seq_t777_4.78" taxon="t777_4.78" totalcount="4" value="cctagttgag"/>
+                        <sequence id="seq_t778_5.5" taxon="t778_5.5" totalcount="4" value="cccatcgcag"/>
+                        <sequence id="seq_t779_5.96" taxon="t779_5.96" totalcount="4" value="aatcgcctca"/>
+                        <sequence id="seq_t77_10.16" taxon="t77_10.16" totalcount="4" value="gcgtgacaac"/>
+                        <sequence id="seq_t780_4.73" taxon="t780_4.73" totalcount="4" value="agaaaggctg"/>
+                        <sequence id="seq_t781_4.89" taxon="t781_4.89" totalcount="4" value="gttccctttt"/>
+                        <sequence id="seq_t782_5.54" taxon="t782_5.54" totalcount="4" value="tgacgcctat"/>
+                        <sequence id="seq_t783_5.53" taxon="t783_5.53" totalcount="4" value="attcggctaa"/>
+                        <sequence id="seq_t784_6.67" taxon="t784_6.67" totalcount="4" value="gttccctacg"/>
+                        <sequence id="seq_t785_6.39" taxon="t785_6.39" totalcount="4" value="gcgcacaacg"/>
+                        <sequence id="seq_t786_6.33" taxon="t786_6.33" totalcount="4" value="gcccaacacg"/>
+                        <sequence id="seq_t787_6.19" taxon="t787_6.19" totalcount="4" value="aatcaccacg"/>
+                        <sequence id="seq_t788_6.06" taxon="t788_6.06" totalcount="4" value="tgtccctacg"/>
+                        <sequence id="seq_t789_6.41" taxon="t789_6.41" totalcount="4" value="tgtcattaca"/>
+                        <sequence id="seq_t78_10.01" taxon="t78_10.01" totalcount="4" value="gcaatagaaa"/>
+                        <sequence id="seq_t790_7.78" taxon="t790_7.78" totalcount="4" value="ggtaaatagt"/>
+                        <sequence id="seq_t791_8.53" taxon="t791_8.53" totalcount="4" value="cagcggctca"/>
+                        <sequence id="seq_t792_8.1" taxon="t792_8.1" totalcount="4" value="ctttggctaa"/>
+                        <sequence id="seq_t793_7.23" taxon="t793_7.23" totalcount="4" value="cttgtgtagc"/>
+                        <sequence id="seq_t794_7.01" taxon="t794_7.01" totalcount="4" value="acgagatagc"/>
+                        <sequence id="seq_t795_7.46" taxon="t795_7.46" totalcount="4" value="agatgctcac"/>
+                        <sequence id="seq_t796_4.86" taxon="t796_4.86" totalcount="4" value="accctaacct"/>
+                        <sequence id="seq_t797_5.85" taxon="t797_5.85" totalcount="4" value="taagtagcct"/>
+                        <sequence id="seq_t798_5.58" taxon="t798_5.58" totalcount="4" value="acacttacgt"/>
+                        <sequence id="seq_t799_5.31" taxon="t799_5.31" totalcount="4" value="gcgtgtggta"/>
+                        <sequence id="seq_t79_11.2" taxon="t79_11.2" totalcount="4" value="gcaatagaag"/>
+                        <sequence id="seq_t7_2.99" taxon="t7_2.99" totalcount="4" value="agactttcat"/>
+                        <sequence id="seq_t800_8.55" taxon="t800_8.55" totalcount="4" value="tttaactgcc"/>
+                        <sequence id="seq_t801_9.4" taxon="t801_9.4" totalcount="4" value="tcggtttata"/>
+                        <sequence id="seq_t802_9.4" taxon="t802_9.4" totalcount="4" value="tccttttata"/>
+                        <sequence id="seq_t803_9.39" taxon="t803_9.39" totalcount="4" value="ccctgcttta"/>
+                        <sequence id="seq_t804_9.45" taxon="t804_9.45" totalcount="4" value="atgctgagct"/>
+                        <sequence id="seq_t805_9.09" taxon="t805_9.09" totalcount="4" value="attctgtgca"/>
+                        <sequence id="seq_t806_8.96" taxon="t806_8.96" totalcount="4" value="attctttgcc"/>
+                        <sequence id="seq_t807_8.36" taxon="t807_8.36" totalcount="4" value="gagttcccca"/>
+                        <sequence id="seq_t808_9.15" taxon="t808_9.15" totalcount="4" value="tcgagactca"/>
+                        <sequence id="seq_t809_10.15" taxon="t809_10.15" totalcount="4" value="tctctactat"/>
+                        <sequence id="seq_t80_11.63" taxon="t80_11.63" totalcount="4" value="ttagcacata"/>
+                        <sequence id="seq_t810_9.96" taxon="t810_9.96" totalcount="4" value="tctagactca"/>
+                        <sequence id="seq_t811_11.31" taxon="t811_11.31" totalcount="4" value="cgatacacag"/>
+                        <sequence id="seq_t812_10.62" taxon="t812_10.62" totalcount="4" value="ggagacaccc"/>
+                        <sequence id="seq_t813_11.51" taxon="t813_11.51" totalcount="4" value="gttgacccca"/>
+                        <sequence id="seq_t814_10.18" taxon="t814_10.18" totalcount="4" value="acggagccta"/>
+                        <sequence id="seq_t815_10.3" taxon="t815_10.3" totalcount="4" value="atgtgcgcag"/>
+                        <sequence id="seq_t816_9.96" taxon="t816_9.96" totalcount="4" value="tccaatcgta"/>
+                        <sequence id="seq_t817_10.47" taxon="t817_10.47" totalcount="4" value="agcaagcaca"/>
+                        <sequence id="seq_t818_10.52" taxon="t818_10.52" totalcount="4" value="agcaagcata"/>
+                        <sequence id="seq_t819_9.83" taxon="t819_9.83" totalcount="4" value="cttttggtaa"/>
+                        <sequence id="seq_t81_12.13" taxon="t81_12.13" totalcount="4" value="tcagcacatt"/>
+                        <sequence id="seq_t820_9.56" taxon="t820_9.56" totalcount="4" value="ccagggtcac"/>
+                        <sequence id="seq_t821_10.49" taxon="t821_10.49" totalcount="4" value="gtgttgccgg"/>
+                        <sequence id="seq_t822_10.52" taxon="t822_10.52" totalcount="4" value="ggatatagag"/>
+                        <sequence id="seq_t823_10.54" taxon="t823_10.54" totalcount="4" value="ttgtagacac"/>
+                        <sequence id="seq_t824_9.44" taxon="t824_9.44" totalcount="4" value="gtttagacat"/>
+                        <sequence id="seq_t825_8.45" taxon="t825_8.45" totalcount="4" value="cgacctactg"/>
+                        <sequence id="seq_t826_10.37" taxon="t826_10.37" totalcount="4" value="cattggtgag"/>
+                        <sequence id="seq_t827_10.12" taxon="t827_10.12" totalcount="4" value="caaaccgcag"/>
+                        <sequence id="seq_t828_9.48" taxon="t828_9.48" totalcount="4" value="ccggccgcgt"/>
+                        <sequence id="seq_t829_8.62" taxon="t829_8.62" totalcount="4" value="tctatgacac"/>
+                        <sequence id="seq_t82_11.99" taxon="t82_11.99" totalcount="4" value="cctggaccag"/>
+                        <sequence id="seq_t830_8.44" taxon="t830_8.44" totalcount="4" value="tctacgacat"/>
+                        <sequence id="seq_t831_8.75" taxon="t831_8.75" totalcount="4" value="agaacgagat"/>
+                        <sequence id="seq_t832_8.02" taxon="t832_8.02" totalcount="4" value="tattagggac"/>
+                        <sequence id="seq_t833_8.23" taxon="t833_8.23" totalcount="4" value="atttaggcat"/>
+                        <sequence id="seq_t834_8.28" taxon="t834_8.28" totalcount="4" value="tcgtaagacc"/>
+                        <sequence id="seq_t835_9.4" taxon="t835_9.4" totalcount="4" value="ggttactatc"/>
+                        <sequence id="seq_t836_9.62" taxon="t836_9.62" totalcount="4" value="atatcatacc"/>
+                        <sequence id="seq_t837_7.33" taxon="t837_7.33" totalcount="4" value="cgttcagcag"/>
+                        <sequence id="seq_t838_7.06" taxon="t838_7.06" totalcount="4" value="agcttatcag"/>
+                        <sequence id="seq_t839_7.58" taxon="t839_7.58" totalcount="4" value="tggtccagga"/>
+                        <sequence id="seq_t83_11.41" taxon="t83_11.41" totalcount="4" value="gctggagaat"/>
+                        <sequence id="seq_t840_7.68" taxon="t840_7.68" totalcount="4" value="tctgaccttc"/>
+                        <sequence id="seq_t841_9.77" taxon="t841_9.77" totalcount="4" value="agcgtctcac"/>
+                        <sequence id="seq_t842_9.84" taxon="t842_9.84" totalcount="4" value="ggcgccgaat"/>
+                        <sequence id="seq_t843_8.68" taxon="t843_8.68" totalcount="4" value="ggcgcacgcc"/>
+                        <sequence id="seq_t844_8.09" taxon="t844_8.09" totalcount="4" value="ggcggatcac"/>
+                        <sequence id="seq_t845_8.31" taxon="t845_8.31" totalcount="4" value="gtcgacccat"/>
+                        <sequence id="seq_t846_8.88" taxon="t846_8.88" totalcount="4" value="ctcgcctcgc"/>
+                        <sequence id="seq_t847_9.3" taxon="t847_9.3" totalcount="4" value="cctgcgatgt"/>
+                        <sequence id="seq_t848_9.69" taxon="t848_9.69" totalcount="4" value="catcttattg"/>
+                        <sequence id="seq_t849_10.06" taxon="t849_10.06" totalcount="4" value="gacttcacgt"/>
+                        <sequence id="seq_t84_10.33" taxon="t84_10.33" totalcount="4" value="cagtaaaagg"/>
+                        <sequence id="seq_t850_9.71" taxon="t850_9.71" totalcount="4" value="ttcttcacat"/>
+                        <sequence id="seq_t851_8.04" taxon="t851_8.04" totalcount="4" value="tttgcccaag"/>
+                        <sequence id="seq_t852_6.8" taxon="t852_6.8" totalcount="4" value="ccattaactg"/>
+                        <sequence id="seq_t853_7.17" taxon="t853_7.17" totalcount="4" value="cgatgaatcc"/>
+                        <sequence id="seq_t854_6.68" taxon="t854_6.68" totalcount="4" value="accaactaac"/>
+                        <sequence id="seq_t855_7.05" taxon="t855_7.05" totalcount="4" value="cttaccgata"/>
+                        <sequence id="seq_t856_7.84" taxon="t856_7.84" totalcount="4" value="tgcggctaca"/>
+                        <sequence id="seq_t857_7.3" taxon="t857_7.3" totalcount="4" value="tcctcatatg"/>
+                        <sequence id="seq_t858_9.02" taxon="t858_9.02" totalcount="4" value="gcacgtcaat"/>
+                        <sequence id="seq_t859_9.11" taxon="t859_9.11" totalcount="4" value="ttagcatcaa"/>
+                        <sequence id="seq_t85_9.79" taxon="t85_9.79" totalcount="4" value="ggacagaaat"/>
+                        <sequence id="seq_t860_9.02" taxon="t860_9.02" totalcount="4" value="cgtatacgat"/>
+                        <sequence id="seq_t861_8.38" taxon="t861_8.38" totalcount="4" value="gttagaacag"/>
+                        <sequence id="seq_t862_8.41" taxon="t862_8.41" totalcount="4" value="accccattca"/>
+                        <sequence id="seq_t863_8.34" taxon="t863_8.34" totalcount="4" value="acagatgaag"/>
+                        <sequence id="seq_t864_8.59" taxon="t864_8.59" totalcount="4" value="agccagttag"/>
+                        <sequence id="seq_t865_7.51" taxon="t865_7.51" totalcount="4" value="tgcagttgag"/>
+                        <sequence id="seq_t866_5.44" taxon="t866_5.44" totalcount="4" value="taccgtcgac"/>
+                        <sequence id="seq_t867_6.99" taxon="t867_6.99" totalcount="4" value="agtaggtgcc"/>
+                        <sequence id="seq_t868_6.72" taxon="t868_6.72" totalcount="4" value="acccgttgtc"/>
+                        <sequence id="seq_t869_7.34" taxon="t869_7.34" totalcount="4" value="ggacacgcag"/>
+                        <sequence id="seq_t86_10.28" taxon="t86_10.28" totalcount="4" value="ggtctgctaa"/>
+                        <sequence id="seq_t870_7.4" taxon="t870_7.4" totalcount="4" value="caacactctg"/>
+                        <sequence id="seq_t871_8.25" taxon="t871_8.25" totalcount="4" value="cgattattca"/>
+                        <sequence id="seq_t872_6.98" taxon="t872_6.98" totalcount="4" value="gtcccctcca"/>
+                        <sequence id="seq_t873_7.05" taxon="t873_7.05" totalcount="4" value="ttttccttca"/>
+                        <sequence id="seq_t874_5.92" taxon="t874_5.92" totalcount="4" value="gcccatacac"/>
+                        <sequence id="seq_t875_9.14" taxon="t875_9.14" totalcount="4" value="cgatcgccca"/>
+                        <sequence id="seq_t876_9.44" taxon="t876_9.44" totalcount="4" value="cgagatccca"/>
+                        <sequence id="seq_t877_8.73" taxon="t877_8.73" totalcount="4" value="agagctccct"/>
+                        <sequence id="seq_t878_8.39" taxon="t878_8.39" totalcount="4" value="gaagcaagct"/>
+                        <sequence id="seq_t879_7.94" taxon="t879_7.94" totalcount="4" value="ggcttcggtt"/>
+                        <sequence id="seq_t87_9.25" taxon="t87_9.25" totalcount="4" value="gagttgggat"/>
+                        <sequence id="seq_t880_7.12" taxon="t880_7.12" totalcount="4" value="ggtacgcgat"/>
+                        <sequence id="seq_t881_8.27" taxon="t881_8.27" totalcount="4" value="ggataagtat"/>
+                        <sequence id="seq_t882_7.45" taxon="t882_7.45" totalcount="4" value="ggaagagaaa"/>
+                        <sequence id="seq_t883_5.84" taxon="t883_5.84" totalcount="4" value="ctgagacctg"/>
+                        <sequence id="seq_t884_6.36" taxon="t884_6.36" totalcount="4" value="aatctccatg"/>
+                        <sequence id="seq_t885_6.77" taxon="t885_6.77" totalcount="4" value="accggtttaa"/>
+                        <sequence id="seq_t886_6.87" taxon="t886_6.87" totalcount="4" value="acgtattcta"/>
+                        <sequence id="seq_t887_8.44" taxon="t887_8.44" totalcount="4" value="caatcagcga"/>
+                        <sequence id="seq_t888_8.36" taxon="t888_8.36" totalcount="4" value="gtgtaccggg"/>
+                        <sequence id="seq_t889_8.02" taxon="t889_8.02" totalcount="4" value="gtcaacgcgg"/>
+                        <sequence id="seq_t88_9.51" taxon="t88_9.51" totalcount="4" value="ctcggctact"/>
+                        <sequence id="seq_t890_7.8" taxon="t890_7.8" totalcount="4" value="taccagtagc"/>
+                        <sequence id="seq_t891_7.92" taxon="t891_7.92" totalcount="4" value="gtcaaagtgc"/>
+                        <sequence id="seq_t892_7.69" taxon="t892_7.69" totalcount="4" value="gcctatgaac"/>
+                        <sequence id="seq_t893_7.09" taxon="t893_7.09" totalcount="4" value="aacttcgagc"/>
+                        <sequence id="seq_t894_7.16" taxon="t894_7.16" totalcount="4" value="attttcgatc"/>
+                        <sequence id="seq_t895_9.28" taxon="t895_9.28" totalcount="4" value="aaacgagtat"/>
+                        <sequence id="seq_t896_8.71" taxon="t896_8.71" totalcount="4" value="tgatgcgagt"/>
+                        <sequence id="seq_t897_8.29" taxon="t897_8.29" totalcount="4" value="tgttaagaga"/>
+                        <sequence id="seq_t898_8.66" taxon="t898_8.66" totalcount="4" value="agtagtttgt"/>
+                        <sequence id="seq_t899_9.04" taxon="t899_9.04" totalcount="4" value="cgcgtagaca"/>
+                        <sequence id="seq_t89_6.67" taxon="t89_6.67" totalcount="4" value="gcgcgtcgaa"/>
+                        <sequence id="seq_t8_4.53" taxon="t8_4.53" totalcount="4" value="cgtcgcagga"/>
+                        <sequence id="seq_t900_8.86" taxon="t900_8.86" totalcount="4" value="ggcaactaca"/>
+                        <sequence id="seq_t901_6.37" taxon="t901_6.37" totalcount="4" value="agcaacacgt"/>
+                        <sequence id="seq_t902_9.08" taxon="t902_9.08" totalcount="4" value="caggttcagg"/>
+                        <sequence id="seq_t903_9.51" taxon="t903_9.51" totalcount="4" value="tacagattgc"/>
+                        <sequence id="seq_t904_9.19" taxon="t904_9.19" totalcount="4" value="tagggaatgc"/>
+                        <sequence id="seq_t905_7.81" taxon="t905_7.81" totalcount="4" value="ttaagaccac"/>
+                        <sequence id="seq_t906_8.05" taxon="t906_8.05" totalcount="4" value="agacgacttc"/>
+                        <sequence id="seq_t907_7.99" taxon="t907_7.99" totalcount="4" value="gggatactcg"/>
+                        <sequence id="seq_t908_6.78" taxon="t908_6.78" totalcount="4" value="gggtattgat"/>
+                        <sequence id="seq_t909_7.22" taxon="t909_7.22" totalcount="4" value="gcgttttgac"/>
+                        <sequence id="seq_t90_6.74" taxon="t90_6.74" totalcount="4" value="gcgagccgga"/>
+                        <sequence id="seq_t910_6.38" taxon="t910_6.38" totalcount="4" value="agatgccgtg"/>
+                        <sequence id="seq_t911_7.1" taxon="t911_7.1" totalcount="4" value="atgttgtaca"/>
+                        <sequence id="seq_t912_7.88" taxon="t912_7.88" totalcount="4" value="gtaccagaga"/>
+                        <sequence id="seq_t913_6.56" taxon="t913_6.56" totalcount="4" value="agtgcaaggc"/>
+                        <sequence id="seq_t914_7.31" taxon="t914_7.31" totalcount="4" value="agcgacgacc"/>
+                        <sequence id="seq_t915_7.52" taxon="t915_7.52" totalcount="4" value="agttatcgtt"/>
+                        <sequence id="seq_t916_8.16" taxon="t916_8.16" totalcount="4" value="aacttgggtg"/>
+                        <sequence id="seq_t917_8.49" taxon="t917_8.49" totalcount="4" value="gactcctttg"/>
+                        <sequence id="seq_t918_7.87" taxon="t918_7.87" totalcount="4" value="gcccagtacc"/>
+                        <sequence id="seq_t919_7.03" taxon="t919_7.03" totalcount="4" value="tgcccctcac"/>
+                        <sequence id="seq_t91_7.23" taxon="t91_7.23" totalcount="4" value="gtgcgccagg"/>
+                        <sequence id="seq_t920_6.96" taxon="t920_6.96" totalcount="4" value="attatgttgc"/>
+                        <sequence id="seq_t921_8" taxon="t921_8" totalcount="4" value="catatagatt"/>
+                        <sequence id="seq_t922_8.87" taxon="t922_8.87" totalcount="4" value="aaaaagaacc"/>
+                        <sequence id="seq_t923_8.02" taxon="t923_8.02" totalcount="4" value="ctaaaggacg"/>
+                        <sequence id="seq_t924_8.64" taxon="t924_8.64" totalcount="4" value="gcacgggtta"/>
+                        <sequence id="seq_t925_8.8" taxon="t925_8.8" totalcount="4" value="tccaaaatat"/>
+                        <sequence id="seq_t926_8.85" taxon="t926_8.85" totalcount="4" value="caaagagcga"/>
+                        <sequence id="seq_t927_7.69" taxon="t927_7.69" totalcount="4" value="ttaatataaa"/>
+                        <sequence id="seq_t928_7.23" taxon="t928_7.23" totalcount="4" value="aggggttctt"/>
+                        <sequence id="seq_t929_7.33" taxon="t929_7.33" totalcount="4" value="tgggtctttg"/>
+                        <sequence id="seq_t92_7.35" taxon="t92_7.35" totalcount="4" value="agtcacgagc"/>
+                        <sequence id="seq_t930_8.44" taxon="t930_8.44" totalcount="4" value="gcattctagt"/>
+                        <sequence id="seq_t931_7.77" taxon="t931_7.77" totalcount="4" value="gctgttcggt"/>
+                        <sequence id="seq_t932_7.47" taxon="t932_7.47" totalcount="4" value="ttcgaccatc"/>
+                        <sequence id="seq_t933_7.88" taxon="t933_7.88" totalcount="4" value="gcggaagttc"/>
+                        <sequence id="seq_t934_7.66" taxon="t934_7.66" totalcount="4" value="atagtggtgg"/>
+                        <sequence id="seq_t935_6.31" taxon="t935_6.31" totalcount="4" value="cattgtttcc"/>
+                        <sequence id="seq_t936_7.97" taxon="t936_7.97" totalcount="4" value="gccgaccctc"/>
+                        <sequence id="seq_t937_7.2" taxon="t937_7.2" totalcount="4" value="ccgaactctg"/>
+                        <sequence id="seq_t938_7.09" taxon="t938_7.09" totalcount="4" value="gcatgctctg"/>
+                        <sequence id="seq_t939_6.95" taxon="t939_6.95" totalcount="4" value="cactcgctga"/>
+                        <sequence id="seq_t93_8.87" taxon="t93_8.87" totalcount="4" value="gatcgtcgag"/>
+                        <sequence id="seq_t940_6.41" taxon="t940_6.41" totalcount="4" value="tcttactact"/>
+                        <sequence id="seq_t941_6.46" taxon="t941_6.46" totalcount="4" value="tactcccttt"/>
+                        <sequence id="seq_t942_6.31" taxon="t942_6.31" totalcount="4" value="tagagtggtc"/>
+                        <sequence id="seq_t943_6.68" taxon="t943_6.68" totalcount="4" value="ttggaaatcg"/>
+                        <sequence id="seq_t944_6.19" taxon="t944_6.19" totalcount="4" value="tcgcccctcg"/>
+                        <sequence id="seq_t945_6.21" taxon="t945_6.21" totalcount="4" value="gcgtctgccc"/>
+                        <sequence id="seq_t946_5.92" taxon="t946_5.92" totalcount="4" value="tcgtgcatcc"/>
+                        <sequence id="seq_t947_5.87" taxon="t947_5.87" totalcount="4" value="caccacaagt"/>
+                        <sequence id="seq_t948_6.07" taxon="t948_6.07" totalcount="4" value="aaaaggtgct"/>
+                        <sequence id="seq_t949_6.3" taxon="t949_6.3" totalcount="4" value="gacagtggag"/>
+                        <sequence id="seq_t94_8.27" taxon="t94_8.27" totalcount="4" value="cacacccgga"/>
+                        <sequence id="seq_t950_7.3" taxon="t950_7.3" totalcount="4" value="ttcgccggca"/>
+                        <sequence id="seq_t951_6.87" taxon="t951_6.87" totalcount="4" value="ttagcttgca"/>
+                        <sequence id="seq_t952_6.39" taxon="t952_6.39" totalcount="4" value="taaacggcgt"/>
+                        <sequence id="seq_t953_6.3" taxon="t953_6.3" totalcount="4" value="cggcaccatc"/>
+                        <sequence id="seq_t954_6.11" taxon="t954_6.11" totalcount="4" value="cgtcacctcc"/>
+                        <sequence id="seq_t955_6.4" taxon="t955_6.4" totalcount="4" value="caggtgctgg"/>
+                        <sequence id="seq_t956_7.21" taxon="t956_7.21" totalcount="4" value="agataaggcg"/>
+                        <sequence id="seq_t957_6.8" taxon="t957_6.8" totalcount="4" value="agataagtcc"/>
+                        <sequence id="seq_t958_7.88" taxon="t958_7.88" totalcount="4" value="cgcgccgcat"/>
+                        <sequence id="seq_t959_7.57" taxon="t959_7.57" totalcount="4" value="gcaaaatcgt"/>
+                        <sequence id="seq_t95_8.45" taxon="t95_8.45" totalcount="4" value="aacagccgga"/>
+                        <sequence id="seq_t960_7.83" taxon="t960_7.83" totalcount="4" value="ccgacgccag"/>
+                        <sequence id="seq_t961_7.73" taxon="t961_7.73" totalcount="4" value="catatgccga"/>
+                        <sequence id="seq_t962_7.77" taxon="t962_7.77" totalcount="4" value="tagccagtcc"/>
+                        <sequence id="seq_t963_6.93" taxon="t963_6.93" totalcount="4" value="tacctgggtt"/>
+                        <sequence id="seq_t964_8.34" taxon="t964_8.34" totalcount="4" value="taagtgttaa"/>
+                        <sequence id="seq_t965_8.69" taxon="t965_8.69" totalcount="4" value="ttggggtcgg"/>
+                        <sequence id="seq_t966_8.81" taxon="t966_8.81" totalcount="4" value="ttgtggtcag"/>
+                        <sequence id="seq_t967_8.1" taxon="t967_8.1" totalcount="4" value="gcaggtgcag"/>
+                        <sequence id="seq_t968_9.6" taxon="t968_9.6" totalcount="4" value="acacagtgac"/>
+                        <sequence id="seq_t969_9.93" taxon="t969_9.93" totalcount="4" value="tgtacaacgt"/>
+                        <sequence id="seq_t96_7.41" taxon="t96_7.41" totalcount="4" value="gaccatgata"/>
+                        <sequence id="seq_t970_9.32" taxon="t970_9.32" totalcount="4" value="tgaaagagtt"/>
+                        <sequence id="seq_t971_8.85" taxon="t971_8.85" totalcount="4" value="ttagctcgtc"/>
+                        <sequence id="seq_t972_8.78" taxon="t972_8.78" totalcount="4" value="ctagtgcctc"/>
+                        <sequence id="seq_t973_9.44" taxon="t973_9.44" totalcount="4" value="gttctgcgct"/>
+                        <sequence id="seq_t974_9.65" taxon="t974_9.65" totalcount="4" value="ttcgcgcgtc"/>
+                        <sequence id="seq_t975_6.37" taxon="t975_6.37" totalcount="4" value="ccaaagacaa"/>
+                        <sequence id="seq_t976_6.83" taxon="t976_6.83" totalcount="4" value="cgtaatgacg"/>
+                        <sequence id="seq_t977_7.56" taxon="t977_7.56" totalcount="4" value="agattgtcaa"/>
+                        <sequence id="seq_t978_6.04" taxon="t978_6.04" totalcount="4" value="tgttgaggaa"/>
+                        <sequence id="seq_t979_7.26" taxon="t979_7.26" totalcount="4" value="tggtacagtc"/>
+                        <sequence id="seq_t97_7.67" taxon="t97_7.67" totalcount="4" value="gtgcgaacct"/>
+                        <sequence id="seq_t980_6.83" taxon="t980_6.83" totalcount="4" value="tgttagaaac"/>
+                        <sequence id="seq_t981_8.63" taxon="t981_8.63" totalcount="4" value="tcgtacctct"/>
+                        <sequence id="seq_t982_10.05" taxon="t982_10.05" totalcount="4" value="tatcattgtt"/>
+                        <sequence id="seq_t983_9.33" taxon="t983_9.33" totalcount="4" value="tcctgtaact"/>
+                        <sequence id="seq_t984_8.89" taxon="t984_8.89" totalcount="4" value="acgcaactct"/>
+                        <sequence id="seq_t985_8.22" taxon="t985_8.22" totalcount="4" value="gctaaactct"/>
+                        <sequence id="seq_t986_7.2" taxon="t986_7.2" totalcount="4" value="tctgatcagt"/>
+                        <sequence id="seq_t987_8.08" taxon="t987_8.08" totalcount="4" value="cacctaccca"/>
+                        <sequence id="seq_t988_7.42" taxon="t988_7.42" totalcount="4" value="acgtcaaggc"/>
+                        <sequence id="seq_t989_6.74" taxon="t989_6.74" totalcount="4" value="cctttccgca"/>
+                        <sequence id="seq_t98_7.98" taxon="t98_7.98" totalcount="4" value="ggctttacct"/>
+                        <sequence id="seq_t990_7.4" taxon="t990_7.4" totalcount="4" value="gcgggctgta"/>
+                        <sequence id="seq_t991_7.2" taxon="t991_7.2" totalcount="4" value="gctattataa"/>
+                        <sequence id="seq_t992_7.83" taxon="t992_7.83" totalcount="4" value="cacgtagtta"/>
+                        <sequence id="seq_t993_7.97" taxon="t993_7.97" totalcount="4" value="cctaaccgtc"/>
+                        <sequence id="seq_t994_8.02" taxon="t994_8.02" totalcount="4" value="gttaatctcc"/>
+                        <sequence id="seq_t995_8.93" taxon="t995_8.93" totalcount="4" value="gatgaggagg"/>
+                        <sequence id="seq_t996_8.83" taxon="t996_8.83" totalcount="4" value="gatcaggtag"/>
+                        <sequence id="seq_t997_9.18" taxon="t997_9.18" totalcount="4" value="agtcacgttg"/>
+                        <sequence id="seq_t998_8.12" taxon="t998_8.12" totalcount="4" value="tctctgatcg"/>
+                        <sequence id="seq_t999_4.83" taxon="t999_4.83" totalcount="4" value="cacacccgga"/>
+                        <sequence id="seq_t99_7.78" taxon="t99_7.78" totalcount="4" value="atatgggaag"/>
+                        <sequence id="seq_t9_4.48" taxon="t9_4.48" totalcount="4" value="ccagggcaaa"/>
+                    </data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="10000000" sampleFromPrior="true">
+    <state id="state" storeEvery="5000">
+        <tree id="Tree.t:staxa" name="stateNode">
+            <trait id="dateTrait.t:staxa" spec="beast.evolution.tree.TraitSet" traitname="date">
+                t1000_4.94=4.94,
+t100_7.96=7.96,
+t101_8.12=8.12,
+t102_8.56=8.56,
+t103_7.74=7.74,
+t104_8.52=8.52,
+t105_9.71=9.71,
+t106_9.41=9.41,
+t107_8.42=8.42,
+t108_7.93=7.93,
+t109_9.4=9.4,
+t10_3.11=3.11,
+t110_9.75=9.75,
+t111_9.47=9.47,
+t112_8.74=8.74,
+t113_9.74=9.74,
+t114_8.97=8.97,
+t115_8.59=8.59,
+t116_8.2=8.2,
+t117_9.15=9.15,
+t118_9.27=9.27,
+t119_9.35=9.35,
+t11_1.74=1.74,
+t120_9.39=9.39,
+t121_10.56=10.56,
+t122_11.55=11.55,
+t123_12.28=12.28,
+t124_10.3=10.3,
+t125_10.26=10.26,
+t126_10.46=10.46,
+t127_10.76=10.76,
+t128_9.84=9.84,
+t129_10.95=10.95,
+t12_2.03=2.03,
+t130_10.36=10.36,
+t131_8.69=8.69,
+t132_8.76=8.76,
+t133_9.14=9.14,
+t134_8.41=8.41,
+t135_8.77=8.77,
+t136_8.67=8.67,
+t137_8.84=8.84,
+t138_9.43=9.43,
+t139_9.99=9.99,
+t13_3.03=3.03,
+t140_10.52=10.52,
+t141_10.16=10.16,
+t142_7.69=7.69,
+t143_7.57=7.57,
+t144_8.88=8.88,
+t145_9.45=9.45,
+t146_9.12=9.12,
+t147_8.2=8.2,
+t148_7.52=7.52,
+t149_7.29=7.29,
+t14_3.73=3.73,
+t150_7.73=7.73,
+t151_8.3=8.3,
+t152_9.82=9.82,
+t153_9.55=9.55,
+t154_8.18=8.18,
+t155_8.44=8.44,
+t156_8.03=8.03,
+t157_8.3=8.3,
+t158_7.67=7.67,
+t159_7.74=7.74,
+t15_3.31=3.31,
+t160_7.12=7.12,
+t161_8.52=8.52,
+t162_8.01=8.01,
+t163_6.78=6.78,
+t164_7.05=7.05,
+t165_6.94=6.94,
+t166_7.25=7.25,
+t167_7.75=7.75,
+t168_7.8=7.8,
+t169_7.39=7.39,
+t16_3.21=3.21,
+t170_7.63=7.63,
+t171_7.7=7.7,
+t172_6.99=6.99,
+t173_7.93=7.93,
+t174_8.48=8.48,
+t175_7.65=7.65,
+t176_7.97=7.97,
+t177_7.83=7.83,
+t178_7.29=7.29,
+t179_7.15=7.15,
+t17_4.71=4.71,
+t180_7.86=7.86,
+t181_7.1=7.1,
+t182_6.84=6.84,
+t183_7.53=7.53,
+t184_4.79=4.79,
+t185_4.68=4.68,
+t186_5.29=5.29,
+t187_8.39=8.39,
+t188_8.83=8.83,
+t189_8.18=8.18,
+t18_4.99=4.99,
+t190_8.09=8.09,
+t191_7.66=7.66,
+t192_6.24=6.24,
+t193_6.75=6.75,
+t194_7.32=7.32,
+t195_6.95=6.95,
+t196_6.61=6.61,
+t197_5.81=5.81,
+t198_6.1=6.1,
+t199_6.25=6.25,
+t19_5.21=5.21,
+t1_2.9=2.9,
+t200_5.89=5.89,
+t201_4.67=4.67,
+t202_4.73=4.73,
+t203_4.79=4.79,
+t204_7.52=7.52,
+t205_7.72=7.72,
+t206_5.88=5.88,
+t207_6.36=6.36,
+t208_6.98=6.98,
+t209_7.23=7.23,
+t20_5.73=5.73,
+t210_6.98=6.98,
+t211_6.72=6.72,
+t212_5.94=5.94,
+t213_6.5=6.5,
+t214_6.76=6.76,
+t215_4.84=4.84,
+t216_5.16=5.16,
+t217_4.95=4.95,
+t218_4.96=4.96,
+t219_5.2=5.2,
+t21_5.86=5.86,
+t220_5.82=5.82,
+t221_6.06=6.06,
+t222_6.61=6.61,
+t223_5.49=5.49,
+t224_5.61=5.61,
+t225_5.65=5.65,
+t226_6.16=6.16,
+t227_5.84=5.84,
+t228_4.71=4.71,
+t229_4.62=4.62,
+t22_5.55=5.55,
+t230_4.63=4.63,
+t231_4.8=4.8,
+t232_4.23=4.23,
+t233_4.85=4.85,
+t234_4.26=4.26,
+t235_4.03=4.03,
+t236_2.34=2.34,
+t237_2.69=2.69,
+t238_3.34=3.34,
+t239_3.37=3.37,
+t23_6.1=6.1,
+t240_2.25=2.25,
+t241_6.22=6.22,
+t242_6.72=6.72,
+t243_6.41=6.41,
+t244_5.46=5.46,
+t245_6.08=6.08,
+t246_5.54=5.54,
+t247_7.14=7.14,
+t248_9.08=9.08,
+t249_8.61=8.61,
+t24_6.32=6.32,
+t250_7.83=7.83,
+t251_7.84=7.84,
+t252_7.65=7.65,
+t253_7.85=7.85,
+t254_7.9=7.9,
+t255_7.87=7.87,
+t256_6.65=6.65,
+t257_9.09=9.09,
+t258_8.8=8.8,
+t259_8.33=8.33,
+t25_5.14=5.14,
+t260_8.46=8.46,
+t261_8.23=8.23,
+t262_6.62=6.62,
+t263_6.75=6.75,
+t264_6.41=6.41,
+t265_6.82=6.82,
+t266_7=7.0,
+t267_6.24=6.24,
+t268_7.27=7.27,
+t269_7.49=7.49,
+t26_6.43=6.43,
+t270_5.93=5.93,
+t271_5.46=5.46,
+t272_6.87=6.87,
+t273_8.39=8.39,
+t274_7.75=7.75,
+t275_8.22=8.22,
+t276_9.04=9.04,
+t277_7.17=7.17,
+t278_7.02=7.02,
+t279_6.92=6.92,
+t27_5.9=5.9,
+t280_6.46=6.46,
+t281_7.38=7.38,
+t282_7.92=7.92,
+t283_7.36=7.36,
+t284_5.41=5.41,
+t285_5.8=5.8,
+t286_5.85=5.85,
+t287_6.53=6.53,
+t288_6.47=6.47,
+t289_6.01=6.01,
+t28_4.57=4.57,
+t290_5.98=5.98,
+t291_6.31=6.31,
+t292_6.2=6.2,
+t293_6.66=6.66,
+t294_8.12=8.12,
+t295_7.81=7.81,
+t296_7.56=7.56,
+t297_7.22=7.22,
+t298_6.62=6.62,
+t299_7.58=7.58,
+t29_6.51=6.51,
+t2_2.28=2.28,
+t300_7.1=7.1,
+t301_7.19=7.19,
+t302_7.96=7.96,
+t303_7.3=7.3,
+t304_6.87=6.87,
+t305_9.07=9.07,
+t306_9.07=9.07,
+t307_8.4=8.4,
+t308_9.32=9.32,
+t309_9.76=9.76,
+t30_6.45=6.45,
+t310_9.77=9.77,
+t311_9.79=9.79,
+t312_8.57=8.57,
+t313_7.92=7.92,
+t314_9.01=9.01,
+t315_9.04=9.04,
+t316_8.69=8.69,
+t317_9.05=9.05,
+t318_9.06=9.06,
+t319_9.19=9.19,
+t31_5.96=5.96,
+t320_8.3=8.3,
+t321_8.26=8.26,
+t322_8.59=8.59,
+t323_8.86=8.86,
+t324_9.47=9.47,
+t325_9.5=9.5,
+t326_6.94=6.94,
+t327_6.7=6.7,
+t328_6.74=6.74,
+t329_6.62=6.62,
+t32_6.06=6.06,
+t330_6.67=6.67,
+t331_5.79=5.79,
+t332_5.03=5.03,
+t333_5.95=5.95,
+t334_7.07=7.07,
+t335_7.91=7.91,
+t336_7.08=7.08,
+t337_7.89=7.89,
+t338_5.67=5.67,
+t339_6.01=6.01,
+t33_6.58=6.58,
+t340_6.36=6.36,
+t341_6.98=6.98,
+t342_7.2=7.2,
+t343_6.14=6.14,
+t344_5.26=5.26,
+t345_3.73=3.73,
+t346_5.27=5.27,
+t347_5.4=5.4,
+t348_4.85=4.85,
+t349_4.95=4.95,
+t34_7.46=7.46,
+t350_5.36=5.36,
+t351_5.37=5.37,
+t352_8.88=8.88,
+t353_8.12=8.12,
+t354_8=8.0,
+t355_8.26=8.26,
+t356_8.41=8.41,
+t357_6.67=6.67,
+t358_6.76=6.76,
+t359_7.24=7.24,
+t35_7.14=7.14,
+t360_7.03=7.03,
+t361_6.58=6.58,
+t362_5.63=5.63,
+t363_3.53=3.53,
+t364_4.21=4.21,
+t365_5.58=5.58,
+t366_5.37=5.37,
+t367_4.76=4.76,
+t368_5.24=5.24,
+t369_4.76=4.76,
+t36_6.59=6.59,
+t370_6.03=6.03,
+t371_6=6.0,
+t372_6.13=6.13,
+t373_6.75=6.75,
+t374_5.43=5.43,
+t375_4.74=4.74,
+t376_5.39=5.39,
+t377_7.23=7.23,
+t378_7.67=7.67,
+t379_6.49=6.49,
+t37_7.94=7.94,
+t380_6.48=6.48,
+t381_7.57=7.57,
+t382_7.39=7.39,
+t383_6.39=6.39,
+t384_6.92=6.92,
+t385_5.54=5.54,
+t386_5.4=5.4,
+t387_6.06=6.06,
+t388_5.62=5.62,
+t389_4.68=4.68,
+t38_7.65=7.65,
+t390_4.93=4.93,
+t391_4.89=4.89,
+t392_4.54=4.54,
+t393_4.33=4.33,
+t394_6.56=6.56,
+t395_6.59=6.59,
+t396_6.37=6.37,
+t397_5.84=5.84,
+t398_6.16=6.16,
+t399_5.79=5.79,
+t39_7.11=7.11,
+t3_2.26=2.26,
+t400_5.61=5.61,
+t401_6.82=6.82,
+t402_7.7=7.7,
+t403_7.06=7.06,
+t404_6.86=6.86,
+t405_7.36=7.36,
+t406_7.46=7.46,
+t407_7.76=7.76,
+t408_5.79=5.79,
+t409_7.47=7.47,
+t40_10.16=10.16,
+t410_8.08=8.08,
+t411_6.49=6.49,
+t412_6.67=6.67,
+t413_7.91=7.91,
+t414_7.66=7.66,
+t415_7.27=7.27,
+t416_7.21=7.21,
+t417_7.68=7.68,
+t418_7.11=7.11,
+t419_7.97=7.97,
+t41_10.14=10.14,
+t420_8.64=8.64,
+t421_8=8.0,
+t422_7.45=7.45,
+t423_5.64=5.64,
+t424_6.08=6.08,
+t425_6.68=6.68,
+t426_7.48=7.48,
+t427_7.18=7.18,
+t428_6.86=6.86,
+t429_7.29=7.29,
+t42_9.21=9.21,
+t430_6.32=6.32,
+t431_7.35=7.35,
+t432_7.48=7.48,
+t433_7.21=7.21,
+t434_5.37=5.37,
+t435_4.97=4.97,
+t436_4.51=4.51,
+t437_6.05=6.05,
+t438_5.61=5.61,
+t439_5.01=5.01,
+t43_9.76=9.76,
+t440_5.03=5.03,
+t441_5.46=5.46,
+t442_5.63=5.63,
+t443_5.65=5.65,
+t444_5.8=5.8,
+t445_5.54=5.54,
+t446_6.57=6.57,
+t447_6.94=6.94,
+t448_6.33=6.33,
+t449_5.21=5.21,
+t44_10.03=10.03,
+t450_4.33=4.33,
+t451_4.39=4.39,
+t452_4.81=4.81,
+t453_5.41=5.41,
+t454_5.71=5.71,
+t455_4.6=4.6,
+t456_5.29=5.29,
+t457_4.83=4.83,
+t458_4.34=4.34,
+t459_4.7=4.7,
+t45_9.94=9.94,
+t460_4.13=4.13,
+t461_3.51=3.51,
+t462_3.36=3.36,
+t463_3.87=3.87,
+t464_4.35=4.35,
+t465_4.05=4.05,
+t466_5.78=5.78,
+t467_5.98=5.98,
+t468_5.39=5.39,
+t469_4.76=4.76,
+t46_11.48=11.48,
+t470_3.59=3.59,
+t471_4.11=4.11,
+t472_4.1=4.1,
+t473_5.35=5.35,
+t474_5.78=5.78,
+t475_6.6=6.6,
+t476_6.01=6.01,
+t477_6.02=6.02,
+t478_5.08=5.08,
+t479_6.58=6.58,
+t47_10.59=10.59,
+t480_6.34=6.34,
+t481_4.67=4.67,
+t482_4.3=4.3,
+t483_3.59=3.59,
+t484_4.72=4.72,
+t485_4.28=4.28,
+t486_6.13=6.13,
+t487_6.44=6.44,
+t488_5.16=5.16,
+t489_4.07=4.07,
+t48_11.13=11.13,
+t490_4.31=4.31,
+t491_4.68=4.68,
+t492_4.41=4.41,
+t493_3.34=3.34,
+t494_5.68=5.68,
+t495_6.14=6.14,
+t496_6.57=6.57,
+t497_6.67=6.67,
+t498_6.19=6.19,
+t499_8.04=8.04,
+t49_11.75=11.75,
+t4_3.49=3.49,
+t500_8.08=8.08,
+t501_8.09=8.09,
+t502_8.02=8.02,
+t503_7.41=7.41,
+t504_8.22=8.22,
+t505_8.24=8.24,
+t506_7.57=7.57,
+t507_7.49=7.49,
+t508_6.84=6.84,
+t509_6.79=6.79,
+t50_8.81=8.81,
+t510_6.79=6.79,
+t511_4.65=4.65,
+t512_6.06=6.06,
+t513_5.96=5.96,
+t514_5.14=5.14,
+t515_5.73=5.73,
+t516_5.41=5.41,
+t517_5.64=5.64,
+t518_4.14=4.14,
+t519_5.62=5.62,
+t51_8.78=8.78,
+t520_5.95=5.95,
+t521_6.58=6.58,
+t522_5.78=5.78,
+t523_5.04=5.04,
+t524_5.46=5.46,
+t525_6.44=6.44,
+t526_5.74=5.74,
+t527_5.47=5.47,
+t528_7.22=7.22,
+t529_6.47=6.47,
+t52_7.95=7.95,
+t530_6.32=6.32,
+t531_5.53=5.53,
+t532_5.97=5.97,
+t533_7.26=7.26,
+t534_7.32=7.32,
+t535_7.41=7.41,
+t536_7.08=7.08,
+t537_7.62=7.62,
+t538_7.89=7.89,
+t539_8.34=8.34,
+t53_8.02=8.02,
+t540_8.92=8.92,
+t541_8.41=8.41,
+t542_8.93=8.93,
+t543_8.61=8.61,
+t544_6.42=6.42,
+t545_7.12=7.12,
+t546_6.48=6.48,
+t547_6.32=6.32,
+t548_5.89=5.89,
+t549_5.87=5.87,
+t54_9.01=9.01,
+t550_6.33=6.33,
+t551_6.58=6.58,
+t552_5.28=5.28,
+t553_6.64=6.64,
+t554_6.58=6.58,
+t555_7.31=7.31,
+t556_6.9=6.9,
+t557_6.43=6.43,
+t558_6.57=6.57,
+t559_7.52=7.52,
+t55_8.99=8.99,
+t560_7.46=7.46,
+t561_6.55=6.55,
+t562_7.8=7.8,
+t563_7.6=7.6,
+t564_8.57=8.57,
+t565_8.34=8.34,
+t566_8.89=8.89,
+t567_8.03=8.03,
+t568_8.01=8.01,
+t569_7.73=7.73,
+t56_8.34=8.34,
+t570_8.05=8.05,
+t571_8.43=8.43,
+t572_8.66=8.66,
+t573_8.68=8.68,
+t574_8.81=8.81,
+t575_9.3=9.3,
+t576_9.09=9.09,
+t577_7.99=7.99,
+t578_7.22=7.22,
+t579_7.13=7.13,
+t57_7.81=7.81,
+t580_7.48=7.48,
+t581_8.34=8.34,
+t582_8.57=8.57,
+t583_9.44=9.44,
+t584_8.04=8.04,
+t585_7.31=7.31,
+t586_6.81=6.81,
+t587_6.98=6.98,
+t588_6.75=6.75,
+t589_8.04=8.04,
+t58_7.91=7.91,
+t590_7.68=7.68,
+t591_6.97=6.97,
+t592_6.57=6.57,
+t593_8.09=8.09,
+t594_8.74=8.74,
+t595_8.09=8.09,
+t596_8.18=8.18,
+t597_8.51=8.51,
+t598_8.59=8.59,
+t599_7.59=7.59,
+t59_8.36=8.36,
+t5_3.5=3.5,
+t600_7.84=7.84,
+t601_7.17=7.17,
+t602_7.49=7.49,
+t603_7.4=7.4,
+t604_7.8=7.8,
+t605_7.84=7.84,
+t606_8.72=8.72,
+t607_9.22=9.22,
+t608_8.42=8.42,
+t609_8.47=8.47,
+t60_9.18=9.18,
+t610_9.59=9.59,
+t611_10.35=10.35,
+t612_10.47=10.47,
+t613_9.17=9.17,
+t614_9.46=9.46,
+t615_8.21=8.21,
+t616_11.18=11.18,
+t617_10.55=10.55,
+t618_9.56=9.56,
+t619_9.5=9.5,
+t61_8.73=8.73,
+t620_9.74=9.74,
+t621_7.63=7.63,
+t622_7.93=7.93,
+t623_6.58=6.58,
+t624_6.77=6.77,
+t625_6.83=6.83,
+t626_6.45=6.45,
+t627_6.59=6.59,
+t628_6.51=6.51,
+t629_6.67=6.67,
+t62_8.96=8.96,
+t630_7.98=7.98,
+t631_8.02=8.02,
+t632_7.62=7.62,
+t633_6.62=6.62,
+t634_7.07=7.07,
+t635_6.87=6.87,
+t636_8.33=8.33,
+t637_8.57=8.57,
+t638_6.87=6.87,
+t639_6.17=6.17,
+t63_8.33=8.33,
+t640_6.06=6.06,
+t641_7.6=7.6,
+t642_7.57=7.57,
+t643_5.64=5.64,
+t644_6.78=6.78,
+t645_6.2=6.2,
+t646_6.71=6.71,
+t647_6.8=6.8,
+t648_5.84=5.84,
+t649_5.2=5.2,
+t64_8.64=8.64,
+t650_5.67=5.67,
+t651_5.61=5.61,
+t652_2.92=2.92,
+t653_3.06=3.06,
+t654_3.41=3.41,
+t655_4=4.0,
+t656_4.15=4.15,
+t657_4.51=4.51,
+t658_4.58=4.58,
+t659_5.48=5.48,
+t65_9.38=9.38,
+t660_5.81=5.81,
+t661_5.77=5.77,
+t662_6.03=6.03,
+t663_5.34=5.34,
+t664_4.87=4.87,
+t665_3.98=3.98,
+t666_3.88=3.88,
+t667_4.16=4.16,
+t668_4.25=4.25,
+t669_4.63=4.63,
+t66_7.73=7.73,
+t670_4.17=4.17,
+t671_3.81=3.81,
+t672_3.82=3.82,
+t673_4.78=4.78,
+t674_4.8=4.8,
+t675_5.29=5.29,
+t676_5.81=5.81,
+t677_4.59=4.59,
+t678_5.2=5.2,
+t679_5.51=5.51,
+t67_7.43=7.43,
+t680_5.61=5.61,
+t681_5.39=5.39,
+t682_5.37=5.37,
+t683_5.6=5.6,
+t684_6.05=6.05,
+t685_5.74=5.74,
+t686_5.27=5.27,
+t687_5.29=5.29,
+t688_3.83=3.83,
+t689_5.13=5.13,
+t68_8.34=8.34,
+t690_5.38=5.38,
+t691_6.44=6.44,
+t692_6.51=6.51,
+t693_4.57=4.57,
+t694_4.79=4.79,
+t695_5.53=5.53,
+t696_5.75=5.75,
+t697_5.48=5.48,
+t698_6.21=6.21,
+t699_7.24=7.24,
+t69_9.46=9.46,
+t6_2.45=2.45,
+t700_6.63=6.63,
+t701_5.71=5.71,
+t702_6.36=6.36,
+t703_6.47=6.47,
+t704_5.78=5.78,
+t705_6.07=6.07,
+t706_3.3=3.3,
+t707_4.52=4.52,
+t708_4.39=4.39,
+t709_5=5.0,
+t70_9.59=9.59,
+t710_4.87=4.87,
+t711_5.25=5.25,
+t712_5.05=5.05,
+t713_6=6.0,
+t714_6.05=6.05,
+t715_6.62=6.62,
+t716_8.24=8.24,
+t717_7.84=7.84,
+t718_7.94=7.94,
+t719_8.44=8.44,
+t71_10.24=10.24,
+t720_7.08=7.08,
+t721_9.07=9.07,
+t722_8.7=8.7,
+t723_8.31=8.31,
+t724_8.73=8.73,
+t725_8.06=8.06,
+t726_6.01=6.01,
+t727_6.85=6.85,
+t728_6.1=6.1,
+t729_6.48=6.48,
+t72_7.42=7.42,
+t730_6.81=6.81,
+t731_5.76=5.76,
+t732_5.62=5.62,
+t733_5.81=5.81,
+t734_5.76=5.76,
+t735_6=6.0,
+t736_6.39=6.39,
+t737_5.81=5.81,
+t738_6.99=6.99,
+t739_6.75=6.75,
+t73_7.74=7.74,
+t740_6.53=6.53,
+t741_6.88=6.88,
+t742_6.89=6.89,
+t743_6.26=6.26,
+t744_6.99=6.99,
+t745_5.4=5.4,
+t746_6.12=6.12,
+t747_5.7=5.7,
+t748_5.8=5.8,
+t749_7.14=7.14,
+t74_9.78=9.78,
+t750_6.86=6.86,
+t751_5.22=5.22,
+t752_6.52=6.52,
+t753_7.28=7.28,
+t754_7.03=7.03,
+t755_7.42=7.42,
+t756_6.72=6.72,
+t757_6.16=6.16,
+t758_7.07=7.07,
+t759_4.76=4.76,
+t75_9.72=9.72,
+t760_4.61=4.61,
+t761_4.65=4.65,
+t762_5.93=5.93,
+t763_6.91=6.91,
+t764_7.08=7.08,
+t765_5.84=5.84,
+t766_6.34=6.34,
+t767_6.52=6.52,
+t768_6.07=6.07,
+t769_5.74=5.74,
+t76_8.9=8.9,
+t770_4.62=4.62,
+t771_6.19=6.19,
+t772_5.59=5.59,
+t773_6.77=6.77,
+t774_6.85=6.85,
+t775_6.08=6.08,
+t776_5.29=5.29,
+t777_4.78=4.78,
+t778_5.5=5.5,
+t779_5.96=5.96,
+t77_10.16=10.16,
+t780_4.73=4.73,
+t781_4.89=4.89,
+t782_5.54=5.54,
+t783_5.53=5.53,
+t784_6.67=6.67,
+t785_6.39=6.39,
+t786_6.33=6.33,
+t787_6.19=6.19,
+t788_6.06=6.06,
+t789_6.41=6.41,
+t78_10.01=10.01,
+t790_7.78=7.78,
+t791_8.53=8.53,
+t792_8.1=8.1,
+t793_7.23=7.23,
+t794_7.01=7.01,
+t795_7.46=7.46,
+t796_4.86=4.86,
+t797_5.85=5.85,
+t798_5.58=5.58,
+t799_5.31=5.31,
+t79_11.2=11.2,
+t7_2.99=2.99,
+t800_8.55=8.55,
+t801_9.4=9.4,
+t802_9.4=9.4,
+t803_9.39=9.39,
+t804_9.45=9.45,
+t805_9.09=9.09,
+t806_8.96=8.96,
+t807_8.36=8.36,
+t808_9.15=9.15,
+t809_10.15=10.15,
+t80_11.63=11.63,
+t810_9.96=9.96,
+t811_11.31=11.31,
+t812_10.62=10.62,
+t813_11.51=11.51,
+t814_10.18=10.18,
+t815_10.3=10.3,
+t816_9.96=9.96,
+t817_10.47=10.47,
+t818_10.52=10.52,
+t819_9.83=9.83,
+t81_12.13=12.13,
+t820_9.56=9.56,
+t821_10.49=10.49,
+t822_10.52=10.52,
+t823_10.54=10.54,
+t824_9.44=9.44,
+t825_8.45=8.45,
+t826_10.37=10.37,
+t827_10.12=10.12,
+t828_9.48=9.48,
+t829_8.62=8.62,
+t82_11.99=11.99,
+t830_8.44=8.44,
+t831_8.75=8.75,
+t832_8.02=8.02,
+t833_8.23=8.23,
+t834_8.28=8.28,
+t835_9.4=9.4,
+t836_9.62=9.62,
+t837_7.33=7.33,
+t838_7.06=7.06,
+t839_7.58=7.58,
+t83_11.41=11.41,
+t840_7.68=7.68,
+t841_9.77=9.77,
+t842_9.84=9.84,
+t843_8.68=8.68,
+t844_8.09=8.09,
+t845_8.31=8.31,
+t846_8.88=8.88,
+t847_9.3=9.3,
+t848_9.69=9.69,
+t849_10.06=10.06,
+t84_10.33=10.33,
+t850_9.71=9.71,
+t851_8.04=8.04,
+t852_6.8=6.8,
+t853_7.17=7.17,
+t854_6.68=6.68,
+t855_7.05=7.05,
+t856_7.84=7.84,
+t857_7.3=7.3,
+t858_9.02=9.02,
+t859_9.11=9.11,
+t85_9.79=9.79,
+t860_9.02=9.02,
+t861_8.38=8.38,
+t862_8.41=8.41,
+t863_8.34=8.34,
+t864_8.59=8.59,
+t865_7.51=7.51,
+t866_5.44=5.44,
+t867_6.99=6.99,
+t868_6.72=6.72,
+t869_7.34=7.34,
+t86_10.28=10.28,
+t870_7.4=7.4,
+t871_8.25=8.25,
+t872_6.98=6.98,
+t873_7.05=7.05,
+t874_5.92=5.92,
+t875_9.14=9.14,
+t876_9.44=9.44,
+t877_8.73=8.73,
+t878_8.39=8.39,
+t879_7.94=7.94,
+t87_9.25=9.25,
+t880_7.12=7.12,
+t881_8.27=8.27,
+t882_7.45=7.45,
+t883_5.84=5.84,
+t884_6.36=6.36,
+t885_6.77=6.77,
+t886_6.87=6.87,
+t887_8.44=8.44,
+t888_8.36=8.36,
+t889_8.02=8.02,
+t88_9.51=9.51,
+t890_7.8=7.8,
+t891_7.92=7.92,
+t892_7.69=7.69,
+t893_7.09=7.09,
+t894_7.16=7.16,
+t895_9.28=9.28,
+t896_8.71=8.71,
+t897_8.29=8.29,
+t898_8.66=8.66,
+t899_9.04=9.04,
+t89_6.67=6.67,
+t8_4.53=4.53,
+t900_8.86=8.86,
+t901_6.37=6.37,
+t902_9.08=9.08,
+t903_9.51=9.51,
+t904_9.19=9.19,
+t905_7.81=7.81,
+t906_8.05=8.05,
+t907_7.99=7.99,
+t908_6.78=6.78,
+t909_7.22=7.22,
+t90_6.74=6.74,
+t910_6.38=6.38,
+t911_7.1=7.1,
+t912_7.88=7.88,
+t913_6.56=6.56,
+t914_7.31=7.31,
+t915_7.52=7.52,
+t916_8.16=8.16,
+t917_8.49=8.49,
+t918_7.87=7.87,
+t919_7.03=7.03,
+t91_7.23=7.23,
+t920_6.96=6.96,
+t921_8=8.0,
+t922_8.87=8.87,
+t923_8.02=8.02,
+t924_8.64=8.64,
+t925_8.8=8.8,
+t926_8.85=8.85,
+t927_7.69=7.69,
+t928_7.23=7.23,
+t929_7.33=7.33,
+t92_7.35=7.35,
+t930_8.44=8.44,
+t931_7.77=7.77,
+t932_7.47=7.47,
+t933_7.88=7.88,
+t934_7.66=7.66,
+t935_6.31=6.31,
+t936_7.97=7.97,
+t937_7.2=7.2,
+t938_7.09=7.09,
+t939_6.95=6.95,
+t93_8.87=8.87,
+t940_6.41=6.41,
+t941_6.46=6.46,
+t942_6.31=6.31,
+t943_6.68=6.68,
+t944_6.19=6.19,
+t945_6.21=6.21,
+t946_5.92=5.92,
+t947_5.87=5.87,
+t948_6.07=6.07,
+t949_6.3=6.3,
+t94_8.27=8.27,
+t950_7.3=7.3,
+t951_6.87=6.87,
+t952_6.39=6.39,
+t953_6.3=6.3,
+t954_6.11=6.11,
+t955_6.4=6.4,
+t956_7.21=7.21,
+t957_6.8=6.8,
+t958_7.88=7.88,
+t959_7.57=7.57,
+t95_8.45=8.45,
+t960_7.83=7.83,
+t961_7.73=7.73,
+t962_7.77=7.77,
+t963_6.93=6.93,
+t964_8.34=8.34,
+t965_8.69=8.69,
+t966_8.81=8.81,
+t967_8.1=8.1,
+t968_9.6=9.6,
+t969_9.93=9.93,
+t96_7.41=7.41,
+t970_9.32=9.32,
+t971_8.85=8.85,
+t972_8.78=8.78,
+t973_9.44=9.44,
+t974_9.65=9.65,
+t975_6.37=6.37,
+t976_6.83=6.83,
+t977_7.56=7.56,
+t978_6.04=6.04,
+t979_7.26=7.26,
+t97_7.67=7.67,
+t980_6.83=6.83,
+t981_8.63=8.63,
+t982_10.05=10.05,
+t983_9.33=9.33,
+t984_8.89=8.89,
+t985_8.22=8.22,
+t986_7.2=7.2,
+t987_8.08=8.08,
+t988_7.42=7.42,
+t989_6.74=6.74,
+t98_7.98=7.98,
+t990_7.4=7.4,
+t991_7.2=7.2,
+t992_7.83=7.83,
+t993_7.97=7.97,
+t994_8.02=8.02,
+t995_8.93=8.93,
+t996_8.83=8.83,
+t997_9.18=9.18,
+t998_8.12=8.12,
+t999_4.83=4.83,
+t99_7.78=7.78,
+t9_4.48=4.48                <taxa id="TaxonSet.staxa" spec="TaxonSet">
+                    <alignment idref="staxa"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.staxa"/>
+        </tree>
+        <parameter id="clockRate.c:staxa" name="stateNode">1.0</parameter>
+        <parameter id="ePopSize.t:staxa" name="stateNode">23.0</parameter>
+        <parameter id="growthRate.t:staxa" name="stateNode">0.03</parameter>
+    </state>
+
+    <init id="RandomTree.t:staxa" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:staxa" taxa="@staxa">
+        <populationModel id="ConstantPopulation0.t:staxa" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:staxa" name="popSize">100.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="CoalescentExponential.t:staxa" spec="Coalescent">
+                <populationModel id="ExponentialGrowth.t:staxa" spec="ExponentialGrowth" growthRate="@growthRate.t:staxa" popSize="@ePopSize.t:staxa"/>
+                <treeIntervals id="TreeIntervals.t:staxa" spec="TreeIntervals" tree="@Tree.t:staxa"/>
+            </distribution>
+            <prior id="ClockPrior.c:staxa" name="distribution" x="@clockRate.c:staxa">
+                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="ePopSizePrior.t:staxa" name="distribution" x="@ePopSize.t:staxa">
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.0" estimate="false" name="mean">23.0</parameter>
+                    <parameter id="RealParameter.01" estimate="false" name="sigma">3.0</parameter>
+                </Normal>
+            </prior>
+            <prior id="GrowthRatePrior.t:staxa" name="distribution" x="@growthRate.t:staxa">
+                <Normal id="Normal.02" name="distr">
+                    <parameter id="RealParameter.02" estimate="false" name="mean">0.03</parameter>
+                    <parameter id="RealParameter.03" estimate="false" name="sigma">0.01</parameter>
+                </Normal>
+            </prior>
+            <distribution id="tmrca_all.prior" spec="beast.math.distributions.MRCAPrior" tree="@Tree.t:staxa">
+                <taxonset id="tmrca_all" spec="TaxonSet">
+                    <taxon id="t1000_4.94" spec="Taxon"/>
+                    <taxon id="t100_7.96" spec="Taxon"/>
+                    <taxon id="t101_8.12" spec="Taxon"/>
+                    <taxon id="t102_8.56" spec="Taxon"/>
+                    <taxon id="t103_7.74" spec="Taxon"/>
+                    <taxon id="t104_8.52" spec="Taxon"/>
+                    <taxon id="t105_9.71" spec="Taxon"/>
+                    <taxon id="t106_9.41" spec="Taxon"/>
+                    <taxon id="t107_8.42" spec="Taxon"/>
+                    <taxon id="t108_7.93" spec="Taxon"/>
+                    <taxon id="t109_9.4" spec="Taxon"/>
+                    <taxon id="t10_3.11" spec="Taxon"/>
+                    <taxon id="t110_9.75" spec="Taxon"/>
+                    <taxon id="t111_9.47" spec="Taxon"/>
+                    <taxon id="t112_8.74" spec="Taxon"/>
+                    <taxon id="t113_9.74" spec="Taxon"/>
+                    <taxon id="t114_8.97" spec="Taxon"/>
+                    <taxon id="t115_8.59" spec="Taxon"/>
+                    <taxon id="t116_8.2" spec="Taxon"/>
+                    <taxon id="t117_9.15" spec="Taxon"/>
+                    <taxon id="t118_9.27" spec="Taxon"/>
+                    <taxon id="t119_9.35" spec="Taxon"/>
+                    <taxon id="t11_1.74" spec="Taxon"/>
+                    <taxon id="t120_9.39" spec="Taxon"/>
+                    <taxon id="t121_10.56" spec="Taxon"/>
+                    <taxon id="t122_11.55" spec="Taxon"/>
+                    <taxon id="t123_12.28" spec="Taxon"/>
+                    <taxon id="t124_10.3" spec="Taxon"/>
+                    <taxon id="t125_10.26" spec="Taxon"/>
+                    <taxon id="t126_10.46" spec="Taxon"/>
+                    <taxon id="t127_10.76" spec="Taxon"/>
+                    <taxon id="t128_9.84" spec="Taxon"/>
+                    <taxon id="t129_10.95" spec="Taxon"/>
+                    <taxon id="t12_2.03" spec="Taxon"/>
+                    <taxon id="t130_10.36" spec="Taxon"/>
+                    <taxon id="t131_8.69" spec="Taxon"/>
+                    <taxon id="t132_8.76" spec="Taxon"/>
+                    <taxon id="t133_9.14" spec="Taxon"/>
+                    <taxon id="t134_8.41" spec="Taxon"/>
+                    <taxon id="t135_8.77" spec="Taxon"/>
+                    <taxon id="t136_8.67" spec="Taxon"/>
+                    <taxon id="t137_8.84" spec="Taxon"/>
+                    <taxon id="t138_9.43" spec="Taxon"/>
+                    <taxon id="t139_9.99" spec="Taxon"/>
+                    <taxon id="t13_3.03" spec="Taxon"/>
+                    <taxon id="t140_10.52" spec="Taxon"/>
+                    <taxon id="t141_10.16" spec="Taxon"/>
+                    <taxon id="t142_7.69" spec="Taxon"/>
+                    <taxon id="t143_7.57" spec="Taxon"/>
+                    <taxon id="t144_8.88" spec="Taxon"/>
+                    <taxon id="t145_9.45" spec="Taxon"/>
+                    <taxon id="t146_9.12" spec="Taxon"/>
+                    <taxon id="t147_8.2" spec="Taxon"/>
+                    <taxon id="t148_7.52" spec="Taxon"/>
+                    <taxon id="t149_7.29" spec="Taxon"/>
+                    <taxon id="t14_3.73" spec="Taxon"/>
+                    <taxon id="t150_7.73" spec="Taxon"/>
+                    <taxon id="t151_8.3" spec="Taxon"/>
+                    <taxon id="t152_9.82" spec="Taxon"/>
+                    <taxon id="t153_9.55" spec="Taxon"/>
+                    <taxon id="t154_8.18" spec="Taxon"/>
+                    <taxon id="t155_8.44" spec="Taxon"/>
+                    <taxon id="t156_8.03" spec="Taxon"/>
+                    <taxon id="t157_8.3" spec="Taxon"/>
+                    <taxon id="t158_7.67" spec="Taxon"/>
+                    <taxon id="t159_7.74" spec="Taxon"/>
+                    <taxon id="t15_3.31" spec="Taxon"/>
+                    <taxon id="t160_7.12" spec="Taxon"/>
+                    <taxon id="t161_8.52" spec="Taxon"/>
+                    <taxon id="t162_8.01" spec="Taxon"/>
+                    <taxon id="t163_6.78" spec="Taxon"/>
+                    <taxon id="t164_7.05" spec="Taxon"/>
+                    <taxon id="t165_6.94" spec="Taxon"/>
+                    <taxon id="t166_7.25" spec="Taxon"/>
+                    <taxon id="t167_7.75" spec="Taxon"/>
+                    <taxon id="t168_7.8" spec="Taxon"/>
+                    <taxon id="t169_7.39" spec="Taxon"/>
+                    <taxon id="t16_3.21" spec="Taxon"/>
+                    <taxon id="t170_7.63" spec="Taxon"/>
+                    <taxon id="t171_7.7" spec="Taxon"/>
+                    <taxon id="t172_6.99" spec="Taxon"/>
+                    <taxon id="t173_7.93" spec="Taxon"/>
+                    <taxon id="t174_8.48" spec="Taxon"/>
+                    <taxon id="t175_7.65" spec="Taxon"/>
+                    <taxon id="t176_7.97" spec="Taxon"/>
+                    <taxon id="t177_7.83" spec="Taxon"/>
+                    <taxon id="t178_7.29" spec="Taxon"/>
+                    <taxon id="t179_7.15" spec="Taxon"/>
+                    <taxon id="t17_4.71" spec="Taxon"/>
+                    <taxon id="t180_7.86" spec="Taxon"/>
+                    <taxon id="t181_7.1" spec="Taxon"/>
+                    <taxon id="t182_6.84" spec="Taxon"/>
+                    <taxon id="t183_7.53" spec="Taxon"/>
+                    <taxon id="t184_4.79" spec="Taxon"/>
+                    <taxon id="t185_4.68" spec="Taxon"/>
+                    <taxon id="t186_5.29" spec="Taxon"/>
+                    <taxon id="t187_8.39" spec="Taxon"/>
+                    <taxon id="t188_8.83" spec="Taxon"/>
+                    <taxon id="t189_8.18" spec="Taxon"/>
+                    <taxon id="t18_4.99" spec="Taxon"/>
+                    <taxon id="t190_8.09" spec="Taxon"/>
+                    <taxon id="t191_7.66" spec="Taxon"/>
+                    <taxon id="t192_6.24" spec="Taxon"/>
+                    <taxon id="t193_6.75" spec="Taxon"/>
+                    <taxon id="t194_7.32" spec="Taxon"/>
+                    <taxon id="t195_6.95" spec="Taxon"/>
+                    <taxon id="t196_6.61" spec="Taxon"/>
+                    <taxon id="t197_5.81" spec="Taxon"/>
+                    <taxon id="t198_6.1" spec="Taxon"/>
+                    <taxon id="t199_6.25" spec="Taxon"/>
+                    <taxon id="t19_5.21" spec="Taxon"/>
+                    <taxon id="t1_2.9" spec="Taxon"/>
+                    <taxon id="t200_5.89" spec="Taxon"/>
+                    <taxon id="t201_4.67" spec="Taxon"/>
+                    <taxon id="t202_4.73" spec="Taxon"/>
+                    <taxon id="t203_4.79" spec="Taxon"/>
+                    <taxon id="t204_7.52" spec="Taxon"/>
+                    <taxon id="t205_7.72" spec="Taxon"/>
+                    <taxon id="t206_5.88" spec="Taxon"/>
+                    <taxon id="t207_6.36" spec="Taxon"/>
+                    <taxon id="t208_6.98" spec="Taxon"/>
+                    <taxon id="t209_7.23" spec="Taxon"/>
+                    <taxon id="t20_5.73" spec="Taxon"/>
+                    <taxon id="t210_6.98" spec="Taxon"/>
+                    <taxon id="t211_6.72" spec="Taxon"/>
+                    <taxon id="t212_5.94" spec="Taxon"/>
+                    <taxon id="t213_6.5" spec="Taxon"/>
+                    <taxon id="t214_6.76" spec="Taxon"/>
+                    <taxon id="t215_4.84" spec="Taxon"/>
+                    <taxon id="t216_5.16" spec="Taxon"/>
+                    <taxon id="t217_4.95" spec="Taxon"/>
+                    <taxon id="t218_4.96" spec="Taxon"/>
+                    <taxon id="t219_5.2" spec="Taxon"/>
+                    <taxon id="t21_5.86" spec="Taxon"/>
+                    <taxon id="t220_5.82" spec="Taxon"/>
+                    <taxon id="t221_6.06" spec="Taxon"/>
+                    <taxon id="t222_6.61" spec="Taxon"/>
+                    <taxon id="t223_5.49" spec="Taxon"/>
+                    <taxon id="t224_5.61" spec="Taxon"/>
+                    <taxon id="t225_5.65" spec="Taxon"/>
+                    <taxon id="t226_6.16" spec="Taxon"/>
+                    <taxon id="t227_5.84" spec="Taxon"/>
+                    <taxon id="t228_4.71" spec="Taxon"/>
+                    <taxon id="t229_4.62" spec="Taxon"/>
+                    <taxon id="t22_5.55" spec="Taxon"/>
+                    <taxon id="t230_4.63" spec="Taxon"/>
+                    <taxon id="t231_4.8" spec="Taxon"/>
+                    <taxon id="t232_4.23" spec="Taxon"/>
+                    <taxon id="t233_4.85" spec="Taxon"/>
+                    <taxon id="t234_4.26" spec="Taxon"/>
+                    <taxon id="t235_4.03" spec="Taxon"/>
+                    <taxon id="t236_2.34" spec="Taxon"/>
+                    <taxon id="t237_2.69" spec="Taxon"/>
+                    <taxon id="t238_3.34" spec="Taxon"/>
+                    <taxon id="t239_3.37" spec="Taxon"/>
+                    <taxon id="t23_6.1" spec="Taxon"/>
+                    <taxon id="t240_2.25" spec="Taxon"/>
+                    <taxon id="t241_6.22" spec="Taxon"/>
+                    <taxon id="t242_6.72" spec="Taxon"/>
+                    <taxon id="t243_6.41" spec="Taxon"/>
+                    <taxon id="t244_5.46" spec="Taxon"/>
+                    <taxon id="t245_6.08" spec="Taxon"/>
+                    <taxon id="t246_5.54" spec="Taxon"/>
+                    <taxon id="t247_7.14" spec="Taxon"/>
+                    <taxon id="t248_9.08" spec="Taxon"/>
+                    <taxon id="t249_8.61" spec="Taxon"/>
+                    <taxon id="t24_6.32" spec="Taxon"/>
+                    <taxon id="t250_7.83" spec="Taxon"/>
+                    <taxon id="t251_7.84" spec="Taxon"/>
+                    <taxon id="t252_7.65" spec="Taxon"/>
+                    <taxon id="t253_7.85" spec="Taxon"/>
+                    <taxon id="t254_7.9" spec="Taxon"/>
+                    <taxon id="t255_7.87" spec="Taxon"/>
+                    <taxon id="t256_6.65" spec="Taxon"/>
+                    <taxon id="t257_9.09" spec="Taxon"/>
+                    <taxon id="t258_8.8" spec="Taxon"/>
+                    <taxon id="t259_8.33" spec="Taxon"/>
+                    <taxon id="t25_5.14" spec="Taxon"/>
+                    <taxon id="t260_8.46" spec="Taxon"/>
+                    <taxon id="t261_8.23" spec="Taxon"/>
+                    <taxon id="t262_6.62" spec="Taxon"/>
+                    <taxon id="t263_6.75" spec="Taxon"/>
+                    <taxon id="t264_6.41" spec="Taxon"/>
+                    <taxon id="t265_6.82" spec="Taxon"/>
+                    <taxon id="t266_7" spec="Taxon"/>
+                    <taxon id="t267_6.24" spec="Taxon"/>
+                    <taxon id="t268_7.27" spec="Taxon"/>
+                    <taxon id="t269_7.49" spec="Taxon"/>
+                    <taxon id="t26_6.43" spec="Taxon"/>
+                    <taxon id="t270_5.93" spec="Taxon"/>
+                    <taxon id="t271_5.46" spec="Taxon"/>
+                    <taxon id="t272_6.87" spec="Taxon"/>
+                    <taxon id="t273_8.39" spec="Taxon"/>
+                    <taxon id="t274_7.75" spec="Taxon"/>
+                    <taxon id="t275_8.22" spec="Taxon"/>
+                    <taxon id="t276_9.04" spec="Taxon"/>
+                    <taxon id="t277_7.17" spec="Taxon"/>
+                    <taxon id="t278_7.02" spec="Taxon"/>
+                    <taxon id="t279_6.92" spec="Taxon"/>
+                    <taxon id="t27_5.9" spec="Taxon"/>
+                    <taxon id="t280_6.46" spec="Taxon"/>
+                    <taxon id="t281_7.38" spec="Taxon"/>
+                    <taxon id="t282_7.92" spec="Taxon"/>
+                    <taxon id="t283_7.36" spec="Taxon"/>
+                    <taxon id="t284_5.41" spec="Taxon"/>
+                    <taxon id="t285_5.8" spec="Taxon"/>
+                    <taxon id="t286_5.85" spec="Taxon"/>
+                    <taxon id="t287_6.53" spec="Taxon"/>
+                    <taxon id="t288_6.47" spec="Taxon"/>
+                    <taxon id="t289_6.01" spec="Taxon"/>
+                    <taxon id="t28_4.57" spec="Taxon"/>
+                    <taxon id="t290_5.98" spec="Taxon"/>
+                    <taxon id="t291_6.31" spec="Taxon"/>
+                    <taxon id="t292_6.2" spec="Taxon"/>
+                    <taxon id="t293_6.66" spec="Taxon"/>
+                    <taxon id="t294_8.12" spec="Taxon"/>
+                    <taxon id="t295_7.81" spec="Taxon"/>
+                    <taxon id="t296_7.56" spec="Taxon"/>
+                    <taxon id="t297_7.22" spec="Taxon"/>
+                    <taxon id="t298_6.62" spec="Taxon"/>
+                    <taxon id="t299_7.58" spec="Taxon"/>
+                    <taxon id="t29_6.51" spec="Taxon"/>
+                    <taxon id="t2_2.28" spec="Taxon"/>
+                    <taxon id="t300_7.1" spec="Taxon"/>
+                    <taxon id="t301_7.19" spec="Taxon"/>
+                    <taxon id="t302_7.96" spec="Taxon"/>
+                    <taxon id="t303_7.3" spec="Taxon"/>
+                    <taxon id="t304_6.87" spec="Taxon"/>
+                    <taxon id="t305_9.07" spec="Taxon"/>
+                    <taxon id="t306_9.07" spec="Taxon"/>
+                    <taxon id="t307_8.4" spec="Taxon"/>
+                    <taxon id="t308_9.32" spec="Taxon"/>
+                    <taxon id="t309_9.76" spec="Taxon"/>
+                    <taxon id="t30_6.45" spec="Taxon"/>
+                    <taxon id="t310_9.77" spec="Taxon"/>
+                    <taxon id="t311_9.79" spec="Taxon"/>
+                    <taxon id="t312_8.57" spec="Taxon"/>
+                    <taxon id="t313_7.92" spec="Taxon"/>
+                    <taxon id="t314_9.01" spec="Taxon"/>
+                    <taxon id="t315_9.04" spec="Taxon"/>
+                    <taxon id="t316_8.69" spec="Taxon"/>
+                    <taxon id="t317_9.05" spec="Taxon"/>
+                    <taxon id="t318_9.06" spec="Taxon"/>
+                    <taxon id="t319_9.19" spec="Taxon"/>
+                    <taxon id="t31_5.96" spec="Taxon"/>
+                    <taxon id="t320_8.3" spec="Taxon"/>
+                    <taxon id="t321_8.26" spec="Taxon"/>
+                    <taxon id="t322_8.59" spec="Taxon"/>
+                    <taxon id="t323_8.86" spec="Taxon"/>
+                    <taxon id="t324_9.47" spec="Taxon"/>
+                    <taxon id="t325_9.5" spec="Taxon"/>
+                    <taxon id="t326_6.94" spec="Taxon"/>
+                    <taxon id="t327_6.7" spec="Taxon"/>
+                    <taxon id="t328_6.74" spec="Taxon"/>
+                    <taxon id="t329_6.62" spec="Taxon"/>
+                    <taxon id="t32_6.06" spec="Taxon"/>
+                    <taxon id="t330_6.67" spec="Taxon"/>
+                    <taxon id="t331_5.79" spec="Taxon"/>
+                    <taxon id="t332_5.03" spec="Taxon"/>
+                    <taxon id="t333_5.95" spec="Taxon"/>
+                    <taxon id="t334_7.07" spec="Taxon"/>
+                    <taxon id="t335_7.91" spec="Taxon"/>
+                    <taxon id="t336_7.08" spec="Taxon"/>
+                    <taxon id="t337_7.89" spec="Taxon"/>
+                    <taxon id="t338_5.67" spec="Taxon"/>
+                    <taxon id="t339_6.01" spec="Taxon"/>
+                    <taxon id="t33_6.58" spec="Taxon"/>
+                    <taxon id="t340_6.36" spec="Taxon"/>
+                    <taxon id="t341_6.98" spec="Taxon"/>
+                    <taxon id="t342_7.2" spec="Taxon"/>
+                    <taxon id="t343_6.14" spec="Taxon"/>
+                    <taxon id="t344_5.26" spec="Taxon"/>
+                    <taxon id="t345_3.73" spec="Taxon"/>
+                    <taxon id="t346_5.27" spec="Taxon"/>
+                    <taxon id="t347_5.4" spec="Taxon"/>
+                    <taxon id="t348_4.85" spec="Taxon"/>
+                    <taxon id="t349_4.95" spec="Taxon"/>
+                    <taxon id="t34_7.46" spec="Taxon"/>
+                    <taxon id="t350_5.36" spec="Taxon"/>
+                    <taxon id="t351_5.37" spec="Taxon"/>
+                    <taxon id="t352_8.88" spec="Taxon"/>
+                    <taxon id="t353_8.12" spec="Taxon"/>
+                    <taxon id="t354_8" spec="Taxon"/>
+                    <taxon id="t355_8.26" spec="Taxon"/>
+                    <taxon id="t356_8.41" spec="Taxon"/>
+                    <taxon id="t357_6.67" spec="Taxon"/>
+                    <taxon id="t358_6.76" spec="Taxon"/>
+                    <taxon id="t359_7.24" spec="Taxon"/>
+                    <taxon id="t35_7.14" spec="Taxon"/>
+                    <taxon id="t360_7.03" spec="Taxon"/>
+                    <taxon id="t361_6.58" spec="Taxon"/>
+                    <taxon id="t362_5.63" spec="Taxon"/>
+                    <taxon id="t363_3.53" spec="Taxon"/>
+                    <taxon id="t364_4.21" spec="Taxon"/>
+                    <taxon id="t365_5.58" spec="Taxon"/>
+                    <taxon id="t366_5.37" spec="Taxon"/>
+                    <taxon id="t367_4.76" spec="Taxon"/>
+                    <taxon id="t368_5.24" spec="Taxon"/>
+                    <taxon id="t369_4.76" spec="Taxon"/>
+                    <taxon id="t36_6.59" spec="Taxon"/>
+                    <taxon id="t370_6.03" spec="Taxon"/>
+                    <taxon id="t371_6" spec="Taxon"/>
+                    <taxon id="t372_6.13" spec="Taxon"/>
+                    <taxon id="t373_6.75" spec="Taxon"/>
+                    <taxon id="t374_5.43" spec="Taxon"/>
+                    <taxon id="t375_4.74" spec="Taxon"/>
+                    <taxon id="t376_5.39" spec="Taxon"/>
+                    <taxon id="t377_7.23" spec="Taxon"/>
+                    <taxon id="t378_7.67" spec="Taxon"/>
+                    <taxon id="t379_6.49" spec="Taxon"/>
+                    <taxon id="t37_7.94" spec="Taxon"/>
+                    <taxon id="t380_6.48" spec="Taxon"/>
+                    <taxon id="t381_7.57" spec="Taxon"/>
+                    <taxon id="t382_7.39" spec="Taxon"/>
+                    <taxon id="t383_6.39" spec="Taxon"/>
+                    <taxon id="t384_6.92" spec="Taxon"/>
+                    <taxon id="t385_5.54" spec="Taxon"/>
+                    <taxon id="t386_5.4" spec="Taxon"/>
+                    <taxon id="t387_6.06" spec="Taxon"/>
+                    <taxon id="t388_5.62" spec="Taxon"/>
+                    <taxon id="t389_4.68" spec="Taxon"/>
+                    <taxon id="t38_7.65" spec="Taxon"/>
+                    <taxon id="t390_4.93" spec="Taxon"/>
+                    <taxon id="t391_4.89" spec="Taxon"/>
+                    <taxon id="t392_4.54" spec="Taxon"/>
+                    <taxon id="t393_4.33" spec="Taxon"/>
+                    <taxon id="t394_6.56" spec="Taxon"/>
+                    <taxon id="t395_6.59" spec="Taxon"/>
+                    <taxon id="t396_6.37" spec="Taxon"/>
+                    <taxon id="t397_5.84" spec="Taxon"/>
+                    <taxon id="t398_6.16" spec="Taxon"/>
+                    <taxon id="t399_5.79" spec="Taxon"/>
+                    <taxon id="t39_7.11" spec="Taxon"/>
+                    <taxon id="t3_2.26" spec="Taxon"/>
+                    <taxon id="t400_5.61" spec="Taxon"/>
+                    <taxon id="t401_6.82" spec="Taxon"/>
+                    <taxon id="t402_7.7" spec="Taxon"/>
+                    <taxon id="t403_7.06" spec="Taxon"/>
+                    <taxon id="t404_6.86" spec="Taxon"/>
+                    <taxon id="t405_7.36" spec="Taxon"/>
+                    <taxon id="t406_7.46" spec="Taxon"/>
+                    <taxon id="t407_7.76" spec="Taxon"/>
+                    <taxon id="t408_5.79" spec="Taxon"/>
+                    <taxon id="t409_7.47" spec="Taxon"/>
+                    <taxon id="t40_10.16" spec="Taxon"/>
+                    <taxon id="t410_8.08" spec="Taxon"/>
+                    <taxon id="t411_6.49" spec="Taxon"/>
+                    <taxon id="t412_6.67" spec="Taxon"/>
+                    <taxon id="t413_7.91" spec="Taxon"/>
+                    <taxon id="t414_7.66" spec="Taxon"/>
+                    <taxon id="t415_7.27" spec="Taxon"/>
+                    <taxon id="t416_7.21" spec="Taxon"/>
+                    <taxon id="t417_7.68" spec="Taxon"/>
+                    <taxon id="t418_7.11" spec="Taxon"/>
+                    <taxon id="t419_7.97" spec="Taxon"/>
+                    <taxon id="t41_10.14" spec="Taxon"/>
+                    <taxon id="t420_8.64" spec="Taxon"/>
+                    <taxon id="t421_8" spec="Taxon"/>
+                    <taxon id="t422_7.45" spec="Taxon"/>
+                    <taxon id="t423_5.64" spec="Taxon"/>
+                    <taxon id="t424_6.08" spec="Taxon"/>
+                    <taxon id="t425_6.68" spec="Taxon"/>
+                    <taxon id="t426_7.48" spec="Taxon"/>
+                    <taxon id="t427_7.18" spec="Taxon"/>
+                    <taxon id="t428_6.86" spec="Taxon"/>
+                    <taxon id="t429_7.29" spec="Taxon"/>
+                    <taxon id="t42_9.21" spec="Taxon"/>
+                    <taxon id="t430_6.32" spec="Taxon"/>
+                    <taxon id="t431_7.35" spec="Taxon"/>
+                    <taxon id="t432_7.48" spec="Taxon"/>
+                    <taxon id="t433_7.21" spec="Taxon"/>
+                    <taxon id="t434_5.37" spec="Taxon"/>
+                    <taxon id="t435_4.97" spec="Taxon"/>
+                    <taxon id="t436_4.51" spec="Taxon"/>
+                    <taxon id="t437_6.05" spec="Taxon"/>
+                    <taxon id="t438_5.61" spec="Taxon"/>
+                    <taxon id="t439_5.01" spec="Taxon"/>
+                    <taxon id="t43_9.76" spec="Taxon"/>
+                    <taxon id="t440_5.03" spec="Taxon"/>
+                    <taxon id="t441_5.46" spec="Taxon"/>
+                    <taxon id="t442_5.63" spec="Taxon"/>
+                    <taxon id="t443_5.65" spec="Taxon"/>
+                    <taxon id="t444_5.8" spec="Taxon"/>
+                    <taxon id="t445_5.54" spec="Taxon"/>
+                    <taxon id="t446_6.57" spec="Taxon"/>
+                    <taxon id="t447_6.94" spec="Taxon"/>
+                    <taxon id="t448_6.33" spec="Taxon"/>
+                    <taxon id="t449_5.21" spec="Taxon"/>
+                    <taxon id="t44_10.03" spec="Taxon"/>
+                    <taxon id="t450_4.33" spec="Taxon"/>
+                    <taxon id="t451_4.39" spec="Taxon"/>
+                    <taxon id="t452_4.81" spec="Taxon"/>
+                    <taxon id="t453_5.41" spec="Taxon"/>
+                    <taxon id="t454_5.71" spec="Taxon"/>
+                    <taxon id="t455_4.6" spec="Taxon"/>
+                    <taxon id="t456_5.29" spec="Taxon"/>
+                    <taxon id="t457_4.83" spec="Taxon"/>
+                    <taxon id="t458_4.34" spec="Taxon"/>
+                    <taxon id="t459_4.7" spec="Taxon"/>
+                    <taxon id="t45_9.94" spec="Taxon"/>
+                    <taxon id="t460_4.13" spec="Taxon"/>
+                    <taxon id="t461_3.51" spec="Taxon"/>
+                    <taxon id="t462_3.36" spec="Taxon"/>
+                    <taxon id="t463_3.87" spec="Taxon"/>
+                    <taxon id="t464_4.35" spec="Taxon"/>
+                    <taxon id="t465_4.05" spec="Taxon"/>
+                    <taxon id="t466_5.78" spec="Taxon"/>
+                    <taxon id="t467_5.98" spec="Taxon"/>
+                    <taxon id="t468_5.39" spec="Taxon"/>
+                    <taxon id="t469_4.76" spec="Taxon"/>
+                    <taxon id="t46_11.48" spec="Taxon"/>
+                    <taxon id="t470_3.59" spec="Taxon"/>
+                    <taxon id="t471_4.11" spec="Taxon"/>
+                    <taxon id="t472_4.1" spec="Taxon"/>
+                    <taxon id="t473_5.35" spec="Taxon"/>
+                    <taxon id="t474_5.78" spec="Taxon"/>
+                    <taxon id="t475_6.6" spec="Taxon"/>
+                    <taxon id="t476_6.01" spec="Taxon"/>
+                    <taxon id="t477_6.02" spec="Taxon"/>
+                    <taxon id="t478_5.08" spec="Taxon"/>
+                    <taxon id="t479_6.58" spec="Taxon"/>
+                    <taxon id="t47_10.59" spec="Taxon"/>
+                    <taxon id="t480_6.34" spec="Taxon"/>
+                    <taxon id="t481_4.67" spec="Taxon"/>
+                    <taxon id="t482_4.3" spec="Taxon"/>
+                    <taxon id="t483_3.59" spec="Taxon"/>
+                    <taxon id="t484_4.72" spec="Taxon"/>
+                    <taxon id="t485_4.28" spec="Taxon"/>
+                    <taxon id="t486_6.13" spec="Taxon"/>
+                    <taxon id="t487_6.44" spec="Taxon"/>
+                    <taxon id="t488_5.16" spec="Taxon"/>
+                    <taxon id="t489_4.07" spec="Taxon"/>
+                    <taxon id="t48_11.13" spec="Taxon"/>
+                    <taxon id="t490_4.31" spec="Taxon"/>
+                    <taxon id="t491_4.68" spec="Taxon"/>
+                    <taxon id="t492_4.41" spec="Taxon"/>
+                    <taxon id="t493_3.34" spec="Taxon"/>
+                    <taxon id="t494_5.68" spec="Taxon"/>
+                    <taxon id="t495_6.14" spec="Taxon"/>
+                    <taxon id="t496_6.57" spec="Taxon"/>
+                    <taxon id="t497_6.67" spec="Taxon"/>
+                    <taxon id="t498_6.19" spec="Taxon"/>
+                    <taxon id="t499_8.04" spec="Taxon"/>
+                    <taxon id="t49_11.75" spec="Taxon"/>
+                    <taxon id="t4_3.49" spec="Taxon"/>
+                    <taxon id="t500_8.08" spec="Taxon"/>
+                    <taxon id="t501_8.09" spec="Taxon"/>
+                    <taxon id="t502_8.02" spec="Taxon"/>
+                    <taxon id="t503_7.41" spec="Taxon"/>
+                    <taxon id="t504_8.22" spec="Taxon"/>
+                    <taxon id="t505_8.24" spec="Taxon"/>
+                    <taxon id="t506_7.57" spec="Taxon"/>
+                    <taxon id="t507_7.49" spec="Taxon"/>
+                    <taxon id="t508_6.84" spec="Taxon"/>
+                    <taxon id="t509_6.79" spec="Taxon"/>
+                    <taxon id="t50_8.81" spec="Taxon"/>
+                    <taxon id="t510_6.79" spec="Taxon"/>
+                    <taxon id="t511_4.65" spec="Taxon"/>
+                    <taxon id="t512_6.06" spec="Taxon"/>
+                    <taxon id="t513_5.96" spec="Taxon"/>
+                    <taxon id="t514_5.14" spec="Taxon"/>
+                    <taxon id="t515_5.73" spec="Taxon"/>
+                    <taxon id="t516_5.41" spec="Taxon"/>
+                    <taxon id="t517_5.64" spec="Taxon"/>
+                    <taxon id="t518_4.14" spec="Taxon"/>
+                    <taxon id="t519_5.62" spec="Taxon"/>
+                    <taxon id="t51_8.78" spec="Taxon"/>
+                    <taxon id="t520_5.95" spec="Taxon"/>
+                    <taxon id="t521_6.58" spec="Taxon"/>
+                    <taxon id="t522_5.78" spec="Taxon"/>
+                    <taxon id="t523_5.04" spec="Taxon"/>
+                    <taxon id="t524_5.46" spec="Taxon"/>
+                    <taxon id="t525_6.44" spec="Taxon"/>
+                    <taxon id="t526_5.74" spec="Taxon"/>
+                    <taxon id="t527_5.47" spec="Taxon"/>
+                    <taxon id="t528_7.22" spec="Taxon"/>
+                    <taxon id="t529_6.47" spec="Taxon"/>
+                    <taxon id="t52_7.95" spec="Taxon"/>
+                    <taxon id="t530_6.32" spec="Taxon"/>
+                    <taxon id="t531_5.53" spec="Taxon"/>
+                    <taxon id="t532_5.97" spec="Taxon"/>
+                    <taxon id="t533_7.26" spec="Taxon"/>
+                    <taxon id="t534_7.32" spec="Taxon"/>
+                    <taxon id="t535_7.41" spec="Taxon"/>
+                    <taxon id="t536_7.08" spec="Taxon"/>
+                    <taxon id="t537_7.62" spec="Taxon"/>
+                    <taxon id="t538_7.89" spec="Taxon"/>
+                    <taxon id="t539_8.34" spec="Taxon"/>
+                    <taxon id="t53_8.02" spec="Taxon"/>
+                    <taxon id="t540_8.92" spec="Taxon"/>
+                    <taxon id="t541_8.41" spec="Taxon"/>
+                    <taxon id="t542_8.93" spec="Taxon"/>
+                    <taxon id="t543_8.61" spec="Taxon"/>
+                    <taxon id="t544_6.42" spec="Taxon"/>
+                    <taxon id="t545_7.12" spec="Taxon"/>
+                    <taxon id="t546_6.48" spec="Taxon"/>
+                    <taxon id="t547_6.32" spec="Taxon"/>
+                    <taxon id="t548_5.89" spec="Taxon"/>
+                    <taxon id="t549_5.87" spec="Taxon"/>
+                    <taxon id="t54_9.01" spec="Taxon"/>
+                    <taxon id="t550_6.33" spec="Taxon"/>
+                    <taxon id="t551_6.58" spec="Taxon"/>
+                    <taxon id="t552_5.28" spec="Taxon"/>
+                    <taxon id="t553_6.64" spec="Taxon"/>
+                    <taxon id="t554_6.58" spec="Taxon"/>
+                    <taxon id="t555_7.31" spec="Taxon"/>
+                    <taxon id="t556_6.9" spec="Taxon"/>
+                    <taxon id="t557_6.43" spec="Taxon"/>
+                    <taxon id="t558_6.57" spec="Taxon"/>
+                    <taxon id="t559_7.52" spec="Taxon"/>
+                    <taxon id="t55_8.99" spec="Taxon"/>
+                    <taxon id="t560_7.46" spec="Taxon"/>
+                    <taxon id="t561_6.55" spec="Taxon"/>
+                    <taxon id="t562_7.8" spec="Taxon"/>
+                    <taxon id="t563_7.6" spec="Taxon"/>
+                    <taxon id="t564_8.57" spec="Taxon"/>
+                    <taxon id="t565_8.34" spec="Taxon"/>
+                    <taxon id="t566_8.89" spec="Taxon"/>
+                    <taxon id="t567_8.03" spec="Taxon"/>
+                    <taxon id="t568_8.01" spec="Taxon"/>
+                    <taxon id="t569_7.73" spec="Taxon"/>
+                    <taxon id="t56_8.34" spec="Taxon"/>
+                    <taxon id="t570_8.05" spec="Taxon"/>
+                    <taxon id="t571_8.43" spec="Taxon"/>
+                    <taxon id="t572_8.66" spec="Taxon"/>
+                    <taxon id="t573_8.68" spec="Taxon"/>
+                    <taxon id="t574_8.81" spec="Taxon"/>
+                    <taxon id="t575_9.3" spec="Taxon"/>
+                    <taxon id="t576_9.09" spec="Taxon"/>
+                    <taxon id="t577_7.99" spec="Taxon"/>
+                    <taxon id="t578_7.22" spec="Taxon"/>
+                    <taxon id="t579_7.13" spec="Taxon"/>
+                    <taxon id="t57_7.81" spec="Taxon"/>
+                    <taxon id="t580_7.48" spec="Taxon"/>
+                    <taxon id="t581_8.34" spec="Taxon"/>
+                    <taxon id="t582_8.57" spec="Taxon"/>
+                    <taxon id="t583_9.44" spec="Taxon"/>
+                    <taxon id="t584_8.04" spec="Taxon"/>
+                    <taxon id="t585_7.31" spec="Taxon"/>
+                    <taxon id="t586_6.81" spec="Taxon"/>
+                    <taxon id="t587_6.98" spec="Taxon"/>
+                    <taxon id="t588_6.75" spec="Taxon"/>
+                    <taxon id="t589_8.04" spec="Taxon"/>
+                    <taxon id="t58_7.91" spec="Taxon"/>
+                    <taxon id="t590_7.68" spec="Taxon"/>
+                    <taxon id="t591_6.97" spec="Taxon"/>
+                    <taxon id="t592_6.57" spec="Taxon"/>
+                    <taxon id="t593_8.09" spec="Taxon"/>
+                    <taxon id="t594_8.74" spec="Taxon"/>
+                    <taxon id="t595_8.09" spec="Taxon"/>
+                    <taxon id="t596_8.18" spec="Taxon"/>
+                    <taxon id="t597_8.51" spec="Taxon"/>
+                    <taxon id="t598_8.59" spec="Taxon"/>
+                    <taxon id="t599_7.59" spec="Taxon"/>
+                    <taxon id="t59_8.36" spec="Taxon"/>
+                    <taxon id="t5_3.5" spec="Taxon"/>
+                    <taxon id="t600_7.84" spec="Taxon"/>
+                    <taxon id="t601_7.17" spec="Taxon"/>
+                    <taxon id="t602_7.49" spec="Taxon"/>
+                    <taxon id="t603_7.4" spec="Taxon"/>
+                    <taxon id="t604_7.8" spec="Taxon"/>
+                    <taxon id="t605_7.84" spec="Taxon"/>
+                    <taxon id="t606_8.72" spec="Taxon"/>
+                    <taxon id="t607_9.22" spec="Taxon"/>
+                    <taxon id="t608_8.42" spec="Taxon"/>
+                    <taxon id="t609_8.47" spec="Taxon"/>
+                    <taxon id="t60_9.18" spec="Taxon"/>
+                    <taxon id="t610_9.59" spec="Taxon"/>
+                    <taxon id="t611_10.35" spec="Taxon"/>
+                    <taxon id="t612_10.47" spec="Taxon"/>
+                    <taxon id="t613_9.17" spec="Taxon"/>
+                    <taxon id="t614_9.46" spec="Taxon"/>
+                    <taxon id="t615_8.21" spec="Taxon"/>
+                    <taxon id="t616_11.18" spec="Taxon"/>
+                    <taxon id="t617_10.55" spec="Taxon"/>
+                    <taxon id="t618_9.56" spec="Taxon"/>
+                    <taxon id="t619_9.5" spec="Taxon"/>
+                    <taxon id="t61_8.73" spec="Taxon"/>
+                    <taxon id="t620_9.74" spec="Taxon"/>
+                    <taxon id="t621_7.63" spec="Taxon"/>
+                    <taxon id="t622_7.93" spec="Taxon"/>
+                    <taxon id="t623_6.58" spec="Taxon"/>
+                    <taxon id="t624_6.77" spec="Taxon"/>
+                    <taxon id="t625_6.83" spec="Taxon"/>
+                    <taxon id="t626_6.45" spec="Taxon"/>
+                    <taxon id="t627_6.59" spec="Taxon"/>
+                    <taxon id="t628_6.51" spec="Taxon"/>
+                    <taxon id="t629_6.67" spec="Taxon"/>
+                    <taxon id="t62_8.96" spec="Taxon"/>
+                    <taxon id="t630_7.98" spec="Taxon"/>
+                    <taxon id="t631_8.02" spec="Taxon"/>
+                    <taxon id="t632_7.62" spec="Taxon"/>
+                    <taxon id="t633_6.62" spec="Taxon"/>
+                    <taxon id="t634_7.07" spec="Taxon"/>
+                    <taxon id="t635_6.87" spec="Taxon"/>
+                    <taxon id="t636_8.33" spec="Taxon"/>
+                    <taxon id="t637_8.57" spec="Taxon"/>
+                    <taxon id="t638_6.87" spec="Taxon"/>
+                    <taxon id="t639_6.17" spec="Taxon"/>
+                    <taxon id="t63_8.33" spec="Taxon"/>
+                    <taxon id="t640_6.06" spec="Taxon"/>
+                    <taxon id="t641_7.6" spec="Taxon"/>
+                    <taxon id="t642_7.57" spec="Taxon"/>
+                    <taxon id="t643_5.64" spec="Taxon"/>
+                    <taxon id="t644_6.78" spec="Taxon"/>
+                    <taxon id="t645_6.2" spec="Taxon"/>
+                    <taxon id="t646_6.71" spec="Taxon"/>
+                    <taxon id="t647_6.8" spec="Taxon"/>
+                    <taxon id="t648_5.84" spec="Taxon"/>
+                    <taxon id="t649_5.2" spec="Taxon"/>
+                    <taxon id="t64_8.64" spec="Taxon"/>
+                    <taxon id="t650_5.67" spec="Taxon"/>
+                    <taxon id="t651_5.61" spec="Taxon"/>
+                    <taxon id="t652_2.92" spec="Taxon"/>
+                    <taxon id="t653_3.06" spec="Taxon"/>
+                    <taxon id="t654_3.41" spec="Taxon"/>
+                    <taxon id="t655_4" spec="Taxon"/>
+                    <taxon id="t656_4.15" spec="Taxon"/>
+                    <taxon id="t657_4.51" spec="Taxon"/>
+                    <taxon id="t658_4.58" spec="Taxon"/>
+                    <taxon id="t659_5.48" spec="Taxon"/>
+                    <taxon id="t65_9.38" spec="Taxon"/>
+                    <taxon id="t660_5.81" spec="Taxon"/>
+                    <taxon id="t661_5.77" spec="Taxon"/>
+                    <taxon id="t662_6.03" spec="Taxon"/>
+                    <taxon id="t663_5.34" spec="Taxon"/>
+                    <taxon id="t664_4.87" spec="Taxon"/>
+                    <taxon id="t665_3.98" spec="Taxon"/>
+                    <taxon id="t666_3.88" spec="Taxon"/>
+                    <taxon id="t667_4.16" spec="Taxon"/>
+                    <taxon id="t668_4.25" spec="Taxon"/>
+                    <taxon id="t669_4.63" spec="Taxon"/>
+                    <taxon id="t66_7.73" spec="Taxon"/>
+                    <taxon id="t670_4.17" spec="Taxon"/>
+                    <taxon id="t671_3.81" spec="Taxon"/>
+                    <taxon id="t672_3.82" spec="Taxon"/>
+                    <taxon id="t673_4.78" spec="Taxon"/>
+                    <taxon id="t674_4.8" spec="Taxon"/>
+                    <taxon id="t675_5.29" spec="Taxon"/>
+                    <taxon id="t676_5.81" spec="Taxon"/>
+                    <taxon id="t677_4.59" spec="Taxon"/>
+                    <taxon id="t678_5.2" spec="Taxon"/>
+                    <taxon id="t679_5.51" spec="Taxon"/>
+                    <taxon id="t67_7.43" spec="Taxon"/>
+                    <taxon id="t680_5.61" spec="Taxon"/>
+                    <taxon id="t681_5.39" spec="Taxon"/>
+                    <taxon id="t682_5.37" spec="Taxon"/>
+                    <taxon id="t683_5.6" spec="Taxon"/>
+                    <taxon id="t684_6.05" spec="Taxon"/>
+                    <taxon id="t685_5.74" spec="Taxon"/>
+                    <taxon id="t686_5.27" spec="Taxon"/>
+                    <taxon id="t687_5.29" spec="Taxon"/>
+                    <taxon id="t688_3.83" spec="Taxon"/>
+                    <taxon id="t689_5.13" spec="Taxon"/>
+                    <taxon id="t68_8.34" spec="Taxon"/>
+                    <taxon id="t690_5.38" spec="Taxon"/>
+                    <taxon id="t691_6.44" spec="Taxon"/>
+                    <taxon id="t692_6.51" spec="Taxon"/>
+                    <taxon id="t693_4.57" spec="Taxon"/>
+                    <taxon id="t694_4.79" spec="Taxon"/>
+                    <taxon id="t695_5.53" spec="Taxon"/>
+                    <taxon id="t696_5.75" spec="Taxon"/>
+                    <taxon id="t697_5.48" spec="Taxon"/>
+                    <taxon id="t698_6.21" spec="Taxon"/>
+                    <taxon id="t699_7.24" spec="Taxon"/>
+                    <taxon id="t69_9.46" spec="Taxon"/>
+                    <taxon id="t6_2.45" spec="Taxon"/>
+                    <taxon id="t700_6.63" spec="Taxon"/>
+                    <taxon id="t701_5.71" spec="Taxon"/>
+                    <taxon id="t702_6.36" spec="Taxon"/>
+                    <taxon id="t703_6.47" spec="Taxon"/>
+                    <taxon id="t704_5.78" spec="Taxon"/>
+                    <taxon id="t705_6.07" spec="Taxon"/>
+                    <taxon id="t706_3.3" spec="Taxon"/>
+                    <taxon id="t707_4.52" spec="Taxon"/>
+                    <taxon id="t708_4.39" spec="Taxon"/>
+                    <taxon id="t709_5" spec="Taxon"/>
+                    <taxon id="t70_9.59" spec="Taxon"/>
+                    <taxon id="t710_4.87" spec="Taxon"/>
+                    <taxon id="t711_5.25" spec="Taxon"/>
+                    <taxon id="t712_5.05" spec="Taxon"/>
+                    <taxon id="t713_6" spec="Taxon"/>
+                    <taxon id="t714_6.05" spec="Taxon"/>
+                    <taxon id="t715_6.62" spec="Taxon"/>
+                    <taxon id="t716_8.24" spec="Taxon"/>
+                    <taxon id="t717_7.84" spec="Taxon"/>
+                    <taxon id="t718_7.94" spec="Taxon"/>
+                    <taxon id="t719_8.44" spec="Taxon"/>
+                    <taxon id="t71_10.24" spec="Taxon"/>
+                    <taxon id="t720_7.08" spec="Taxon"/>
+                    <taxon id="t721_9.07" spec="Taxon"/>
+                    <taxon id="t722_8.7" spec="Taxon"/>
+                    <taxon id="t723_8.31" spec="Taxon"/>
+                    <taxon id="t724_8.73" spec="Taxon"/>
+                    <taxon id="t725_8.06" spec="Taxon"/>
+                    <taxon id="t726_6.01" spec="Taxon"/>
+                    <taxon id="t727_6.85" spec="Taxon"/>
+                    <taxon id="t728_6.1" spec="Taxon"/>
+                    <taxon id="t729_6.48" spec="Taxon"/>
+                    <taxon id="t72_7.42" spec="Taxon"/>
+                    <taxon id="t730_6.81" spec="Taxon"/>
+                    <taxon id="t731_5.76" spec="Taxon"/>
+                    <taxon id="t732_5.62" spec="Taxon"/>
+                    <taxon id="t733_5.81" spec="Taxon"/>
+                    <taxon id="t734_5.76" spec="Taxon"/>
+                    <taxon id="t735_6" spec="Taxon"/>
+                    <taxon id="t736_6.39" spec="Taxon"/>
+                    <taxon id="t737_5.81" spec="Taxon"/>
+                    <taxon id="t738_6.99" spec="Taxon"/>
+                    <taxon id="t739_6.75" spec="Taxon"/>
+                    <taxon id="t73_7.74" spec="Taxon"/>
+                    <taxon id="t740_6.53" spec="Taxon"/>
+                    <taxon id="t741_6.88" spec="Taxon"/>
+                    <taxon id="t742_6.89" spec="Taxon"/>
+                    <taxon id="t743_6.26" spec="Taxon"/>
+                    <taxon id="t744_6.99" spec="Taxon"/>
+                    <taxon id="t745_5.4" spec="Taxon"/>
+                    <taxon id="t746_6.12" spec="Taxon"/>
+                    <taxon id="t747_5.7" spec="Taxon"/>
+                    <taxon id="t748_5.8" spec="Taxon"/>
+                    <taxon id="t749_7.14" spec="Taxon"/>
+                    <taxon id="t74_9.78" spec="Taxon"/>
+                    <taxon id="t750_6.86" spec="Taxon"/>
+                    <taxon id="t751_5.22" spec="Taxon"/>
+                    <taxon id="t752_6.52" spec="Taxon"/>
+                    <taxon id="t753_7.28" spec="Taxon"/>
+                    <taxon id="t754_7.03" spec="Taxon"/>
+                    <taxon id="t755_7.42" spec="Taxon"/>
+                    <taxon id="t756_6.72" spec="Taxon"/>
+                    <taxon id="t757_6.16" spec="Taxon"/>
+                    <taxon id="t758_7.07" spec="Taxon"/>
+                    <taxon id="t759_4.76" spec="Taxon"/>
+                    <taxon id="t75_9.72" spec="Taxon"/>
+                    <taxon id="t760_4.61" spec="Taxon"/>
+                    <taxon id="t761_4.65" spec="Taxon"/>
+                    <taxon id="t762_5.93" spec="Taxon"/>
+                    <taxon id="t763_6.91" spec="Taxon"/>
+                    <taxon id="t764_7.08" spec="Taxon"/>
+                    <taxon id="t765_5.84" spec="Taxon"/>
+                    <taxon id="t766_6.34" spec="Taxon"/>
+                    <taxon id="t767_6.52" spec="Taxon"/>
+                    <taxon id="t768_6.07" spec="Taxon"/>
+                    <taxon id="t769_5.74" spec="Taxon"/>
+                    <taxon id="t76_8.9" spec="Taxon"/>
+                    <taxon id="t770_4.62" spec="Taxon"/>
+                    <taxon id="t771_6.19" spec="Taxon"/>
+                    <taxon id="t772_5.59" spec="Taxon"/>
+                    <taxon id="t773_6.77" spec="Taxon"/>
+                    <taxon id="t774_6.85" spec="Taxon"/>
+                    <taxon id="t775_6.08" spec="Taxon"/>
+                    <taxon id="t776_5.29" spec="Taxon"/>
+                    <taxon id="t777_4.78" spec="Taxon"/>
+                    <taxon id="t778_5.5" spec="Taxon"/>
+                    <taxon id="t779_5.96" spec="Taxon"/>
+                    <taxon id="t77_10.16" spec="Taxon"/>
+                    <taxon id="t780_4.73" spec="Taxon"/>
+                    <taxon id="t781_4.89" spec="Taxon"/>
+                    <taxon id="t782_5.54" spec="Taxon"/>
+                    <taxon id="t783_5.53" spec="Taxon"/>
+                    <taxon id="t784_6.67" spec="Taxon"/>
+                    <taxon id="t785_6.39" spec="Taxon"/>
+                    <taxon id="t786_6.33" spec="Taxon"/>
+                    <taxon id="t787_6.19" spec="Taxon"/>
+                    <taxon id="t788_6.06" spec="Taxon"/>
+                    <taxon id="t789_6.41" spec="Taxon"/>
+                    <taxon id="t78_10.01" spec="Taxon"/>
+                    <taxon id="t790_7.78" spec="Taxon"/>
+                    <taxon id="t791_8.53" spec="Taxon"/>
+                    <taxon id="t792_8.1" spec="Taxon"/>
+                    <taxon id="t793_7.23" spec="Taxon"/>
+                    <taxon id="t794_7.01" spec="Taxon"/>
+                    <taxon id="t795_7.46" spec="Taxon"/>
+                    <taxon id="t796_4.86" spec="Taxon"/>
+                    <taxon id="t797_5.85" spec="Taxon"/>
+                    <taxon id="t798_5.58" spec="Taxon"/>
+                    <taxon id="t799_5.31" spec="Taxon"/>
+                    <taxon id="t79_11.2" spec="Taxon"/>
+                    <taxon id="t7_2.99" spec="Taxon"/>
+                    <taxon id="t800_8.55" spec="Taxon"/>
+                    <taxon id="t801_9.4" spec="Taxon"/>
+                    <taxon id="t802_9.4" spec="Taxon"/>
+                    <taxon id="t803_9.39" spec="Taxon"/>
+                    <taxon id="t804_9.45" spec="Taxon"/>
+                    <taxon id="t805_9.09" spec="Taxon"/>
+                    <taxon id="t806_8.96" spec="Taxon"/>
+                    <taxon id="t807_8.36" spec="Taxon"/>
+                    <taxon id="t808_9.15" spec="Taxon"/>
+                    <taxon id="t809_10.15" spec="Taxon"/>
+                    <taxon id="t80_11.63" spec="Taxon"/>
+                    <taxon id="t810_9.96" spec="Taxon"/>
+                    <taxon id="t811_11.31" spec="Taxon"/>
+                    <taxon id="t812_10.62" spec="Taxon"/>
+                    <taxon id="t813_11.51" spec="Taxon"/>
+                    <taxon id="t814_10.18" spec="Taxon"/>
+                    <taxon id="t815_10.3" spec="Taxon"/>
+                    <taxon id="t816_9.96" spec="Taxon"/>
+                    <taxon id="t817_10.47" spec="Taxon"/>
+                    <taxon id="t818_10.52" spec="Taxon"/>
+                    <taxon id="t819_9.83" spec="Taxon"/>
+                    <taxon id="t81_12.13" spec="Taxon"/>
+                    <taxon id="t820_9.56" spec="Taxon"/>
+                    <taxon id="t821_10.49" spec="Taxon"/>
+                    <taxon id="t822_10.52" spec="Taxon"/>
+                    <taxon id="t823_10.54" spec="Taxon"/>
+                    <taxon id="t824_9.44" spec="Taxon"/>
+                    <taxon id="t825_8.45" spec="Taxon"/>
+                    <taxon id="t826_10.37" spec="Taxon"/>
+                    <taxon id="t827_10.12" spec="Taxon"/>
+                    <taxon id="t828_9.48" spec="Taxon"/>
+                    <taxon id="t829_8.62" spec="Taxon"/>
+                    <taxon id="t82_11.99" spec="Taxon"/>
+                    <taxon id="t830_8.44" spec="Taxon"/>
+                    <taxon id="t831_8.75" spec="Taxon"/>
+                    <taxon id="t832_8.02" spec="Taxon"/>
+                    <taxon id="t833_8.23" spec="Taxon"/>
+                    <taxon id="t834_8.28" spec="Taxon"/>
+                    <taxon id="t835_9.4" spec="Taxon"/>
+                    <taxon id="t836_9.62" spec="Taxon"/>
+                    <taxon id="t837_7.33" spec="Taxon"/>
+                    <taxon id="t838_7.06" spec="Taxon"/>
+                    <taxon id="t839_7.58" spec="Taxon"/>
+                    <taxon id="t83_11.41" spec="Taxon"/>
+                    <taxon id="t840_7.68" spec="Taxon"/>
+                    <taxon id="t841_9.77" spec="Taxon"/>
+                    <taxon id="t842_9.84" spec="Taxon"/>
+                    <taxon id="t843_8.68" spec="Taxon"/>
+                    <taxon id="t844_8.09" spec="Taxon"/>
+                    <taxon id="t845_8.31" spec="Taxon"/>
+                    <taxon id="t846_8.88" spec="Taxon"/>
+                    <taxon id="t847_9.3" spec="Taxon"/>
+                    <taxon id="t848_9.69" spec="Taxon"/>
+                    <taxon id="t849_10.06" spec="Taxon"/>
+                    <taxon id="t84_10.33" spec="Taxon"/>
+                    <taxon id="t850_9.71" spec="Taxon"/>
+                    <taxon id="t851_8.04" spec="Taxon"/>
+                    <taxon id="t852_6.8" spec="Taxon"/>
+                    <taxon id="t853_7.17" spec="Taxon"/>
+                    <taxon id="t854_6.68" spec="Taxon"/>
+                    <taxon id="t855_7.05" spec="Taxon"/>
+                    <taxon id="t856_7.84" spec="Taxon"/>
+                    <taxon id="t857_7.3" spec="Taxon"/>
+                    <taxon id="t858_9.02" spec="Taxon"/>
+                    <taxon id="t859_9.11" spec="Taxon"/>
+                    <taxon id="t85_9.79" spec="Taxon"/>
+                    <taxon id="t860_9.02" spec="Taxon"/>
+                    <taxon id="t861_8.38" spec="Taxon"/>
+                    <taxon id="t862_8.41" spec="Taxon"/>
+                    <taxon id="t863_8.34" spec="Taxon"/>
+                    <taxon id="t864_8.59" spec="Taxon"/>
+                    <taxon id="t865_7.51" spec="Taxon"/>
+                    <taxon id="t866_5.44" spec="Taxon"/>
+                    <taxon id="t867_6.99" spec="Taxon"/>
+                    <taxon id="t868_6.72" spec="Taxon"/>
+                    <taxon id="t869_7.34" spec="Taxon"/>
+                    <taxon id="t86_10.28" spec="Taxon"/>
+                    <taxon id="t870_7.4" spec="Taxon"/>
+                    <taxon id="t871_8.25" spec="Taxon"/>
+                    <taxon id="t872_6.98" spec="Taxon"/>
+                    <taxon id="t873_7.05" spec="Taxon"/>
+                    <taxon id="t874_5.92" spec="Taxon"/>
+                    <taxon id="t875_9.14" spec="Taxon"/>
+                    <taxon id="t876_9.44" spec="Taxon"/>
+                    <taxon id="t877_8.73" spec="Taxon"/>
+                    <taxon id="t878_8.39" spec="Taxon"/>
+                    <taxon id="t879_7.94" spec="Taxon"/>
+                    <taxon id="t87_9.25" spec="Taxon"/>
+                    <taxon id="t880_7.12" spec="Taxon"/>
+                    <taxon id="t881_8.27" spec="Taxon"/>
+                    <taxon id="t882_7.45" spec="Taxon"/>
+                    <taxon id="t883_5.84" spec="Taxon"/>
+                    <taxon id="t884_6.36" spec="Taxon"/>
+                    <taxon id="t885_6.77" spec="Taxon"/>
+                    <taxon id="t886_6.87" spec="Taxon"/>
+                    <taxon id="t887_8.44" spec="Taxon"/>
+                    <taxon id="t888_8.36" spec="Taxon"/>
+                    <taxon id="t889_8.02" spec="Taxon"/>
+                    <taxon id="t88_9.51" spec="Taxon"/>
+                    <taxon id="t890_7.8" spec="Taxon"/>
+                    <taxon id="t891_7.92" spec="Taxon"/>
+                    <taxon id="t892_7.69" spec="Taxon"/>
+                    <taxon id="t893_7.09" spec="Taxon"/>
+                    <taxon id="t894_7.16" spec="Taxon"/>
+                    <taxon id="t895_9.28" spec="Taxon"/>
+                    <taxon id="t896_8.71" spec="Taxon"/>
+                    <taxon id="t897_8.29" spec="Taxon"/>
+                    <taxon id="t898_8.66" spec="Taxon"/>
+                    <taxon id="t899_9.04" spec="Taxon"/>
+                    <taxon id="t89_6.67" spec="Taxon"/>
+                    <taxon id="t8_4.53" spec="Taxon"/>
+                    <taxon id="t900_8.86" spec="Taxon"/>
+                    <taxon id="t901_6.37" spec="Taxon"/>
+                    <taxon id="t902_9.08" spec="Taxon"/>
+                    <taxon id="t903_9.51" spec="Taxon"/>
+                    <taxon id="t904_9.19" spec="Taxon"/>
+                    <taxon id="t905_7.81" spec="Taxon"/>
+                    <taxon id="t906_8.05" spec="Taxon"/>
+                    <taxon id="t907_7.99" spec="Taxon"/>
+                    <taxon id="t908_6.78" spec="Taxon"/>
+                    <taxon id="t909_7.22" spec="Taxon"/>
+                    <taxon id="t90_6.74" spec="Taxon"/>
+                    <taxon id="t910_6.38" spec="Taxon"/>
+                    <taxon id="t911_7.1" spec="Taxon"/>
+                    <taxon id="t912_7.88" spec="Taxon"/>
+                    <taxon id="t913_6.56" spec="Taxon"/>
+                    <taxon id="t914_7.31" spec="Taxon"/>
+                    <taxon id="t915_7.52" spec="Taxon"/>
+                    <taxon id="t916_8.16" spec="Taxon"/>
+                    <taxon id="t917_8.49" spec="Taxon"/>
+                    <taxon id="t918_7.87" spec="Taxon"/>
+                    <taxon id="t919_7.03" spec="Taxon"/>
+                    <taxon id="t91_7.23" spec="Taxon"/>
+                    <taxon id="t920_6.96" spec="Taxon"/>
+                    <taxon id="t921_8" spec="Taxon"/>
+                    <taxon id="t922_8.87" spec="Taxon"/>
+                    <taxon id="t923_8.02" spec="Taxon"/>
+                    <taxon id="t924_8.64" spec="Taxon"/>
+                    <taxon id="t925_8.8" spec="Taxon"/>
+                    <taxon id="t926_8.85" spec="Taxon"/>
+                    <taxon id="t927_7.69" spec="Taxon"/>
+                    <taxon id="t928_7.23" spec="Taxon"/>
+                    <taxon id="t929_7.33" spec="Taxon"/>
+                    <taxon id="t92_7.35" spec="Taxon"/>
+                    <taxon id="t930_8.44" spec="Taxon"/>
+                    <taxon id="t931_7.77" spec="Taxon"/>
+                    <taxon id="t932_7.47" spec="Taxon"/>
+                    <taxon id="t933_7.88" spec="Taxon"/>
+                    <taxon id="t934_7.66" spec="Taxon"/>
+                    <taxon id="t935_6.31" spec="Taxon"/>
+                    <taxon id="t936_7.97" spec="Taxon"/>
+                    <taxon id="t937_7.2" spec="Taxon"/>
+                    <taxon id="t938_7.09" spec="Taxon"/>
+                    <taxon id="t939_6.95" spec="Taxon"/>
+                    <taxon id="t93_8.87" spec="Taxon"/>
+                    <taxon id="t940_6.41" spec="Taxon"/>
+                    <taxon id="t941_6.46" spec="Taxon"/>
+                    <taxon id="t942_6.31" spec="Taxon"/>
+                    <taxon id="t943_6.68" spec="Taxon"/>
+                    <taxon id="t944_6.19" spec="Taxon"/>
+                    <taxon id="t945_6.21" spec="Taxon"/>
+                    <taxon id="t946_5.92" spec="Taxon"/>
+                    <taxon id="t947_5.87" spec="Taxon"/>
+                    <taxon id="t948_6.07" spec="Taxon"/>
+                    <taxon id="t949_6.3" spec="Taxon"/>
+                    <taxon id="t94_8.27" spec="Taxon"/>
+                    <taxon id="t950_7.3" spec="Taxon"/>
+                    <taxon id="t951_6.87" spec="Taxon"/>
+                    <taxon id="t952_6.39" spec="Taxon"/>
+                    <taxon id="t953_6.3" spec="Taxon"/>
+                    <taxon id="t954_6.11" spec="Taxon"/>
+                    <taxon id="t955_6.4" spec="Taxon"/>
+                    <taxon id="t956_7.21" spec="Taxon"/>
+                    <taxon id="t957_6.8" spec="Taxon"/>
+                    <taxon id="t958_7.88" spec="Taxon"/>
+                    <taxon id="t959_7.57" spec="Taxon"/>
+                    <taxon id="t95_8.45" spec="Taxon"/>
+                    <taxon id="t960_7.83" spec="Taxon"/>
+                    <taxon id="t961_7.73" spec="Taxon"/>
+                    <taxon id="t962_7.77" spec="Taxon"/>
+                    <taxon id="t963_6.93" spec="Taxon"/>
+                    <taxon id="t964_8.34" spec="Taxon"/>
+                    <taxon id="t965_8.69" spec="Taxon"/>
+                    <taxon id="t966_8.81" spec="Taxon"/>
+                    <taxon id="t967_8.1" spec="Taxon"/>
+                    <taxon id="t968_9.6" spec="Taxon"/>
+                    <taxon id="t969_9.93" spec="Taxon"/>
+                    <taxon id="t96_7.41" spec="Taxon"/>
+                    <taxon id="t970_9.32" spec="Taxon"/>
+                    <taxon id="t971_8.85" spec="Taxon"/>
+                    <taxon id="t972_8.78" spec="Taxon"/>
+                    <taxon id="t973_9.44" spec="Taxon"/>
+                    <taxon id="t974_9.65" spec="Taxon"/>
+                    <taxon id="t975_6.37" spec="Taxon"/>
+                    <taxon id="t976_6.83" spec="Taxon"/>
+                    <taxon id="t977_7.56" spec="Taxon"/>
+                    <taxon id="t978_6.04" spec="Taxon"/>
+                    <taxon id="t979_7.26" spec="Taxon"/>
+                    <taxon id="t97_7.67" spec="Taxon"/>
+                    <taxon id="t980_6.83" spec="Taxon"/>
+                    <taxon id="t981_8.63" spec="Taxon"/>
+                    <taxon id="t982_10.05" spec="Taxon"/>
+                    <taxon id="t983_9.33" spec="Taxon"/>
+                    <taxon id="t984_8.89" spec="Taxon"/>
+                    <taxon id="t985_8.22" spec="Taxon"/>
+                    <taxon id="t986_7.2" spec="Taxon"/>
+                    <taxon id="t987_8.08" spec="Taxon"/>
+                    <taxon id="t988_7.42" spec="Taxon"/>
+                    <taxon id="t989_6.74" spec="Taxon"/>
+                    <taxon id="t98_7.98" spec="Taxon"/>
+                    <taxon id="t990_7.4" spec="Taxon"/>
+                    <taxon id="t991_7.2" spec="Taxon"/>
+                    <taxon id="t992_7.83" spec="Taxon"/>
+                    <taxon id="t993_7.97" spec="Taxon"/>
+                    <taxon id="t994_8.02" spec="Taxon"/>
+                    <taxon id="t995_8.93" spec="Taxon"/>
+                    <taxon id="t996_8.83" spec="Taxon"/>
+                    <taxon id="t997_9.18" spec="Taxon"/>
+                    <taxon id="t998_8.12" spec="Taxon"/>
+                    <taxon id="t999_4.83" spec="Taxon"/>
+                    <taxon id="t99_7.78" spec="Taxon"/>
+                    <taxon id="t9_4.48" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.03" name="distr">
+                    <parameter id="RealParameter.05" estimate="false" name="mean">100.0</parameter>
+                    <parameter id="RealParameter.06" estimate="false" name="sigma">0.1</parameter>
+                </Normal>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.staxa" spec="ThreadedTreeLikelihood" data="@staxa" tree="@Tree.t:staxa">
+                <siteModel id="SiteModel.s:staxa" spec="SiteModel">
+                    <parameter id="mutationRate.s:staxa" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="gammaShape.s:staxa" estimate="false" name="shape">1.0</parameter>
+                    <parameter id="proportionInvariant.s:staxa" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="JC69.s:staxa" spec="JukesCantor"/>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:staxa" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:staxa"/>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="StrictClockRateScaler.c:staxa" spec="ScaleOperator" parameter="@clockRate.c:staxa" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="strictClockUpDownOperator.c:staxa" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:staxa"/>
+        <down idref="Tree.t:staxa"/>
+    </operator>
+
+    <operator id="CoalescentExponentialTreeScaler.t:staxa" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:staxa" weight="3.0"/>
+
+    <operator id="CoalescentExponentialTreeRootScaler.t:staxa" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:staxa" weight="10"/>
+
+    <operator id="CoalescentExponentialUniformOperator.t:staxa" spec="Uniform" tree="@Tree.t:staxa" weight="30.0"/>
+
+    <operator id="CoalescentExponentialSubtreeSlide.t:staxa" spec="SubtreeSlide" tree="@Tree.t:staxa" weight="15.0"/>
+
+    <operator id="CoalescentExponentialNarrow.t:staxa" spec="Exchange" tree="@Tree.t:staxa" weight="15.0"/>
+
+    <operator id="CoalescentExponentialWide.t:staxa" spec="Exchange" isNarrow="false" tree="@Tree.t:staxa" weight="3.0"/>
+
+    <operator id="CoalescentExponentialWilsonBalding.t:staxa" spec="WilsonBalding" tree="@Tree.t:staxa" weight="3.0"/>
+
+    <operator id="ePopSizeScaler.t:staxa" spec="ScaleOperator" parameter="@ePopSize.t:staxa" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="GrowthRateRandomWalk.t:staxa" spec="RealRandomWalkOperator" parameter="@growthRate.t:staxa" weight="3.0" windowSize="1.0"/>
+
+    <logger id="tracelog" fileName="ce_largetrdeep.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.staxa"/>
+        <log id="TreeHeight.t:staxa" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:staxa"/>
+        <log idref="clockRate.c:staxa"/>
+        <log idref="CoalescentExponential.t:staxa"/>
+        <log idref="ePopSize.t:staxa"/>
+        <log idref="growthRate.t:staxa"/>
+        <log idref="tmrca_all.prior"/>
+    </logger>
+
+    <logger id="screenlog" logEvery="1000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+	<log idref="TreeHeight.t:staxa"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:staxa" fileName="ce_largetrdeep.trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:staxa" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:staxa"/>
+    </logger>
+
+</run>
+
+</beast>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+
+      <data id="dummy_aln" name="alignment">
+        <sequence id="seq_V6427_2003" taxon="V6427_2003" totalcount="4" value="gc"/>
+<sequence id="seq_V6466_2003" taxon="V6466_2003" totalcount="4" value="gc"/>
+<sequence id="seq_DQ164187_2002" taxon="DQ164187_2002" totalcount="4" value="gc"/>
+<sequence id="seq_DQ164192_2003" taxon="DQ164192_2003" totalcount="4" value="gc"/>
+<sequence id="seq_V6478_2001" taxon="V6478_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6629_2001" taxon="V6629_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6496_2001" taxon="V6496_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6395_2001" taxon="V6395_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6396_2001" taxon="V6396_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6394_2001" taxon="V6394_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6399_2002" taxon="V6399_2002" totalcount="4" value="gc"/>
+<sequence id="seq_HM488249_2001" taxon="HM488249_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6380_2001" taxon="V6380_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6620_2001" taxon="V6620_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6526_2001" taxon="V6526_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM756662_2001" taxon="HM756662_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM756664_2002" taxon="HM756664_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6450_2001" taxon="V6450_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671711_2000" taxon="HQ671711_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HM488130_2000" taxon="HM488130_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HM488175_2003" taxon="HM488175_2003" totalcount="4" value="gc"/>
+<sequence id="seq_HM756653_2003" taxon="HM756653_2003" totalcount="4" value="gc"/>
+<sequence id="seq_HM488246_2001" taxon="HM488246_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488247_2001" taxon="HM488247_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM756663_2001" taxon="HM756663_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM756661_2001" taxon="HM756661_2001" totalcount="4" value="gc"/>
+<sequence id="seq_DQ164188_2003" taxon="DQ164188_2003" totalcount="4" value="gc"/>
+<sequence id="seq_V6623_2002" taxon="V6623_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6382_2002" taxon="V6382_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6622_2001" taxon="V6622_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488248_2001" taxon="HM488248_2001" totalcount="4" value="gc"/>
+<sequence id="seq_NC009942_1999" taxon="NC009942_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671713_2001" taxon="HQ671713_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488129_2000" taxon="HM488129_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HM488128_1999" taxon="HM488128_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HM488126_1999" taxon="HM488126_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HM488127_1999" taxon="HM488127_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671712_2000" taxon="HQ671712_2000" totalcount="4" value="gc"/>
+<sequence id="seq_DQ164194_2001" taxon="DQ164194_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671709_2000" taxon="HQ671709_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HM488131_2000" taxon="HM488131_2000" totalcount="4" value="gc"/>
+<sequence id="seq_V6537_2001" taxon="V6537_2001" totalcount="4" value="gc"/>
+<sequence id="seq_JF920307_2001" taxon="JF920307_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671719_2001" taxon="HQ671719_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488133_2001" taxon="HM488133_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488136_2001" taxon="HM488136_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488125_1999" taxon="HM488125_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671707_1999" taxon="HQ671707_1999" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671697_2001" taxon="HQ671697_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671714_2001" taxon="HQ671714_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6422_2001" taxon="V6422_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6527_2001" taxon="V6527_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6401_2002" taxon="V6401_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6423_2002" taxon="V6423_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6529_2002" taxon="V6529_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6528_2001" taxon="V6528_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6420_2001" taxon="V6420_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6421_2001" taxon="V6421_2001" totalcount="4" value="gc"/>
+<sequence id="seq_V6438_2002" taxon="V6438_2002" totalcount="4" value="gc"/>
+<sequence id="seq_V6480_2002" taxon="V6480_2002" totalcount="4" value="gc"/>
+<sequence id="seq_HM488132_2000" taxon="HM488132_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671708_2000" taxon="HQ671708_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671710_2000" taxon="HQ671710_2000" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671717_2001" taxon="HQ671717_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HM488135_2001" taxon="HM488135_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671716_2001" taxon="HQ671716_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671718_2001" taxon="HQ671718_2001" totalcount="4" value="gc"/>
+<sequence id="seq_HQ671715_2001" taxon="HQ671715_2001" totalcount="4" value="gc"/>
+      </data>
+
+  <map name="Uniform" >beast.math.distributions.Uniform</map>
+  <map name="Exponential" >beast.math.distributions.Exponential</map>
+  <map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+  <map name="Normal" >beast.math.distributions.Normal</map>
+  <map name="Beta" >beast.math.distributions.Beta</map>
+  <map name="Gamma" >beast.math.distributions.Gamma</map>
+  <map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+  <map name="prior" >beast.math.distributions.Prior</map>
+  <map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+  <map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+  <run id="mcmc" spec="MCMC" chainLength="2000000" sampleFromPrior="true">
+      <state id="state" storeEvery="5000">
+          <tree id="Tree.t:dummy_aln" name="stateNode">
+            <trait id="dateTrait.t:dummy_aln" spec="beast.evolution.tree.TraitSet" traitname="date">
+              V6427_2003=2003,
+V6466_2003=2003,
+DQ164187_2002=2002,
+DQ164192_2003=2003,
+V6478_2001=2001,
+V6629_2001=2001,
+V6496_2001=2001,
+V6395_2001=2001,
+V6396_2001=2001,
+V6394_2001=2001,
+V6399_2002=2002,
+HM488249_2001=2001,
+V6380_2001=2001,
+V6620_2001=2001,
+V6526_2001=2001,
+HM756662_2001=2001,
+HM756664_2002=2002,
+V6450_2001=2001,
+HQ671711_2000=2000,
+HM488130_2000=2000,
+HM488175_2003=2003,
+HM756653_2003=2003,
+HM488246_2001=2001,
+HM488247_2001=2001,
+HM756663_2001=2001,
+HM756661_2001=2001,
+DQ164188_2003=2003,
+V6623_2002=2002,
+V6382_2002=2002,
+V6622_2001=2001,
+HM488248_2001=2001,
+NC009942_1999=1999,
+HQ671713_2001=2001,
+HM488129_2000=2000,
+HM488128_1999=1999,
+HM488126_1999=1999,
+HM488127_1999=1999,
+HQ671712_2000=2000,
+DQ164194_2001=2001,
+HQ671709_2000=2000,
+HM488131_2000=2000,
+V6537_2001=2001,
+JF920307_2001=2001,
+HQ671719_2001=2001,
+HM488133_2001=2001,
+HM488136_2001=2001,
+HM488125_1999=1999,
+HQ671707_1999=1999,
+HQ671697_2001=2001,
+HQ671714_2001=2001,
+V6422_2001=2001,
+V6527_2001=2001,
+V6401_2002=2002,
+V6423_2002=2002,
+V6529_2002=2002,
+V6528_2001=2001,
+V6420_2001=2001,
+V6421_2001=2001,
+V6438_2002=2002,
+V6480_2002=2002,
+HM488132_2000=2000,
+HQ671708_2000=2000,
+HQ671710_2000=2000,
+HQ671717_2001=2001,
+HM488135_2001=2001,
+HQ671716_2001=2001,
+HQ671718_2001=2001,
+HQ671715_2001=2001
+                <taxa id="TaxonSet.dummy_aln" spec="TaxonSet">
+                  <alignment idref="dummy_aln"/>
+                </taxa>
+              </trait>
+              <taxonset idref="TaxonSet.dummy_aln"/>
+          </tree>
+          <parameter id="clockRate.c:dummy_aln" name="stateNode">1.0</parameter>
+          <parameter id="popSize.t:dummy_aln" name="stateNode">20.55</parameter>
+      </state>
+
+      <init id="RandomTree.t:dummy_aln" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dummy_aln" taxa="@dummy_aln">
+          <populationModel id="ConstantPopulation0.t:dummy_aln" spec="ConstantPopulation">
+              <parameter id="randomPopSize.t:dummy_aln" name="popSize">1</parameter>
+          </populationModel>
+      </init>
+
+      <distribution id="posterior" spec="util.CompoundDistribution">
+          <distribution id="prior" spec="util.CompoundDistribution">
+              <distribution id="CoalescentConstant.t:dummy_aln" spec="Coalescent">
+                  <populationModel id="ConstantPopulation.t:dummy_aln" spec="ConstantPopulation" popSize="@popSize.t:dummy_aln"/>
+                  <treeIntervals id="TreeIntervals.t:dummy_aln" spec="TreeIntervals" tree="@Tree.t:dummy_aln"/>
+              </distribution>
+              <prior id="ClockPrior.c:dummy_aln" name="distribution" x="@clockRate.c:dummy_aln">
+                  <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+              </prior>
+              <prior id="PopSizePrior.t:dummy_aln" name="distribution" x="@popSize.t:dummy_aln">
+  	      <Normal id="Normal.01" name="distr">
+  		<parameter id="RealParameter.02" estimate="false" name="mean">20.55</parameter>
+                  <parameter id="RealParameter.03" estimate="false" name="sigma">2.46</parameter>
+  	      </Normal>
+              </prior>
+          </distribution>
+          <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+              <distribution id="treeLikelihood.dummy_aln" spec="ThreadedTreeLikelihood" data="@dummy_aln" tree="@Tree.t:dummy_aln">
+                  <siteModel id="SiteModel.s:dummy_aln" spec="SiteModel">
+                      <parameter id="mutationRate.s:dummy_aln" estimate="false" name="mutationRate">1.0</parameter>
+                      <parameter id="gammaShape.s:dummy_aln" estimate="false" name="shape">1.0</parameter>
+                      <parameter id="proportionInvariant.s:dummy_aln" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                      <substModel id="JC69.s:dummy_aln" spec="JukesCantor"/>
+                  </siteModel>
+                  <branchRateModel id="StrictClock.c:dummy_aln" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dummy_aln"/>
+              </distribution>
+          </distribution>
+      </distribution>
+
+      <operator id="StrictClockRateScaler.c:dummy_aln" spec="ScaleOperator" parameter="@clockRate.c:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+
+      <operator id="strictClockUpDownOperator.c:dummy_aln" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+          <up idref="clockRate.c:dummy_aln"/>
+          <down idref="Tree.t:dummy_aln"/>
+      </operator>
+
+      <operator id="CoalescentConstantTreeScaler.t:dummy_aln" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+      <operator id="CoalescentConstantTreeRootScaler.t:dummy_aln" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dummy_aln" weight="3.0"/>
+      <operator id="CoalescentConstantUniformOperator.t:dummy_aln" spec="Uniform" tree="@Tree.t:dummy_aln" weight="30.0"/>
+      <operator id="CoalescentConstantSubtreeSlide.t:dummy_aln" spec="SubtreeSlide" tree="@Tree.t:dummy_aln" weight="15.0"/>
+      <operator id="CoalescentConstantNarrow.t:dummy_aln" spec="Exchange" tree="@Tree.t:dummy_aln" weight="15.0"/>
+      <operator id="CoalescentConstantWide.t:dummy_aln" spec="Exchange" isNarrow="false" tree="@Tree.t:dummy_aln" weight="3.0"/>
+      <operator id="CoalescentConstantWilsonBalding.t:dummy_aln" spec="WilsonBalding" tree="@Tree.t:dummy_aln" weight="3.0"/>
+      <operator id="PopSizeScaler.t:dummy_aln" spec="ScaleOperator" parameter="@popSize.t:dummy_aln" scaleFactor="0.75" weight="3.0"/>
+      <logger id="tracelog" fileName="wnv_date_cc_pps.log" logEvery="5000" model="@posterior" sanitiseHeaders="true" sort="smart">
+          <log idref="posterior"/>
+          <log idref="likelihood"/>
+          <log idref="prior"/>
+          <log idref="treeLikelihood.dummy_aln"/>
+          <log id="TreeHeight.t:dummy_aln" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dummy_aln"/>
+          <log idref="clockRate.c:dummy_aln"/>
+          <log idref="popSize.t:dummy_aln"/>
+          <log idref="CoalescentConstant.t:dummy_aln"/>
+      </logger>
+
+      <logger id="screenlog" fileName="" logEvery="5000">
+          <log idref="posterior"/>
+  	<log idref="TreeHeight.t:dummy_aln"/>
+          <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+          <log idref="likelihood"/>
+          <log idref="prior"/>
+      </logger>
+
+      <logger id="treelog.t:dummy_aln" fileName="wnv_date_cc_pps.trees" logEvery="5000" mode="tree">
+          <log id="TreeWithMetaDataLogger.t:dummy_aln" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dummy_aln"/>
+      </logger>
+
+  </run>
+
+  </beast>
+  

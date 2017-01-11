@@ -6,7 +6,6 @@
 # Input settings are:
 
 library(NELSI)
-library(MASS)
 
 make_cc_template <- function(trees_lines, rep_name){
 
@@ -41,8 +40,8 @@ make_cc_template <- function(trees_lines, rep_name){
             <prior id=\"PopSizePrior.t:dummy_aln\" name=\"distribution\" x=\"@popSize.t:dummy_aln\">
 	      <!--Very uninformative prior on population size -->
 	      <Normal id=\"Normal.01\" name=\"distr\">
-		<parameter id=\"RealParameter.0\" estimate=\"false\" name=\"mean\">0</parameter>
-		<parameter id=\"RealParameter.01\" estimate=\"false\" name=\"sigma\">1E11</parameter>
+		<parameter id=\"RealParameter.0\" estimate=\"false\" name=\"mean\">100</parameter>
+		<parameter id=\"RealParameter.01\" estimate=\"false\" name=\"sigma\">100</parameter>
 	      </Normal>
             </prior>
         </distribution>
@@ -104,25 +103,27 @@ make_ce_template <- function(trees_lines, rep_name){
       INPUT_TAXON_SETS
     </taxonset>
   </tree>
-
-  <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"4000000\" sampleFromPrior=\"false\">
+					       
+  <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"2000000\" sampleFromPrior=\"false\">
       <state id=\"state\" storeEvery=\"5000\">
-        <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">1E11</parameter>
-        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">0</parameter>
+        <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">1000000</parameter>
+        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">0.8</parameter>
       </state>
 
       <distribution id=\"posterior\" spec=\"util.CompoundDistribution\">
           <distribution id=\"prior\" spec=\"util.CompoundDistribution\">
-
-<!-- Using uniform priors -->
               <prior id=\"ePopSizePrior.t:dummy_aln\" name=\"distribution\" x=\"@ePopSize.t:dummy_aln\">
-	      	     <Uniform id=\"Uniform.0\" name=\"distr\" lower=\"0\" upper=\"Infinity\"/>
+                <Normal id=\"Normal.01\" name=\"distr\">
+                  <parameter id=\"RealParameter.0\" estimate=\"false\" name=\"mean\">22.8</parameter>
+                  <parameter id=\"RealParameter.01\" estimate=\"false\" name=\"sigma\">100000.0</parameter>
+                </Normal>
               </prior>
-
               <prior id=\"GrowthRatePrior.t:dummy_aln\" name=\"distribution\" x=\"@growthRate.t:dummy_aln\">
-	      	     <Uniform id=\"Uniform.1\" name=\"distr\" upper=\"Infinity\"/>
+                <Normal id=\"Normal.02\" name=\"distr\">
+                  <parameter id=\"RealParameter.02\" estimate=\"false\" name=\"mean\">0.8</parameter>
+                  <parameter id=\"RealParameter.03\" estimate=\"false\" name=\"sigma\">5</parameter>
+                </Normal>
               </prior>
-
           </distribution>
           <distribution id=\"likelihood\" spec=\"util.CompoundDistribution\" useThreads=\"true\">
   	  <distribution id=\"CoalescentExponential.t:dummy_aln\" spec=\"Coalescent\">
@@ -133,7 +134,7 @@ make_ce_template <- function(trees_lines, rep_name){
       </distribution>
   <!-- Kill topology operators to for analysis -->
       <operator id=\"ePopSizeScaler.t:dummy_aln\" spec=\"ScaleOperator\" parameter=\"@ePopSize.t:dummy_aln\" scaleFactor=\"0.75\" weight=\"3.0\"/>
-      <operator id=\"GrowthRateRandomWalk.t:dummy_aln\" spec=\"RealRandomWalkOperator\" parameter=\"@growthRate.t:dummy_aln\" weight=\"3.0\" windowSize=\"1E-5\"/>
+      <operator id=\"GrowthRateRandomWalk.t:dummy_aln\" spec=\"RealRandomWalkOperator\" parameter=\"@growthRate.t:dummy_aln\" weight=\"3.0\" windowSize=\"1.0\"/>
 
       <logger id=\"tracelog\" fileName=\"POSTERIOR_OUTPUT_FILE.log\" logEvery=\"10000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
           <log idref=\"posterior\"/>
@@ -167,7 +168,7 @@ make_ce_template <- function(trees_lines, rep_name){
 
 }
 
-make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
+make_bd_template <- function(trees_lines, rep_name){
   bd_template <- "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><beast beautitemplate='Standard' beautistatus='' namespace=\"beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood\" required=\"BDSKY v1.3.2\" version=\"2.4\">
 
   <map name=\"Uniform\" >beast.math.distributions.Uniform</map>
@@ -192,7 +193,7 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
   <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"10000000\" sampleFromPrior=\"false\">
       <state id=\"state\" storeEvery=\"5000\">
           <parameter id=\"origin.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">ORIGIN_START</parameter>
-          <parameter id=\"samplingProportion.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"1.0\">SAMPLING_PROPORTION</parameter>
+          <parameter id=\"samplingProportion.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"1.0\">0.01</parameter>
           <parameter id=\"becomeUninfectiousRate.s.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">4.0</parameter>
           <parameter id=\"R0.s.t:dummy_aln\" dimension=\"10\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">3</parameter>
       </state>
@@ -219,7 +220,7 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
               </prior>
               <prior id=\"samplingProportionPrior.s.t:dummy_aln\" name=\"distribution\" x=\"@samplingProportion.s.t:dummy_aln\">
                   <Normal id=\"Normal.02\" name=\"distr\">
-                      <parameter id=\"RealParameter.04\" estimate=\"false\" name=\"mean\">SAMPLING_PROPORTION</parameter>
+                      <parameter id=\"RealParameter.04\" estimate=\"false\" name=\"mean\">0.01</parameter>
                       <parameter id=\"RealParameter.05\" estimate=\"false\" name=\"sigma\">1.0E-5</parameter>
                   </Normal>
               </prior>
@@ -265,7 +266,6 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
               <parameter idref=\"becomeUninfectiousRate.s.t:dummy_aln\"/>
               <parameter idref=\"samplingProportion.s.t:dummy_aln\"/>
           </log>
-          <log id=\"TreeHeight.t:dummy_aln\" spec=\"beast.evolution.tree.TreeHeightLogger\" tree=\"@Tree.t:dummy_aln\"/>
       </logger>
 
       <logger id=\"screenlog\" fileName=\"\" logEvery=\"20000\">
@@ -273,7 +273,6 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
           <log id=\"ESS.0\" spec=\"util.ESS\" arg=\"@posterior\"/>
           <log idref=\"likelihood\"/>
           <log idref=\"prior\"/>
-          <log idref=\"TreeHeight.t:dummy_aln\"/>
       </logger>
   </run>
   </beast>
@@ -284,7 +283,6 @@ make_bd_template <- function(trees_lines, rep_name, sampling_proportion){
     xml_temp <- gsub('POSTERIOR_OUTPUT_FILE', paste0(rep_name, '_', i), gsub("INPUT_TAXON_SETS", taxon_sets, gsub("INPUT_TREE_STRING", trees_lines[i], bd_template)))
     tree_height <- round(max(intnode.times(tr_temp)), 2)
     xml_temp <- gsub('ORIGIN_START', tree_height+10, xml_temp)
-    xml_temp <- gsub('SAMPLING_PROPORTION', sampling_proportion, xml_temp)
     cat(xml_temp, file = paste0(rep_name, '_', i, '.xml'), sep = '\n')
   }
 }
@@ -457,7 +455,7 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
           <taxonset idref=\"TaxonSet.dummy_aln\"/>
         </tree>
         <parameter id=\"ePopSize.t:dummy_aln\" name=\"stateNode\">E_POP_SIZE_MEAN</parameter>
-        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">GROWTH_RATE_INIT</parameter>
+        <parameter id=\"growthRate.t:dummy_aln\" name=\"stateNode\">GROWTH_RATE_MEAN</parameter>
         <parameter id=\"clockRate.c:dummy_aln\" name=\"stateNode\">1.0</parameter>
       </state>
 
@@ -474,35 +472,16 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
             <treeIntervals id=\"TreeIntervals.t:dummy_aln\" spec=\"TreeIntervals\" tree=\"@Tree.t:dummy_aln\"/>
           </distribution>
           <prior id=\"ePopSizePrior.t:dummy_aln\" name=\"distribution\" x=\"@ePopSize.t:dummy_aln\">
-
-                <LogNormal id=\"LogNormalDistribution.0\" name=\"distr\">
-                    <parameter id=\"RealParameter.0\" estimate=\"false\" name=\"M\">E_POP_SIZE_MEAN</parameter>
-                    <parameter id=\"RealParameter.01\" estimate=\"false\" lower=\"0.0\" name=\"S\" upper=\"5.0\">E_POP_SIZE_SD</parameter>
-                </LogNormal>
-
+            <Normal id=\"Normal.01\" name=\"distr\">
+              <parameter id=\"RealParameter.0\" estimate=\"false\" name=\"mean\">E_POP_SIZE_MEAN</parameter>
+              <parameter id=\"RealParameter.01\" estimate=\"false\" name=\"sigma\">E_POP_SIZE_SD</parameter>
+            </Normal>
           </prior>
           <prior id=\"GrowthRatePrior.t:dummy_aln\" name=\"distribution\" x=\"@growthRate.t:dummy_aln\">
-
-                <Normal id=\"NormalDistribution.1\" name=\"distr\">
-                    <parameter id=\"RealParameter.1\" estimate=\"false\" name=\"mean\">GROWTH_RATE_MEAN</parameter>
-                    <parameter id=\"RealParameter.11\" estimate=\"false\" lower=\"0.0\" name=\"sigma\" upper=\"5.0\">GROWTH_RATE_SD</parameter>
-                </Normal>
-
-
-
-<!--
-                <LogNormal id=\"LogNormalDistribution.1\" name=\"distr\">
-                    <parameter id=\"RealParameter.1\" estimate=\"false\" name=\"M\">GROWTH_RATE_MEAN</parameter>
-                    <parameter id=\"RealParameter.11\" estimate=\"false\" lower=\"0.0\" name=\"S\" upper=\"5.0\">GROWTH_RATE_SD</parameter>
-                </LogNormal>
--->
-<!--
-                <Gamma id="Gamma.0" mode="ShapeRate" name="distr">
-                    <parameter id="RealParameter.1" estimate="false" name="alpha">GROWTH_RATE_SHAPE</parameter>
-                    <parameter id="RealParameter.11" estimate="false" name="beta">GROWTH_RATE_RATE</parameter>
-                </Gamma>
--->
-
+            <Normal id=\"Normal.02\" name=\"distr\">
+              <parameter id=\"RealParameter.02\" estimate=\"false\" name=\"mean\">GROWTH_RATE_MEAN</parameter>
+              <parameter id=\"RealParameter.03\" estimate=\"false\" name=\"sigma\">GROWTH_RATE_SD</parameter>
+            </Normal>
           </prior>
           <prior id=\"ClockPrior.c:dummy_aln\" name=\"distribution\" x=\"@clockRate.c:dummy_aln\">
             <Uniform id=\"Uniform.0\" name=\"distr\" upper=\"Infinity\"/>
@@ -532,7 +511,7 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
       <operator id=\"ePopSizeScaler.t:dummy_aln\" spec=\"ScaleOperator\" parameter=\"@ePopSize.t:dummy_aln\" scaleFactor=\"0.75\" weight=\"3.0\"/>
       <operator id=\"GrowthRateRandomWalk.t:dummy_aln\" spec=\"RealRandomWalkOperator\" parameter=\"@growthRate.t:dummy_aln\" weight=\"3.0\" windowSize=\"1.0\"/>
 
-      <logger id=\"tracelog\" fileName=\"CE_SIM_TREE_FILE.log\" logEvery=\"10000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
+      <logger id=\"tracelog\" fileName=\"CE_SIM_TREE_FILE.log\" logEvery=\"1000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
           <log idref=\"posterior\"/>
           <log idref=\"likelihood\"/>
           <log idref=\"prior\"/>
@@ -549,7 +528,7 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
           <log idref=\"prior\"/>
       </logger>
   <!-- sample trees a bit less often -->
-      <logger id=\"treelog.t:dummy_aln\" fileName=\"CE_SIM_TREE_FILE.trees\" logEvery=\"10000\" mode=\"tree\">
+      <logger id=\"treelog.t:dummy_aln\" fileName=\"CE_SIM_TREE_FILE.trees\" logEvery=\"1000\" mode=\"tree\">
           <log id=\"TreeWithMetaDataLogger.t:dummy_aln\" spec=\"beast.evolution.tree.TreeWithMetaDataLogger\" tree=\"@Tree.t:dummy_aln\"/>
       </logger>
   </run>
@@ -564,23 +543,14 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
   taxon_dates <- paste0(taxon_dates, collapse = ',\n')
   burnin <- ceiling(nrow(posterior_log_data)*0.2)
   posterior_log_data <- posterior_log_data[-(1:burnin), ]
-  epopsize <- round(c(mean(log(posterior_log_data$ePopSize)), sd(log(posterior_log_data$ePopSize))), 4)
-  #fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
-  #growth_rate_gamma <- fit_growth_rate$estimate
-  if(sd(posterior_log_data$growthRate.) != 0){
-    growth_rate_norm <- c(mean(posterior_log_data$growthRate.), sd(posterior_log_data$growthRate.))
-  }else{
-    growth_rate_norm <- c(round(mean(posterior_log_data$growthRate.), 4), 1e-10)
-  }
+  epopsize <- round(c(mean(posterior_log_data$ePopSize), sd(posterior_log_data$ePopSize)), 4)
+  growthrate <- round(c(mean(posterior_log_data$growthRate.), sd(posterior_log_data$growthRate.)), 4)
   xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, ce_template))
   xml_temp <- gsub('CE_SIM_TREE_FILE', paste0(output_name, '_pps'), xml_temp)
   xml_temp <- gsub('E_POP_SIZE_MEAN', epopsize[1], xml_temp)
   xml_temp <- gsub('E_POP_SIZE_SD', epopsize[2], xml_temp)
-#  xml_temp <- gsub('GROWTH_RATE_SHAPE', growth_rate[1], xml_temp)
-#  xml_temp <- gsub('GROWTH_RATE_RATE', growth_rate[2], xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_INIT', mean(posterior_log_data$growthRate.), xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_MEAN', growth_rate_norm[1], xml_temp)
-  xml_temp <- gsub('GROWTH_RATE_SD', growth_rate_norm[2], xml_temp)
+  xml_temp <- gsub('GROWTH_RATE_MEAN', growthrate[1], xml_temp)
+  xml_temp <- gsub('GROWTH_RATE_SD', growthrate[2], xml_temp)
 
   cat(xml_temp, file = paste0(output_name, '_pps.xml'), sep = '\n')
 
@@ -744,7 +714,6 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
           <log id=\"ESS.0\" spec=\"util.ESS\" arg=\"@posterior\"/>
           <log idref=\"likelihood\"/>
           <log idref=\"prior\"/>
-          <log idref=\"TreeHeight.t:dummy_aln\"/>
       </logger>
 
       <logger id=\"treelog.t:dummy_aln\" fileName=\"BD_SIM_TREE_FILE.trees\" logEvery=\"5000\" mode=\"tree\">
@@ -769,9 +738,9 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
 
     origin <- round(c(mean(posterior_log_data$origin), sd(posterior_log_data$origin)), 2)
     sampling <- round(c(mean(posterior_log_data$samplingProportion),
-                        sd(posterior_log_data$samplingProportion)), 15)
+                        sd(posterior_log_data$samplingProportion)), 2)
     becomeUninfect <- round(c(mean(posterior_log_data$becomeUninfectiousRate),
-                              sd(posterior_log_data$becomeUninfectiousRate)), 4)
+                              sd(posterior_log_data$becomeUninfectiousRate)), 2)
     r0s <- posterior_log_data[, grep('R0', colnames(posterior_log_data))]
     r0s_means <- round(colMeans(r0s), 2)
     r0s_sds <- round(sapply(1:ncol(r0s), function(x) sd(r0s[, x])), 2)
@@ -797,8 +766,7 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
 run_beast_simulation <- function(beast_command, xml_file_name){
     system(paste(beast_command, xml_file_name))
     trees_sampled <- read.nexus(gsub('[.]xml', '.trees', xml_file_name))
-    return(trees_sampled[sample(300:length(trees_sampled), 100)])# Note that we only sample 20 trees for now, and that there should be at least 100 pps trees.
-#    return(tail(trees_sampled, 20))
+    return(trees_sampled[sample(1:length(trees_sampled), 20)])# Note that we only sample 100 trees
 }
 
 run_beast_pps <- function(beast_command, xml_files){
@@ -834,12 +802,12 @@ run_beast_pps <- function(beast_command, xml_files){
 cc_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_cc', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_cc_template(gsub('e[+]', 'E', readLines(tr)), file_name)
+  make_cc_template(readLines(tr), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_cc_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
   pps_names <- paste0(file_name, '_pps')
-  make_cc_template(gsub('e[+]', 'E', write.tree(pps)), pps_names)
+  make_cc_template(write.tree(pps), pps_names)
   pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
   pps_results <- run_beast_pps(beast_command, pps_files)
   write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
@@ -848,26 +816,26 @@ cc_run <- function(tr, beast_command){
 ce_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_ce', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_ce_template(gsub('e[+]', 'E', readLines(tr)), file_name)
+  make_ce_template(readLines(tr), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_ce_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
   pps_names <- paste0(file_name, '_pps')
-  make_ce_template(gsub('e[+]', 'E', write.tree(pps)), pps_names)
+  make_ce_template(write.tree(pps), pps_names)
   pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
   pps_results <- run_beast_pps(beast_command, pps_files)
   write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
 }
 
-bd_run <- function(tr, beast_command, sampling_proportion){
+bd_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_bd', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_bd_template(gsub('e[+]', 'E', readLines(tr)), file_name, sampling_proportion)
+  make_bd_template(readLines(tr), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_bd_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
   pps_names <- paste0(file_name, '_pps')
-  make_bd_template(gsub('e[+]', 'E', write.tree(pps)), pps_names, sampling_proportion)
+  make_bd_template(write.tree(pps), pps_names)
   pps_files <- paste0(pps_names, '_', 1:length(pps), '.xml')
   pps_results <- run_beast_pps(beast_command, pps_files)
   write.table(pps_results, file = paste0(file_name, '_pps_result.txt'), row.names = F, quote = F)
@@ -878,17 +846,13 @@ args <- commandArgs(trailingOnly = T)
 model <- args[1]
 tree_file <- args[2]
 beast_command <- args[3]
-
 print(args)
 #beast_command <- '~/Desktop/phylo_programs/BEAST243/bin/beast'
 # To run Rscript model pps_pipleline.R tr1.tree beastcommand
 if(model == 'cc'){
-    cc_run(tree_file, beast_command)
+  cc_run(tree_file, beast_command)
 }else if(model == 'ce'){
-    ce_run(tree_file, beast_command)
+  ce_run(tree_file, beast_command)
 }else if(model == 'bd'){
-    pop_size <- args[4]
-    emp_tree <- read.tree(tree_file)
-    sampling_proportion <- length(emp_tree$tip.label) / as.numeric(pop_size)
-    bd_run(tree_file, beast_command, sampling_proportion)
+  bd_run(tree_file, beast_command)
 }
