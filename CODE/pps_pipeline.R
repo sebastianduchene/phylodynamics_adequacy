@@ -822,7 +822,7 @@ run_beast_pps <- function(beast_command, xml_files){
 cc_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_cc', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_cc_template(readLines(tr), file_name)
+  make_cc_template(gsub('e[+]', 'E', readLines(tr)), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_cc_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
@@ -850,7 +850,7 @@ ce_run <- function(tr, beast_command){
 bd_run <- function(tr, beast_command, sampling_proportion){
   file_name <- gsub('[.]tree', '_bd', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_bd_template(readLines(tr), file_name, sampling_proportion)
+  make_bd_template(gsub('e[+]', 'E',readLines(tr)), file_name, sampling_proportion)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_bd_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
