@@ -555,11 +555,11 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
   burnin <- ceiling(nrow(posterior_log_data)*0.2)
   posterior_log_data <- posterior_log_data[-(1:burnin), ]
   epopsize <- round(c(mean(log(posterior_log_data$ePopSize)), sd(log(posterior_log_data$ePopSize))), 4)
-  
- 
+
+
   fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
   growth_rate <- fit_growth_rate$estimate
- 
+
 #  growthrate <- round(c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.))), 4)
   xml_temp <- gsub('TAXON_DATES', taxon_dates, gsub('TAXON_SEQS', taxon_seqs, ce_template))
   xml_temp <- gsub('CE_SIM_TREE_FILE', paste0(output_name, '_pps'), xml_temp)
@@ -836,7 +836,7 @@ cc_run <- function(tr, beast_command){
 ce_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_ce', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_ce_template(readLines(tr), file_name)
+  make_ce_template(gsub('e[+]', 'E', readLines(tr)), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_ce_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))

@@ -840,7 +840,7 @@ cc_run <- function(tr, beast_command){
 ce_run <- function(tr, beast_command){
   file_name <- gsub('[.]tree', '_ce', tr)
   xml_file <- paste0(file_name, '_1.xml')
-  make_ce_template(readLines(tr), file_name)
+  make_ce_template(gsub('e[+]', 'E', readLines(tr)), file_name)
   log_temp <- run_beast_analyses(beast_command, xml_file)
   make_ce_simulation(log_temp, read.tree(tr), file_name)
   pps <- run_beast_simulation(beast_command, paste0(file_name, '_pps.xml'))
