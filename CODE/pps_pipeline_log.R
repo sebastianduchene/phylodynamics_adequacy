@@ -560,7 +560,7 @@ make_ce_simulation <- function(posterior_log_data, input_tree, output_name){
   #fit_growth_rate <- fitdistr(posterior_log_data$growthRate., 'gamma')
   #growth_rate_gamma <- fit_growth_rate$estimate
   if(sd(posterior_log_data$growthRate.) > 0){
-    growth_rate_lnorm <- round(c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.))), 4)
+    growth_rate_lnorm <- c(mean(log(posterior_log_data$growthRate.)), sd(log(posterior_log_data$growthRate.)))
   }else{
     growth_rate_lnorm <- c(round(mean(log(posterior_log_data$growthRate.)), 4), 1e-10)
   }
