@@ -1,0 +1,4 @@
+ce_log_files <- paste0('../test_data/', dir('../test_data/', pattern = '_ce_.+log'))
+
+cc_log_files <- paste0('../test_data/', dir('../test_data/', pattern = '_cc_.+log'))
+
