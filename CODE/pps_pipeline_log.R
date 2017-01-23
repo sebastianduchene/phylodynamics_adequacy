@@ -609,7 +609,7 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
               <taxonset idref=\"TaxonSet.dummy_aln\"/>
           </tree>
           <parameter id=\"clockRate.c:dummy_aln\" name=\"stateNode\">1.0</parameter>
-          <parameter id=\"origin.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">ORIGIN_MEAN</parameter>
+          <parameter id=\"origin.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">ORIGIN_START</parameter>
           <parameter id=\"samplingProportion.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"1.0\">SAMPLING_PROP_MEAN</parameter>
           <parameter id=\"becomeUninfectiousRate.t:dummy_aln\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">BECOME_UNINFECTIOUS_MEAN</parameter>
           <parameter id=\"R0.t:dummy_aln\" dimension=\"10\" lower=\"0.0\" name=\"stateNode\" upper=\"Infinity\">R0_MEAN</parameter>
@@ -769,6 +769,7 @@ make_bd_simulation <- function(posterior_log_data, input_tree, output_name){
     r0s_sds <- round(sapply(1:ncol(r0s), function(x) sd(r0s[, x])), 2)
 
     xml_temp <- gsub('ORIGIN_MEAN', origin[1], xml_temp)
+    xml_temp <- gsub('ORIGIN_START', origin[1]+20, xml_temp)
     xml_temp <- gsub('ORIGIN_SD', origin[2], xml_temp)
     xml_temp <- gsub('BECOME_UNINFECTIOUS_MEAN', becomeUninfect[1], xml_temp)
     xml_temp <- gsub('BECOME_UNINFECTIOUS_SD', becomeUninfect[2], xml_temp)
